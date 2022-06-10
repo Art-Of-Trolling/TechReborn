@@ -1,0 +1,20 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 10,
+  "time": 3600,
+  "ingredients": [
+	{
+	  "tag": "c:electrum_dusts"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:gold_small_dust",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:silver_small_dust",
+	  "count": 2
+	}
+  ]
+}

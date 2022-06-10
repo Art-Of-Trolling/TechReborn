@@ -1,0 +1,27 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "power": 64,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "item": "techreborn:bismuth_ore"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:bismuth_gem",
+	  "count": 6
+	},
+	{
+	  "item": "techreborn:endstone_dust",
+	  "count": 3
+	},
+	{
+	  "item": "techreborn:ender_eye_dust"
+	}
+  ]
+}

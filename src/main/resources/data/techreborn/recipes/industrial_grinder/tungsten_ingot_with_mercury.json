@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "power": 16,
+  "time": 40,
+  "tank": {
+	"fluid": "techreborn:mercury",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "c:tungsten_ingots"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:tungsten_dust",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:tungsten_nugget",
+	  "count": 3
+	}
+  ]
+}

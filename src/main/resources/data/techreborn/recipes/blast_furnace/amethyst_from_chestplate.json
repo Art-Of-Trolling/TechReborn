@@ -1,0 +1,23 @@
+{
+  "type": "techreborn:blast_furnace",
+  "power": 128,
+  "time": 140,
+  "heat": 1000,
+  "ingredients": [
+	{
+	  "item": "techreborn:amethyst_chestplate"
+	},
+	{
+	  "item": "minecraft:sand"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:amethyst_gem",
+	  "count": 8
+	},
+	{
+	  "item": "techreborn:dark_ashes_dust"
+	}
+  ]
+}

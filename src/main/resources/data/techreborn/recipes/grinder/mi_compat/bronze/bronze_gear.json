@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "modern_industrialization:bronze_gear"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:bronze_dust",
+	  "count": 2
+	}
+  ],
+  "conditions": {
+	"reborncore:mod": "modern_industrialization"
+  }
+}

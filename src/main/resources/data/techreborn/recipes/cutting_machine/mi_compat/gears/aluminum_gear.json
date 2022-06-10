@@ -1,0 +1,23 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "power": 32,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "item": "modern_industrialization:aluminum_large_plate"
+	}
+  ],
+  "results": [
+	{
+	  "item": "modern_industrialization:aluminum_gear",
+	  "count": 2
+	}
+  ],
+  "conditions": {
+	"reborncore:mod": "modern_industrialization"
+  }
+}

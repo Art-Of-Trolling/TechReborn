@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "power": 30,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "item": "minecraft:wooden_shovel",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:saw_small_dust",
+	  "count": 2
+	}
+  ]
+}

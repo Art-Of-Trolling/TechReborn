@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "modern_industrialization:aluminum_rotor"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:aluminum_dust",
+	  "count": 3
+	}
+  ],
+  "conditions": {
+	"reborncore:mod": "modern_industrialization"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "power": 25,
+  "time": 250,
+  "ingredients": [
+	{
+	  "item": "minecraft:red_dye",
+	  "count": 1
+	},
+	{
+	  "item": "minecraft:white_stained_glass",
+	  "count": 12
+	}
+  ],
+  "results": [
+	{
+	  "item": "minecraft:pink_stained_glass",
+	  "count": 12
+	}
+  ]
+}

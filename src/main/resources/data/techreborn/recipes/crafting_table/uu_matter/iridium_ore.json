@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"UUU",
+	"UUX",
+	"UXX"
+  ],
+  "key": {
+	"U": {
+	  "item": "techreborn:uu_matter"
+	},
+	"X": {
+	  "item": "minecraft:air"
+	}
+  },
+  "result": {
+	"item": "techreborn:iridium_ore"
+  }
+}

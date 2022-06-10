@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:rolling_machine",
+  "shaped": {
+	"pattern": [
+	  "PP",
+	  "PP"
+	],
+	"key": {
+	  "P": {
+		"tag": "c:iron_plates"
+	  }
+	},
+	"result": {
+	  "item": "modern_industrialization:iron_gear",
+	  "count": 2
+	}
+  },
+  "conditions": {
+	"reborncore:mod": "modern_industrialization"
+  }
+}

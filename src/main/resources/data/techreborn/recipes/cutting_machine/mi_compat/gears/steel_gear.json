@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:cutting_machine",
+  "power": 32,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "c:steel_plates",
+	  "count": 4
+	}
+  ],
+  "results": [
+	{
+	  "item": "modern_industrialization:steel_gear",
+	  "count": 2
+	}
+  ],
+  "conditions": {
+	"reborncore:mod": "modern_industrialization"
+  }
+}

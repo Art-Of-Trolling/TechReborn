@@ -1,0 +1,7 @@
+{
+  "variants": {
+	"": {
+	  "model": "techreborn:block/storage/osmium_storage_block"
+	}
+  }
+}

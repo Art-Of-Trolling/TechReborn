@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	" C ",
+	"RBR",
+	" C "
+  ],
+  "key": {
+	"B": {
+	  "item": "techreborn:quantum_storage_unit"
+	},
+	"C": {
+	  "item": "techreborn:cell"
+	},
+	"R": {
+	  "item": "techreborn:rubber"
+	}
+  },
+  "result": {
+	"item": "techreborn:quantum_tank_unit"
+  }
+}

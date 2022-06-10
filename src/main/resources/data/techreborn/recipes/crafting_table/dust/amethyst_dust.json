@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+	{
+	  "item": "techreborn:amethyst_small_dust"
+	},
+	{
+	  "item": "techreborn:amethyst_small_dust"
+	},
+	{
+	  "item": "techreborn:amethyst_small_dust"
+	},
+	{
+	  "item": "techreborn:amethyst_small_dust"
+	}
+  ],
+  "result": {
+	"item": "techreborn:amethyst_dust"
+  }
+}

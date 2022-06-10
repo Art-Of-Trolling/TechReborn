@@ -1,0 +1,27 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "power": 64,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "item": "techreborn:amethyst_ore"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:amethyst_gem",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:endstone_small_dust"
+	},
+	{
+	  "item": "techreborn:amethyst_small_dust",
+	  "count": 4
+	}
+  ]
+}

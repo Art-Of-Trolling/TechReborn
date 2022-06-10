@@ -1,0 +1,15 @@
+{
+  "type": "techreborn:compressor",
+  "power": 10,
+  "time": 300,
+  "ingredients": [
+	{
+	  "tag": "c:tungsten_ingots"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:tungsten_plate"
+	}
+  ]
+}

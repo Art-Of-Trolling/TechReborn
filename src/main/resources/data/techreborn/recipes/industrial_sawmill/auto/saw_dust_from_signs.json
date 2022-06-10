@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "power": 30,
+  "time": 200,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "minecraft:signs"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:saw_dust"
+	}
+  ]
+}

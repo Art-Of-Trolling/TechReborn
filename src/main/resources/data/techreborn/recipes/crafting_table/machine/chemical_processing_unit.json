@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"PAP",
+	"CFC",
+	"ESR"
+  ],
+  "key": {
+	"P": {
+	  "item": "techreborn:tungstensteel_plate"
+	},
+	"R": {
+	  "item": "techreborn:chemical_reactor"
+	},
+	"C": {
+	  "item": "techreborn:advanced_machine_frame"
+	},
+	"A": {
+	  "item": "techreborn:energy_flow_chip"
+	},
+	"S": {
+	  "item": "techreborn:extractor"
+	},
+	"E": {
+	  "item": "techreborn:fluid_replicator"
+	},
+	"F": {
+	  "item": "techreborn:gas_turbine"
+	}
+  },
+  "result": {
+	"item": "techreborn:chemical_processing_unit"
+  }
+}

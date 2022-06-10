@@ -1,0 +1,15 @@
+{
+  "type": "techreborn:grinder",
+  "power": 5,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:bismuth_ingots"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:bismuth_dust"
+	}
+  ]
+}

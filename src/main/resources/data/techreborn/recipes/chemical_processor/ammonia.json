@@ -1,0 +1,26 @@
+{
+  "type": "techreborn:chemical_processing_unit",
+  "power": 20,
+  "time": 400,
+  "ingredients": [
+	{
+	  "fluid": "techreborn:hydrogen",
+	  "holder": "techreborn:cell",
+	  "count": 32
+	},
+	{
+	  "fluid": "techreborn:nitrogen",
+	  "holder": "techreborn:cell",
+	  "count": 16
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cell",
+	  "count": 48,
+	  "nbt": {
+		"fluid": "techreborn:ammonia"
+	  }
+	}
+  ]
+}

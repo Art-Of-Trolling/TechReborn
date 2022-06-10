@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 10,
+  "time": 1500,
+  "ingredients": [
+	{
+	  "tag": "c:brass_dusts"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:copper_small_dust",
+	  "count": 3
+	},
+	{
+	  "item": "techreborn:zinc_small_dust"
+	}
+  ]
+}

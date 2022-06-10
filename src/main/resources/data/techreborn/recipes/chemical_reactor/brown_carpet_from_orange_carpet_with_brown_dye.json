@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "power": 25,
+  "time": 250,
+  "ingredients": [
+	{
+	  "item": "minecraft:brown_dye",
+	  "count": 1
+	},
+	{
+	  "item": "minecraft:orange_carpet",
+	  "count": 8
+	}
+  ],
+  "results": [
+	{
+	  "item": "minecraft:brown_carpet",
+	  "count": 8
+	}
+  ]
+}

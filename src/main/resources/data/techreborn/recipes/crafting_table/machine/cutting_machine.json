@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"FFF",
+	"SMS",
+	"ACA"
+  ],
+  "key": {
+	"F": {
+	  "item": "techreborn:advanced_circuit"
+	},
+	"S": {
+	  "item": "minecraft:stone"
+	},
+	"C": {
+	  "item": "techreborn:electronic_circuit"
+	},
+	"M": {
+	  "item": "techreborn:diamond_grinding_head"
+	},
+	"A": {
+	  "item": "techreborn:basic_machine_frame"
+	}
+  },
+  "result": {
+	"item": "techreborn:cutting_machine"
+  }
+}

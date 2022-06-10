@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "power": 30,
+  "time": 2000,
+  "ingredients": [
+	{
+	  "fluid": "techreborn:argon",
+	  "holder": "techreborn:cell"
+	},
+	{
+	  "fluid": "techreborn:mercury",
+	  "holder": "techreborn:cell"
+	}
+  ],
+  "results": [
+	{
+	  "item": "minecraft:glowstone_dust",
+	  "count": 9
+	}
+  ]
+}

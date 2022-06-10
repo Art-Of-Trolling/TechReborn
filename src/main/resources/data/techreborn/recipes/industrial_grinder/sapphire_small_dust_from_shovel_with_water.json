@@ -1,0 +1,23 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "power": 128,
+  "time": 140,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "item": "techreborn:sapphire_spade",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:sapphire_small_dust"
+	},
+	{
+	  "item": "techreborn:saw_small_dust"
+	}
+  ]
+}

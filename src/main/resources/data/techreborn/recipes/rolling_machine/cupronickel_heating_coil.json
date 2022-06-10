@@ -1,0 +1,22 @@
+{
+  "type": "techreborn:rolling_machine",
+  "shaped": {
+	"pattern": [
+	  "NCN",
+	  "C C",
+	  "NCN"
+	],
+	"key": {
+	  "N": {
+		"tag": "c:nickel_ingots"
+	  },
+	  "C": {
+		"tag": "c:copper_ingots"
+	  }
+	},
+	"result": {
+	  "item": "techreborn:cupronickel_heating_coil",
+	  "count": 3
+	}
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"AAA",
+	"A A",
+	"AAA"
+  ],
+  "key": {
+	"A": {
+	  "tag": "c:refined_iron_ingots"
+	}
+  },
+  "result": {
+	"item": "techreborn:basic_machine_frame"
+  }
+}

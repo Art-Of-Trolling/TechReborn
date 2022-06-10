@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"UXX",
+	"UXX",
+	"UXX"
+  ],
+  "key": {
+	"U": {
+	  "item": "techreborn:uu_matter"
+	},
+	"X": {
+	  "item": "minecraft:air"
+	}
+  },
+  "result": {
+	"item": "minecraft:feather"
+  }
+}

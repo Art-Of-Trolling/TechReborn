@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+	{
+	  "tag": "c:bismuth_dusts"
+	}
+  ],
+  "result": {
+	"item": "techreborn:bismuth_small_dust",
+	"count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:grinder",
+  "power": 4,
+  "time": 270,
+  "ingredients": [
+	{
+	  "item": "techreborn:amethyst_storage_block"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:amethyst_dust",
+	  "count": 2
+	}
+  ]
+}

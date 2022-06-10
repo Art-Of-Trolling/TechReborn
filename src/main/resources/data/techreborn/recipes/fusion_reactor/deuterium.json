@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:fusion_reactor",
+  "power": 16384,
+  "time": 2048,
+  "start-power": 50000000,
+  "min-size": 1,
+  "ingredients": [
+	{
+	  "fluid": "techreborn:calcium",
+	  "holder": "techreborn:cell"
+	},
+	{
+	  "fluid": "techreborn:sodium",
+	  "holder": "techreborn:cell"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cell",
+	  "nbt": {
+		"fluid": "techreborn:deuterium"
+	  }
+	}
+  ]
+}

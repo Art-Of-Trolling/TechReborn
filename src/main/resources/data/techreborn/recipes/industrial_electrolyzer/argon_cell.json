@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "power": 50,
+  "time": 1000,
+  "ingredients": [
+	{
+	  "item": "techreborn:cell",
+	  "nbt": {
+		"fluid": "techreborn:compressed_air"
+	  },
+	  "count": 3
+	},
+	{
+	  "item": "techreborn:cell",
+	  "count": 3,
+	  "nbt": "empty"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cell",
+	  "nbt": {
+		"fluid": "techreborn:argon"
+	  },
+	  "count": 6
+	}
+  ]
+}

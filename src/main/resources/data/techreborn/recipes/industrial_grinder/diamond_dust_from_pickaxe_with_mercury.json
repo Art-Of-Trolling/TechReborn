@@ -1,0 +1,27 @@
+{
+  "type": "techreborn:industrial_grinder",
+  "power": 128,
+  "time": 140,
+  "tank": {
+	"fluid": "techreborn:mercury",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "item": "minecraft:diamond_pickaxe",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:diamond_dust"
+	},
+	{
+	  "item": "techreborn:diamond_small_dust",
+	  "count": 3
+	},
+	{
+	  "item": "techreborn:saw_small_dust"
+	}
+  ]
+}

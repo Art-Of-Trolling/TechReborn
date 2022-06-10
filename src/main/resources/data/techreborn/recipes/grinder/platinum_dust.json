@@ -1,0 +1,15 @@
+{
+  "type": "techreborn:grinder",
+  "power": 4,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:platinum_ingots"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:platinum_dust"
+	}
+  ]
+}

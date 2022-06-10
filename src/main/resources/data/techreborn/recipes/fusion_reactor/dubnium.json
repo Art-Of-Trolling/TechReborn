@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:fusion_reactor",
+  "power": 16384,
+  "time": 1024,
+  "start-power": 30000000,
+  "min-size": 1,
+  "ingredients": [
+	{
+	  "fluid": "techreborn:californium",
+	  "holder": "techreborn:cell"
+	},
+	{
+	  "fluid": "techreborn:nitrogen",
+	  "holder": "techreborn:cell"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cell",
+	  "nbt": {
+		"fluid": "techreborn:dubnium"
+	  }
+	}
+  ]
+}

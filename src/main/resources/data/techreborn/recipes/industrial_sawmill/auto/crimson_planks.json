@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:industrial_sawmill",
+  "power": 40,
+  "time": 200,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "minecraft:crimson_stems"
+	}
+  ],
+  "results": [
+	{
+	  "item": "minecraft:crimson_planks",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:saw_dust",
+	  "count": 3
+	}
+  ]
+}

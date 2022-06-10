@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "power": 50,
+  "time": 1100,
+  "ingredients": [
+	{
+	  "item": "techreborn:quartz_dust",
+	  "count": 4
+	},
+	{
+	  "count": 4,
+	  "fluid": "techreborn:compressed_air",
+	  "holder": "techreborn:cell"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cell",
+	  "nbt": {
+		"fluid": "techreborn:fluorine"
+	  },
+	  "count": 4
+	}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "techreborn:cutting_machine",
+  "power": 64,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "item": "techreborn:quartz_plate"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:quartz_gear"
+	}
+  ]
+}

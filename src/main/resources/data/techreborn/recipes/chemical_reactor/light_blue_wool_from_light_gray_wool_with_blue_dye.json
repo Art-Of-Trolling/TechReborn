@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "power": 25,
+  "time": 250,
+  "ingredients": [
+	{
+	  "item": "minecraft:blue_dye",
+	  "count": 1
+	},
+	{
+	  "item": "minecraft:light_gray_wool",
+	  "count": 4
+	}
+  ],
+  "results": [
+	{
+	  "item": "minecraft:light_blue_wool",
+	  "count": 4
+	}
+  ]
+}

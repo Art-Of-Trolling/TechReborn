@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+	"techreborn:amethyst_hoe",
+	"techreborn:bronze_hoe",
+	"techreborn:ruby_hoe",
+	"techreborn:sapphire_hoe",
+	"techreborn:peridot_hoe"
+  ]
+}

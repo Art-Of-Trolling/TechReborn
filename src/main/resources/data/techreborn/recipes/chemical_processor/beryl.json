@@ -1,0 +1,33 @@
+{
+  "type": "techreborn:chemical_processing_unit",
+  "power": 20,
+  "time": 400,
+  "ingredients": [
+	{
+	  "fluid": "techreborn:chromium",
+	  "holder": "techreborn:cell",
+	  "count": 16
+	},
+	{
+	  "fluid": "techreborn:sulfur",
+	  "holder": "techreborn:cell",
+	  "count": 16
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cell",
+	  "count": 16,
+	  "nbt": {
+		"fluid": "techreborn:radon"
+	  }
+	},
+	{
+	  "item": "techreborn:cell",
+	  "count": 15,
+	  "nbt": {
+		"fluid": "techreborn:compressed_air"
+	  }
+	}
+  ]
+}
