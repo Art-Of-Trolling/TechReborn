@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "techreborn:advanced_machine_casing"
+          "name": "techreborn:industrial_machine_casing"
         }
       ],
       "conditions": [

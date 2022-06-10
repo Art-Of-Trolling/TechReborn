@@ -1,3 +1,3 @@
 {
-	"parent": "techreborn:block/machines/chemical_chamber/chemical_chamber"
+	"parent": "techreborn:block/machines/chemical_reactor/chemical_reactor"
 }

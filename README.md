@@ -19,5 +19,5 @@
 
 # License
 Tech Reborn is licensed under the MIT license. Full license is in [**LICENSE.md**](https://github.com/szumaster/techreborn/blob/main/LICENSE.md).
-
+All assets, except for gui's, are licensed under the [CC0 1.0 Universal Public Domain Dedication](https://github.com/szumaster/techreborn/blob/main/LICENSE.md).
 Report any issues regarding this repository to [szumaster](https://github.com/szumaster).

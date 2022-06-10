@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/orientable",
 	"textures": {
-		"0": "techreborn:block/machines/chemical_chamber/chemical_chamber_bottom",
-		"3": "techreborn:block/machines/chemical_chamber/chemical_chamber_side",
-		"4": "techreborn:block/machines/chemical_chamber/chemical_chamber_top",
-		"5": "techreborn:block/machines/chemical_chamber/chemical_chamber_on",
-		"6": "techreborn:block/machines/chemical_chamber/chemical_chamber_back",
-		"particle": "techreborn:block/machines/chemical_chamber/chemical_chamber_bottom"
+		"0": "techreborn:block/machines/chemical_reactor/chemical_reactor_bottom",
+		"3": "techreborn:block/machines/chemical_reactor/chemical_reactor_side",
+		"4": "techreborn:block/machines/chemical_reactor/chemical_reactor_top",
+		"5": "techreborn:block/machines/chemical_reactor/chemical_reactor_on",
+		"6": "techreborn:block/machines/chemical_reactor/chemical_reactor_back",
+		"particle": "techreborn:block/machines/chemical_reactor/chemical_reactor_bottom"
 	},
 	"elements": [
 		{

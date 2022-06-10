@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/orientable",
 	"textures": {
-		"1": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine_side",
-		"2": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine_top",
-		"3": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine_bottom",
-		"particle": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine_side"
+		"1": "techreborn:block/machines/auto_crafting_table/auto_crafting_table_side",
+		"2": "techreborn:block/machines/auto_crafting_table/auto_crafting_table_top",
+		"3": "techreborn:block/machines/auto_crafting_table/auto_crafting_table_bottom",
+		"particle": "techreborn:block/machines/auto_crafting_table/auto_crafting_table_side"
 	},
 	"elements": [
 		{

@@ -1,6 +1,6 @@
 ﻿{
     "textures": {
-        "particle": "techreborn:block/fluids/sodium_persulfate_still"
+        "particle": "techreborn:block/fluids/sodium_persulfate_flowing"
     }
 }
 

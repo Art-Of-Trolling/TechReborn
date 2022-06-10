@@ -1,6 +1,6 @@
 ﻿{
     "textures": {
-        "particle": "techreborn:block/fluids/electrolyzed_water_still"
+        "particle": "techreborn:block/fluids/electrolyzed_water_flowing"
     }
 }
 

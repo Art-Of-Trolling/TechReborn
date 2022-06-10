@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine" },
-        "facing=south": { "model": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine", "y": 180 },
-        "facing=west":  { "model": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine", "y": 270 },
-        "facing=east":  { "model": "techreborn:block/machines/auto_crafting_machine/auto_crafting_machine", "y": 90 }
+        "facing=north": { "model": "techreborn:block/machines/auto_crafting_table/auto_crafting_table" },
+        "facing=south": { "model": "techreborn:block/machines/auto_crafting_table/auto_crafting_table", "y": 180 },
+        "facing=west":  { "model": "techreborn:block/machines/auto_crafting_table/auto_crafting_table", "y": 270 },
+        "facing=east":  { "model": "techreborn:block/machines/auto_crafting_table/auto_crafting_table", "y": 90 }
     }
 }

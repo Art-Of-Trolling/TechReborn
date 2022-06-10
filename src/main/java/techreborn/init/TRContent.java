@@ -630,7 +630,7 @@ public class TRContent {
 		}
 	}
 
-	public enum Gears implements ItemConvertible {
+	public enum Cogs implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALUMINUM,
 		BISMUTH,
@@ -701,10 +701,10 @@ public class TRContent {
 		public final String name;
 		public final Item item;
 
-		Gears() {
+		Cogs() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
-			InitUtils.setup(item, name + "_gear");
+			InitUtils.setup(item, name + "_cog");
 		}
 
 		public ItemStack getStack() {

@@ -2,13 +2,13 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/orientable",
 	"textures": {
-		"0": "techreborn:block/machines/fusion_reactor/fusion_reactor_back",
-		"1": "techreborn:block/machines/fusion_reactor/fusion_reactor_bottom",
-		"2": "techreborn:block/machines/fusion_reactor/fusion_reactor_east",
-		"3": "techreborn:block/machines/fusion_reactor/fusion_reactor_front",
-		"4": "techreborn:block/machines/fusion_reactor/fusion_reactor_top",
-		"5": "techreborn:block/machines/fusion_reactor/fusion_reactor_west",
-		"particle": "techreborn:block/machines/fusion_reactor/fusion_reactor_back"
+		"0": "techreborn:block/machines/fusion_control_computer/fusion_control_computer_back",
+		"1": "techreborn:block/machines/fusion_control_computer/fusion_control_computer_bottom",
+		"2": "techreborn:block/machines/fusion_control_computer/fusion_control_computer_east",
+		"3": "techreborn:block/machines/fusion_control_computer/fusion_control_computer_front",
+		"4": "techreborn:block/machines/fusion_control_computer/fusion_control_computer_top",
+		"5": "techreborn:block/machines/fusion_control_computer/fusion_control_computer_west",
+		"particle": "techreborn:block/machines/fusion_control_computer/fusion_control_computer_back"
 	},
 	"elements": [
 		{

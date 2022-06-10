@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-	"0": "techreborn:block/machines/env_controller/env_controller_bottom",
-	"1": "techreborn:block/machines/env_controller/env_controller_front",
-	"2": "techreborn:block/machines/env_controller/env_controller_side",
-	"3": "techreborn:block/machines/env_controller/env_controller_top",
-	"particle": "techreborn:block/machines/env_controller/env_controller_bottom"
+	"0": "techreborn:block/machines/env_controller/greenhouse_controllerbottom",
+	"1": "techreborn:block/machines/env_controller/greenhouse_controllerfront",
+	"2": "techreborn:block/machines/env_controller/greenhouse_controllerside",
+	"3": "techreborn:block/machines/env_controller/greenhouse_controllertop",
+	"particle": "techreborn:block/machines/env_controller/greenhouse_controllerbottom"
   },
   "elements": [
 	{

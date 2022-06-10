@@ -1,6 +1,6 @@
 ﻿{
     "textures": {
-        "particle": "techreborn:block/fluids/nitro_diesel_still"
+        "particle": "techreborn:block/fluids/nitro_diesel_flowing"
     }
 }
 
