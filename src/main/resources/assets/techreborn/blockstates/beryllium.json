@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/fluid/beryllium"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/fluid/beryllium" }
+    }
 }

@@ -1,0 +1,6 @@
+{
+	"textures": {
+        "0": "techreborn:block/misc/metal_composite",
+		"particle": "techreborn:block/misc/metal_composite"
+    }
+}

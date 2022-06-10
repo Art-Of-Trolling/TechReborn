@@ -1,3 +1,3 @@
 {
-  "parent": "techreborn:block/machines/tier2_machines/vacuum_freezer"
+	"parent": "techreborn:block/machines/vacuum_freezer/vacuum_freezer"
 }

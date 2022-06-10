@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/machines/tier3_machines/creative_tank_unit"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/machines/creative_tank_unit/creative_tank_unit" }
+    }
 }

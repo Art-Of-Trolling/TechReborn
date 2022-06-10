@@ -1,3 +1,3 @@
 {
-  "parent": "techreborn:block/machines/tier1_machines/alloy_smelter"
+	"parent": "techreborn:block/machines/alloy_smelter/alloy_smelter"
 }

@@ -1,4 +1,4 @@
 {
-  "parent": "techreborn:block/machines/tier3_machines/quantum_tank_unit"
+    "parent": "techreborn:block/machines/quantum_tank_unit/quantum_tank_unit"
 }
 

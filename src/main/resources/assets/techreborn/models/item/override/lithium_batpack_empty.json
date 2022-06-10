@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-	"layer0": "techreborn:item/armor/lithium_batpack_empty"
+    "layer0": "techreborn:item/armor/lithium_batpack_empty"
   }
 }

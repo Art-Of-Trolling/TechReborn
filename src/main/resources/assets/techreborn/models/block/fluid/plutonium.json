@@ -1,5 +1,6 @@
-{
-  "textures": {
-	"particle": "techreborn:block/fluids/plutonium_flowing"
-  }
+﻿{
+    "textures": {
+        "particle": "techreborn:block/fluids/plutonium_still"
+    }
 }
+

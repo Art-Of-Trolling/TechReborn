@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/reinforced_glass"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/reinforced_glass" }
+    }
 }

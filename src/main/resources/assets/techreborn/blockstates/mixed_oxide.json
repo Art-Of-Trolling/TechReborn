@@ -1,7 +1,5 @@
-﻿{
-  "textures": {
-	"particle": "techreborn:block/fluid/mixed_oxide"
-  }
+{
+    "variants": {
+        "": { "model": "techreborn:block/fluid/mixed_oxide" }
+    }
 }
-}
-

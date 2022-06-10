@@ -1,5 +1,6 @@
-{
-  "textures": {
-	"particle": "techreborn:block/fluids/mercury_flowing"
-  }
+﻿{
+    "textures": {
+        "particle": "techreborn:block/fluids/mercury_still"
+    }
 }
+

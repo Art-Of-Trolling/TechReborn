@@ -10,13 +10,13 @@
 	  "tag": "c:iron_plates"
 	},
 	"C": {
-	  "item": "techreborn:advanced_circuit"
+	  "item": "techreborn:industrial_circuit"
 	},
 	"E": {
 	  "item": "techreborn:extractor"
 	},
 	"F": {
-	  "item": "techreborn:advanced_machine_frame"
+	  "item": "techreborn:industrial_machine_frame"
 	}
   },
   "result": {

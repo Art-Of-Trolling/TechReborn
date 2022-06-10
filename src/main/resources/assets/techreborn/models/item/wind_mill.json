@@ -1,3 +1,3 @@
 {
-  "parent": "techreborn:block/machines/generators/wind_mill"
+	"parent": "techreborn:block/machines/wind_mill/wind_mill"
 }

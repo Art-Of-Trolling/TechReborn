@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/fluid/lithium"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/fluid/lithium" }
+    }
 }

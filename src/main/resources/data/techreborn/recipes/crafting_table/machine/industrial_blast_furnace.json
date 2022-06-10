@@ -7,10 +7,10 @@
   ],
   "key": {
 	"B": {
-	  "item": "techreborn:advanced_machine_frame"
+	  "item": "techreborn:industrial_machine_frame"
 	},
 	"C": {
-	  "item": "techreborn:advanced_circuit"
+	  "item": "techreborn:industrial_circuit"
 	},
 	"F": {
 	  "item": "techreborn:electric_furnace"

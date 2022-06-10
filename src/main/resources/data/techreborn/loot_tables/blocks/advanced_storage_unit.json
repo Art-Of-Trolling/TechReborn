@@ -6,7 +6,7 @@
 	  "entries": [
 		{
 		  "type": "minecraft:item",
-		  "name": "techreborn:advanced_storage_unit"
+		  "name": "techreborn:industrial_storage_unit"
 		}
 	  ],
 	  "conditions": [

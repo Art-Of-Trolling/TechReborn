@@ -1,3 +1,3 @@
 {
-  "parent": "techreborn:block/machines/lighting/alarm"
+	"parent": "techreborn:block/machines/alarm/alarm"
 }

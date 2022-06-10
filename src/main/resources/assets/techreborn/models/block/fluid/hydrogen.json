@@ -1,5 +1,6 @@
-{
-  "textures": {
-	"particle": "techreborn:block/fluids/hydrogen_flowing"
-  }
+﻿{
+    "textures": {
+        "particle": "techreborn:block/fluids/hydrogen_still"
+    }
 }
+

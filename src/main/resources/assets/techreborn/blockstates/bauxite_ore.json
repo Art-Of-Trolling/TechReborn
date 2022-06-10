@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/ore/bauxite_ore"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/ore/bauxite_ore" }
+    }
 }

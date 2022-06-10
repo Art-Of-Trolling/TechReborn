@@ -1,3 +1,3 @@
 {
-  "parent": "techreborn:block/machines/tier1_machines/compressor"
+	"parent": "techreborn:block/machines/compressor/compressor"
 }

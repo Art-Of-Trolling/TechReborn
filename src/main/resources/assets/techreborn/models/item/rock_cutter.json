@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-	"layer0": "techreborn:item/tool/rock_cutter"
+    "layer0": "techreborn:item/tool/rock_cutter"
   }
 }

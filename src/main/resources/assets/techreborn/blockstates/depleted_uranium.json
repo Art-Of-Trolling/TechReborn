@@ -1,7 +1,5 @@
-﻿{
-  "textures": {
-	"particle": "techreborn:block/fluid/depleted_uranium"
+{
+  "variants": {
+	"": { "model": "techreborn:block/fluid/depleted_uranium" }
   }
 }
-}
-

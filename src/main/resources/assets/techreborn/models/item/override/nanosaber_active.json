@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-	"layer0": "techreborn:item/tool/nanosaber_on"
+    "layer0": "techreborn:item/tool/nanosaber_on"
   }
 }

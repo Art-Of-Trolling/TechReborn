@@ -6,7 +6,7 @@
 	  "entries": [
 		{
 		  "type": "minecraft:item",
-		  "name": "techreborn:advanced_solar_panel"
+		  "name": "techreborn:industrial_solar_panel"
 		}
 	  ],
 	  "conditions": [

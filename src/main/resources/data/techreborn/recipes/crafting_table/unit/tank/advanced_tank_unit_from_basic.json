@@ -10,7 +10,7 @@
 	  "tag": "c:electrum_plates"
 	},
 	"B": {
-	  "item": "techreborn:advanced_machine_frame"
+	  "item": "techreborn:industrial_machine_frame"
 	},
 	"D": {
 	  "item": "techreborn:digital_display"
@@ -19,10 +19,10 @@
 	  "item": "techreborn:basic_tank_unit"
 	},
 	"C": {
-	  "item": "techreborn:advanced_circuit"
+	  "item": "techreborn:industrial_circuit"
 	}
   },
   "result": {
-	"item": "techreborn:advanced_tank_unit"
+	"item": "techreborn:industrial_tank_unit"
   }
 }

@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/machines/tier2_machines/industrial_tank_unit"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/machines/industrial_tank_unit/industrial_tank_unit" }
+    }
 }

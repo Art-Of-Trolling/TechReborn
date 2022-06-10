@@ -7,7 +7,7 @@
   ],
   "key": {
 	"B": {
-	  "item": "techreborn:advanced_storage_unit"
+	  "item": "techreborn:industrial_storage_unit"
 	},
 	"R": {
 	  "item": "techreborn:rubber"
@@ -17,6 +17,6 @@
 	}
   },
   "result": {
-	"item": "techreborn:advanced_tank_unit"
+	"item": "techreborn:industrial_tank_unit"
   }
 }

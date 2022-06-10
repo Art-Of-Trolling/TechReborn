@@ -1,4 +1,4 @@
 {
-  "parent": "techreborn:block/machines/tier0_machines/drain"
+	"parent": "techreborn:block/machines/drain/drain"
 }
 

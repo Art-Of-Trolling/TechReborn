@@ -1,3 +1,3 @@
 {
-  "parent": "techreborn:block/machines/structure/basic_machine_frame"
+    "parent": "techreborn:block/machines/basic_machine_frame/basic_machine_frame"
 }

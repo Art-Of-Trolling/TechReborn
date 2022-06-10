@@ -10,7 +10,7 @@
 	  "translate": "advancements.techreborn.fusioncoil.desc"
 	}
   },
-  "parent": "techreborn:advancedmachineblock",
+  "parent": "techreborn:industrialmachineblock",
   "criteria": {
 	"crit1": {
 	  "trigger": "minecraft:inventory_changed",

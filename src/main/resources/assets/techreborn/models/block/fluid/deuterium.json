@@ -1,6 +1,6 @@
 ﻿{
-  "textures": {
-	"particle": "techreborn:block/fluids/deuterium_flowing"
-  }
+    "textures": {
+        "particle": "techreborn:block/fluids/deuterium_still"
+    }
 }
 

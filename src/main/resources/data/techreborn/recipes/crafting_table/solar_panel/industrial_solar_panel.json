@@ -7,10 +7,10 @@
   ],
   "key": {
 	"P": {
-	  "item": "techreborn:advanced_solar_panel"
+	  "item": "techreborn:industrial_solar_panel"
 	},
 	"C": {
-	  "item": "techreborn:advanced_circuit"
+	  "item": "techreborn:industrial_circuit"
 	},
 	"D": {
 	  "tag": "c:diamond_dusts"

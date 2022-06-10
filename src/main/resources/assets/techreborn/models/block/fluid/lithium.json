@@ -1,5 +1,6 @@
-{
-  "textures": {
-	"particle": "techreborn:block/fluids/lithium_flowing"
-  }
+﻿{
+    "textures": {
+        "particle": "techreborn:block/fluids/lithium_still"
+    }
 }
+

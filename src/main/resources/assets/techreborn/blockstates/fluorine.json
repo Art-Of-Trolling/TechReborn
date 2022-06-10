@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/fluid/fluorine"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/fluid/fluorine_gas" }
+    }
 }

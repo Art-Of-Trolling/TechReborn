@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-	"layer0": "techreborn:item/part/carbon_fiber"
-  }
+  "parent": "techreborn:block/fluid/carbon_fiber"
 }

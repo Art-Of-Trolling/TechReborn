@@ -1,0 +1,6 @@
+{
+	"textures": {
+        "uranium": "techreborn:block/misc/depleted_uranium",
+		"particle": "techreborn:block/misc/depleted_uranium"
+    }
+}

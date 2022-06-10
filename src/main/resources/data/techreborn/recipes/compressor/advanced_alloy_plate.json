@@ -4,12 +4,12 @@
   "time": 300,
   "ingredients": [
 	{
-	  "item": "techreborn:advanced_alloy_ingot"
+	  "item": "techreborn:industrial_alloy_ingot"
 	}
   ],
   "results": [
 	{
-	  "item": "techreborn:advanced_alloy_plate"
+	  "item": "techreborn:industrial_alloy_plate"
 	}
   ]
 }

@@ -1,10 +1,6 @@
 {
-  "variants": {
-	"active=false": {
-	  "model": "techreborn:block/machines/generators/basic_solar_panel"
-	},
-	"active=true": {
-	  "model": "techreborn:block/machines/generators/basic_solar_panel_on"
-	}
-  }
+    "variants": {
+        "active=false": { "model": "techreborn:block/machines/basic_solar_panel/basic_solar_panel" },
+        "active=true":  { "model": "techreborn:block/machines/basic_solar_panel/basic_solar_panel_on" }
+    }
 }
