@@ -3,7 +3,7 @@
         "ctm_version": 1,
         "type":"CTM",
         "textures":[
-            "techreborn:block/storage/iridium_reinforced_tungstensteel_block_ctm"
+            "techreborn:block/storage/iridium_reinforced_tungstensteel_storage_block_ctm"
         ],
         "extra":{
             "ignore_states":true
