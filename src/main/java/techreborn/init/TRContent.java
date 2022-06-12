@@ -1098,7 +1098,6 @@ public class TRContent {
 	}
 
 	public enum Parts implements ItemConvertible {
-		LEAF,
 		CARBON_FIBER,
 		CARBON_MESH,
 
