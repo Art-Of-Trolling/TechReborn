@@ -86,7 +86,7 @@ public class FluidReplicatorRecipeCategory implements RecipeCategory<FluidReplic
 		}));
 
 		widgets.add(Widgets.createSlot(new Point(bounds.x + 46, bounds.y + 26)).entries(recipeDisplay.getInputEntries().get(0)).markInput());
-		widgets.add(ReiPlugin.createProgressBar(bounds.x + 46 + 21, bounds.y + 30, recipeDisplay.getTime() * 50, GuiBuilder.ProgressDirection.RIGHT));
+		widgets.add(ReiPlugin.createProgressBar(bounds.x + 46 + 19, bounds.y + 30, recipeDisplay.getTime() * 50, GuiBuilder.ProgressDirection.RIGHT));
 		widgets.add(ReiPlugin.createFluidDisplay(new Rectangle(bounds.x + 46 + 46, bounds.y + 8, 16, 50), recipeDisplay.getOutputEntries().get(0), ReiPlugin.EntryAnimation.upwards(5000)));
 
 		widgets.add(Widgets.createLabel(new Point(bounds.x + 24, bounds.y + 5), new TranslatableText("techreborn.jei.recipe.processing.time.3", new DecimalFormat("###.##").format(recipeDisplay.getTime() / 20.0)))

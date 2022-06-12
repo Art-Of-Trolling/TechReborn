@@ -82,7 +82,7 @@ public class FluidGeneratorRecipeCategory implements RecipeCategory<FluidGenerat
 			return Tooltip.create(point, list);
 		}));
 		widgets.add(ReiPlugin.createFluidDisplay(new Rectangle(bounds.x + 16, bounds.y + 8, 16, 50), recipeDisplay.getInputEntries().get(0).get(0), ReiPlugin.EntryAnimation.downwards(5000)));
-		widgets.add(ReiPlugin.createProgressBar(bounds.x + 76 - 16, bounds.y + 48 - 19, 5000, GuiBuilder.ProgressDirection.RIGHT));
+		widgets.add(ReiPlugin.createProgressBar(bounds.x + 76 - 14, bounds.y + 48 - 19, 5000, GuiBuilder.ProgressDirection.RIGHT));
 		return widgets;
 	}
 }
