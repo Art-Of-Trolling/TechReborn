@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:platinum_small_dust"
+	  "item": "techreborn:platinum_tiny_dust"
 	},
 	{
-	  "item": "techreborn:platinum_small_dust"
+	  "item": "techreborn:platinum_tiny_dust"
 	},
 	{
-	  "item": "techreborn:platinum_small_dust"
+	  "item": "techreborn:platinum_tiny_dust"
 	},
 	{
-	  "item": "techreborn:platinum_small_dust"
+	  "item": "techreborn:platinum_tiny_dust"
 	}
   ],
   "result": {

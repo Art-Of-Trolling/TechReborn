@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:obsidian_small_dust"
+	  "item": "techreborn:obsidian_tiny_dust"
 	},
 	{
 	  "item": "techreborn:diorite_dust"

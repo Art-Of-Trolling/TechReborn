@@ -1,5 +1,5 @@
 {
-  "type": "techreborn:industrial_grinder",
+  "type": "techreborn:cutting_machine",
   "power": 32,
   "time": 100,
   "tank": {
@@ -13,7 +13,7 @@
   ],
   "results": [
 	{
-	  "item": "modern_industrialization:aluminum_cog",
+	  "item": "modern_industrialization:aluminum_gear",
 	  "count": 2
 	}
   ],

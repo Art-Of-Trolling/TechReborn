@@ -108,7 +108,7 @@ public class TechReborn implements ModInitializer {
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(TRContent.Parts.PLANTBALL.asItem(), 1F);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(TRContent.Parts.COMPRESSED_PLANTBALL.asItem(), 1F);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(TRContent.Dusts.SAW.asItem(), 0.3F);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(TRContent.SmallDusts.SAW.asItem(), 0.1F);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(TRContent.TinyDusts.SAW.asItem(), 0.1F);
 
 		if (FabricLoader.getInstance().isModLoaded("trinkets")) {
 			elytraPredicate = Trinkets.isElytraEquipped();

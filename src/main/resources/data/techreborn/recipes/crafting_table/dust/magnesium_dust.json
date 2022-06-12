@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:magnesium_small_dust"
+	  "item": "techreborn:magnesium_tiny_dust"
 	},
 	{
-	  "item": "techreborn:magnesium_small_dust"
+	  "item": "techreborn:magnesium_tiny_dust"
 	},
 	{
-	  "item": "techreborn:magnesium_small_dust"
+	  "item": "techreborn:magnesium_tiny_dust"
 	},
 	{
-	  "item": "techreborn:magnesium_small_dust"
+	  "item": "techreborn:magnesium_tiny_dust"
 	}
   ],
   "result": {

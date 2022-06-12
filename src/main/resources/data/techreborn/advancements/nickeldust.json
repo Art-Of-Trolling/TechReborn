@@ -1,7 +1,7 @@
 {
   "display": {
 	"icon": {
-	  "item": "techreborn:nickel_small_dust"
+	  "item": "techreborn:nickel_tiny_dust"
 	},
 	"title": {
 	  "translate": "advancements.techreborn.nickeldust"
@@ -17,7 +17,7 @@
 	  "conditions": {
 		"items": [
 		  {
-			"item": "techreborn:nickel_small_dust"
+			"item": "techreborn:nickel_tiny_dust"
 		  }
 		]
 	  }

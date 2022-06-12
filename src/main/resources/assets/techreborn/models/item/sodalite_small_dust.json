@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "techreborn:item/smalldust/sodalite_small_dust"
+        "layer0": "techreborn:item/smalldust/sodalite_tiny_dust"
     }
 }

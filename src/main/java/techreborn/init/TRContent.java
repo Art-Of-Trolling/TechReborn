@@ -548,69 +548,69 @@ public class TRContent {
 
 
 	public enum Machine implements ItemConvertible {
+		ADJUSTABLE_SU(new AdjustableSUBlock()),
+		ALARM(new BlockAlarm()),
 		ALLOY_SMELTER(new GenericMachineBlock(GuiType.ALLOY_SMELTER, AlloySmelterBlockEntity::new)),
 		ASSEMBLY_MACHINE(new GenericMachineBlock(GuiType.ASSEMBLING_MACHINE, AssemblingMachineBlockEntity::new)),
 		AUTO_CRAFTING_TABLE(new GenericMachineBlock(GuiType.AUTO_CRAFTING_TABLE, AutoCraftingTableBlockEntity::new)),
-		CHEMICAL_REACTOR(new GenericMachineBlock(GuiType.CHEMICAL_REACTOR, ChemicalReactorBlockEntity::new)),
-		COMPRESSOR(new GenericMachineBlock(GuiType.COMPRESSOR, CompressorBlockEntity::new)),
+		CHARGE_O_MAT(new GenericMachineBlock(GuiType.CHARGEBENCH, ChargeOMatBlockEntity::new)),
 		CHEMICAL_PROCESSING_UNIT(new GenericMachineBlock(GuiType.CHEMICAL_PROCESSING_UNIT, ChemicalProcessingUnitBlockEntity::new)),
-		DISTILLATION_TOWER(new GenericMachineBlock(GuiType.DISTILLATION_TOWER, DistillationTowerBlockEntity::new)),
-		EXTRACTOR(new GenericMachineBlock(GuiType.EXTRACTOR, ExtractorBlockEntity::new)),
-		RESIN_BASIN(new ResinBasinBlock(ResinBasinBlockEntity::new)),
-		FLUID_REPLICATOR(new GenericMachineBlock(GuiType.FLUID_REPLICATOR, FluidReplicatorBlockEntity::new)),
-		GRINDER(new GenericMachineBlock(GuiType.GRINDER, GrinderBlockEntity::new)),
-		ELECTRIC_FURNACE(new GenericMachineBlock(GuiType.ELECTRIC_FURNACE, ElectricFurnaceBlockEntity::new)),
-		IMPLOSION_COMPRESSOR(new GenericMachineBlock(GuiType.IMPLOSION_COMPRESSOR, ImplosionCompressorBlockEntity::new)),
-		INDUSTRIAL_BLAST_FURNACE(new GenericMachineBlock(GuiType.BLAST_FURNACE, IndustrialBlastFurnaceBlockEntity::new)),
-		INDUSTRIAL_CENTRIFUGE(new GenericMachineBlock(GuiType.CENTRIFUGE, IndustrialCentrifugeBlockEntity::new)),
-		INDUSTRIAL_ELECTROLYZER(new GenericMachineBlock(GuiType.INDUSTRIAL_ELECTROLYZER, IndustrialElectrolyzerBlockEntity::new)),
-		INDUSTRIAL_GRINDER(new GenericMachineBlock(GuiType.INDUSTRIAL_GRINDER, IndustrialGrinderBlockEntity::new)),
-		INDUSTRIAL_SAWMILL(new GenericMachineBlock(GuiType.SAWMILL, IndustrialSawmillBlockEntity::new)),
+		CHEMICAL_REACTOR(new GenericMachineBlock(GuiType.CHEMICAL_REACTOR, ChemicalReactorBlockEntity::new)),
+		CHUNK_LOADER(new GenericMachineBlock(GuiType.CHUNK_LOADER, ChunkLoaderBlockEntity::new)),
+		COMPRESSOR(new GenericMachineBlock(GuiType.COMPRESSOR, CompressorBlockEntity::new)),
 		CUTTING_MACHINE(new GenericMachineBlock(GuiType.CUTTING_MACHINE, CuttingMachineBlockEntity::new)),
-		IRON_ALLOY_FURNACE(new IronAlloyFurnaceBlock()),
-		IRON_FURNACE(new IronFurnaceBlock()),
-		MATTER_FABRICATOR(new GenericMachineBlock(GuiType.MATTER_FABRICATOR, MatterFabricatorBlockEntity::new)),
-		RECYCLER(new GenericMachineBlock(GuiType.RECYCLER, RecyclerBlockEntity::new)),
-		ROLLING_MACHINE(new GenericMachineBlock(GuiType.ROLLING_MACHINE, RollingMachineBlockEntity::new)),
-		SCRAPBOXINATOR(new GenericMachineBlock(GuiType.SCRAPBOXINATOR, ScrapboxinatorBlockEntity::new)),
-		VACUUM_FREEZER(new GenericMachineBlock(GuiType.VACUUM_FREEZER, VacuumFreezerBlockEntity::new)),
-		SOLID_CANNING_MACHINE(new GenericMachineBlock(GuiType.SOLID_CANNING_MACHINE, SoildCanningMachineBlockEntity::new)),
-		WIRE_MILL(new GenericMachineBlock(GuiType.WIRE_MILL, WireMillBlockEntity::new)),
-		GREENHOUSE_CONTROLLER(new GenericMachineBlock(GuiType.GREENHOUSE_CONTROLLER, GreenhouseControllerBlockEntity::new)),
-
 		DIESEL_GENERATOR(new GenericGeneratorBlock(GuiType.DIESEL_GENERATOR, DieselGeneratorBlockEntity::new)),
+		DISTILLATION_TOWER(new GenericMachineBlock(GuiType.DISTILLATION_TOWER, DistillationTowerBlockEntity::new)),
 		DRAGON_EGG_SYPHON(new GenericGeneratorBlock(null, DragonEggSyphonBlockEntity::new)),
+		DRAIN(new GenericMachineBlock(null, DrainBlockEntity::new)),
+		ELECTRIC_FURNACE(new GenericMachineBlock(GuiType.ELECTRIC_FURNACE, ElectricFurnaceBlockEntity::new)),
+		EV_TRANSFORMER(new BlockEVTransformer()),
+		EXTRACTOR(new GenericMachineBlock(GuiType.EXTRACTOR, ExtractorBlockEntity::new)),
+		FLUID_REPLICATOR(new GenericMachineBlock(GuiType.FLUID_REPLICATOR, FluidReplicatorBlockEntity::new)),
 		FUSION_COIL(new BlockFusionCoil()),
 		FUSION_CONTROL_COMPUTER(new BlockFusionControlComputer()),
 		GAS_TURBINE(new GenericGeneratorBlock(GuiType.GAS_TURBINE, GasTurbineBlockEntity::new)),
-		LIGHTNING_ROD(new GenericGeneratorBlock(null, LightningRodBlockEntity::new)),
-		PLASMA_GENERATOR(new GenericGeneratorBlock(GuiType.PLASMA_GENERATOR, PlasmaGeneratorBlockEntity::new)),
-		SEMI_FLUID_GENERATOR(new GenericGeneratorBlock(GuiType.SEMIFLUID_GENERATOR, SemiFluidGeneratorBlockEntity::new)),
-		SOLID_FUEL_GENERATOR(new GenericGeneratorBlock(GuiType.GENERATOR, SolidFuelGeneratorBlockEntity::new)),
-		THERMAL_GENERATOR(new GenericGeneratorBlock(GuiType.THERMAL_GENERATOR, ThermalGeneratorBlockEntity::new)),
-		WATER_MILL(new GenericGeneratorBlock(null, WaterMillBlockEntity::new)),
-		WIND_MILL(new GenericGeneratorBlock(null, WindMillBlockEntity::new)),
-
-		DRAIN(new GenericMachineBlock(null, DrainBlockEntity::new)),
-
-		ADJUSTABLE_SU(new AdjustableSUBlock()),
-		CHARGE_O_MAT(new GenericMachineBlock(GuiType.CHARGEBENCH, ChargeOMatBlockEntity::new)),
-		INTERDIMENSIONAL_SU(new InterdimensionalSUBlock()),
-		LAPOTRONIC_SU(new LapotronicSUBlock()),
-		LSU_STORAGE(new LSUStorageBlock()),
-		LOW_VOLTAGE_SU(new LowVoltageSUBlock()),
-		MEDIUM_VOLTAGE_SU(new MediumVoltageSUBlock()),
+		GREENHOUSE_CONTROLLER(new GenericMachineBlock(GuiType.GREENHOUSE_CONTROLLER, GreenhouseControllerBlockEntity::new)),
+		GRINDER(new GenericMachineBlock(GuiType.GRINDER, GrinderBlockEntity::new)),
 		HIGH_VOLTAGE_SU(new HighVoltageSUBlock()),
-		LV_TRANSFORMER(new BlockLVTransformer()),
-		MV_TRANSFORMER(new BlockMVTransformer()),
 		HV_TRANSFORMER(new BlockHVTransformer()),
-		EV_TRANSFORMER(new BlockEVTransformer()),
+		IMPLOSION_COMPRESSOR(new GenericMachineBlock(GuiType.IMPLOSION_COMPRESSOR, ImplosionCompressorBlockEntity::new)),
+		INDUSTRIAL_BLAST_FURNACE(new GenericMachineBlock(GuiType.BLAST_FURNACE, IndustrialBlastFurnaceBlockEntity::new)),
+		INDUSTRIAL_CENTRIFUGE(new GenericMachineBlock(GuiType.CENTRIFUGE, IndustrialCentrifugeBlockEntity::new)),
 
-		ALARM(new BlockAlarm()),
-		CHUNK_LOADER(new GenericMachineBlock(GuiType.CHUNK_LOADER, ChunkLoaderBlockEntity::new)),
+		INDUSTRIAL_ELECTROLYZER(new GenericMachineBlock(GuiType.INDUSTRIAL_ELECTROLYZER, IndustrialElectrolyzerBlockEntity::new)),
+		INDUSTRIAL_GRINDER(new GenericMachineBlock(GuiType.INDUSTRIAL_GRINDER, IndustrialGrinderBlockEntity::new)),
+		INDUSTRIAL_SAWMILL(new GenericMachineBlock(GuiType.SAWMILL, IndustrialSawmillBlockEntity::new)),
+		INTERDIMENSIONAL_SU(new InterdimensionalSUBlock()),
+		IRON_ALLOY_FURNACE(new IronAlloyFurnaceBlock()),
+		IRON_FURNACE(new IronFurnaceBlock()),
 		LAMP_INCANDESCENT(new LampBlock(4, 10, 8)),
 		LAMP_LED(new LampBlock(1, 1, 12)),
-		PLAYER_DETECTOR(new PlayerDetectorBlock());
+		LAPOTRONIC_SU(new LapotronicSUBlock()),
+		LIGHTNING_ROD(new GenericGeneratorBlock(null, LightningRodBlockEntity::new)),
+		LOW_VOLTAGE_SU(new LowVoltageSUBlock()),
+		LSU_STORAGE(new LSUStorageBlock()),
+
+		LV_TRANSFORMER(new BlockLVTransformer()),
+
+		MATTER_FABRICATOR(new GenericMachineBlock(GuiType.MATTER_FABRICATOR, MatterFabricatorBlockEntity::new)),
+		MEDIUM_VOLTAGE_SU(new MediumVoltageSUBlock()),
+		MV_TRANSFORMER(new BlockMVTransformer()),
+		PLASMA_GENERATOR(new GenericGeneratorBlock(GuiType.PLASMA_GENERATOR, PlasmaGeneratorBlockEntity::new)),
+		PLAYER_DETECTOR(new PlayerDetectorBlock()),
+		RECYCLER(new GenericMachineBlock(GuiType.RECYCLER, RecyclerBlockEntity::new)),
+		RESIN_BASIN(new ResinBasinBlock(ResinBasinBlockEntity::new)),
+		ROLLING_MACHINE(new GenericMachineBlock(GuiType.ROLLING_MACHINE, RollingMachineBlockEntity::new)),
+		SCRAPBOXINATOR(new GenericMachineBlock(GuiType.SCRAPBOXINATOR, ScrapboxinatorBlockEntity::new)),
+		SEMI_FLUID_GENERATOR(new GenericGeneratorBlock(GuiType.SEMIFLUID_GENERATOR, SemiFluidGeneratorBlockEntity::new)),
+		SOLID_CANNING_MACHINE(new GenericMachineBlock(GuiType.SOLID_CANNING_MACHINE, SoildCanningMachineBlockEntity::new)),
+		SOLID_FUEL_GENERATOR(new GenericGeneratorBlock(GuiType.GENERATOR, SolidFuelGeneratorBlockEntity::new)),
+
+		THERMAL_GENERATOR(new GenericGeneratorBlock(GuiType.THERMAL_GENERATOR, ThermalGeneratorBlockEntity::new)),
+		VACUUM_FREEZER(new GenericMachineBlock(GuiType.VACUUM_FREEZER, VacuumFreezerBlockEntity::new)),
+		WATER_MILL(new GenericGeneratorBlock(null, WaterMillBlockEntity::new)),
+		WIND_MILL(new GenericGeneratorBlock(null, WindMillBlockEntity::new)),
+		WIRE_MILL(new GenericMachineBlock(GuiType.WIRE_MILL, WireMillBlockEntity::new));
 
 		public final String name;
 		public final Block block;
@@ -632,6 +632,279 @@ public class TRContent {
 	}
 
 	public enum Cogs implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		Cogs() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_cog");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum Rings implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		Rings() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_ring");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum CrushedDusts implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		CrushedDusts() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_crushed_dust");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum Rods implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALUMINUM,
 		BISMUTH,
@@ -702,10 +975,10 @@ public class TRContent {
 		public final String name;
 		public final Item item;
 
-		Cogs() {
+		Rods() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
-			InitUtils.setup(item, name + "_cog");
+			InitUtils.setup(item, name + "_rod");
 		}
 
 		public ItemStack getStack() {
@@ -812,7 +1085,7 @@ public class TRContent {
 		}
 	}
 
-	public enum SmallDusts implements ItemConvertible {
+	public enum TinyDusts implements ItemConvertible {
 		ALMANDINE,
 		ALUMINUM,
 		AMETHYST,
@@ -884,10 +1157,10 @@ public class TRContent {
 		public final String name;
 		public final Item item;
 
-		SmallDusts() {
+		TinyDusts() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
-			InitUtils.setup(item, name + "_small_dust");
+			InitUtils.setup(item, name + "_tiny_dust");
 		}
 
 		public ItemStack getStack() {
@@ -939,49 +1212,36 @@ public class TRContent {
 	public enum Ingots implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALUMINUM,
-		ALUMINUM_DOUBLE,
 		ANNEALED_COPPER,
-		ANNEALED_COPPER_DOUBLE,
 		ANNEALED_COPPER_HOT,
 		ANTIMONY,
 		BATTERY_ALLOY,
-		BATTERY_ALLOY_DOUBLE,
 		BERYLLIUM,
-		BERYLLIUM_DOUBLE,
 		BISMUTH,
 		BLASTPROOF_ALLOY,
 		BRASS,
 		BRONZE,
-		BRONZE_DOUBLE,
 		CADMIUM,
-		CADMIUM_DOUBLE,
 		CAESIUM,
 		CATERIUM,
 		CHROME,
-		CHROME_DOUBLE,
 		CHROME_HOT,
 		CLAY,
 		COBALT,
 		COPPER,
-		COPPER_DOUBLE,
 		CUPRONICKEL,
-		CUPRONICKEL_DOUBLE,
 		ELECTRUM,
-		ELECTRUM_DOUBLE,
 		FIRE_CLAY_BRICK,
-		GOLD_DOUBLE,
+		GOLD,
 		HALIT,
 		HE_URANIUM,
 		HOT_TUNGSTENSTEEL,
 		INVAR,
-		INVAR_DOUBLE,
 		IRIDIUM,
 		IRIDIUM_ALLOY,
 		KANTHAL,
-		KANTHAL_DOUBLE,
 		KANTHAL_HOT,
 		LEAD,
-		LEAD_DOUBLE,
 		LERASIUM,
 		LITHIUM,
 		MANGANESE,
@@ -990,38 +1250,28 @@ public class TRContent {
 		MIXED_METAL,
 		NEODYMIUM,
 		NICKEL,
-		NICKEL_DOUBLE,
 		NIKOLITE,
 		OSMIUM,
 		PALLADIUM,
 		PLATINUM,
-		PLATINUM_DOUBLE,
 		PLATINUM_HOT,
 		PLUTONIUM,
 		REFINED_IRON,
 		SASSOLITE,
 		SCRITH,
 		SILICON,
-		SILICON_DOUBLE,
 		SILVER,
-		SILVER_DOUBLE,
 		STAINLESS_STEEL,
-		STAINLESS_STEEL_DOUBLE,
 		STAINLESS_STEEL_HOT,
 		STEEL,
-		STEEL_DOUBLE,
 		SUPERCONDUCTOR,
-		SUPERCONDUCTOR_DOUBLE,
 		SUPERCONDUCTOR_HOT,
 		SYLWIN,
 		TIN,
-		TIN_DOUBLE,
 		TITANIUM,
-		TITANIUM_DOUBLE,
 		TITANIUM_HOT,
 		TUNGSTEN,
 		TUNGSTENSTEEL,
-		TUNGSTEN_DOUBLE,
 		URANIUM,
 		URANIUM_235,
 		URANIUM_238,
@@ -1050,29 +1300,509 @@ public class TRContent {
 		}
 	}
 
-	public enum Nuggets implements ItemConvertible {
+	public enum Bolts implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
 		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
 		BRASS,
 		BRONZE,
+		CALCITE,
+		CHARCOAL,
 		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
 		COPPER,
 		DIAMOND,
+		DIORITE,
 		ELECTRUM,
 		EMERALD,
-		HOT_TUNGSTENSTEEL,
+		ENDSTONE,
+		GOLD,
+		GRANITE,
 		INVAR,
-		IRIDIUM,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
 		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
 		NETHERITE,
+		NETHERRACK,
 		NICKEL,
+		OBSIDIAN,
+		PERIDOT,
 		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
 		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
 		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
 		STEEL,
 		TIN,
 		TITANIUM,
 		TUNGSTEN,
 		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		Bolts() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_bolts");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum LargePlates implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		LargePlates() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_large_plate");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum DoubleIngots implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		DoubleIngots() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_double_ingot");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum CurvedPlates implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		CurvedPlates() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_curved_plate");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum Wires implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		GOLD,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LEAD,
+		MIXED_METAL,
+		NETHERITE,
+		NICKEL,
+		OBSIDIAN,
+		PLATINUM,
+		QUARTZ,
+		REFINED_IRON,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		Wires() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_wire");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum Nuggets implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CARBON,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		FLINT,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		HOT_TUNGSTENSTEEL,
+		INVAR,
+		IRIDIUM,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAPIS,
+		LAZURITE,
+		LEAD,
+		MAGNALIUM,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REDSTONE,
+		RED_GARNET,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILICON,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		YELLOW_GARNET,
 		ZINC;
 
 		public final String name;
@@ -1099,56 +1829,55 @@ public class TRContent {
 	}
 
 	public enum Parts implements ItemConvertible {
+		ADVANCED_CIRCUIT,
+		BASIC_DISPLAY,
+
 		CARBON_FIBER,
 		CARBON_MESH,
-
-		ELECTRONIC_CIRCUIT,
-		ADVANCED_CIRCUIT,
-		INDUSTRIAL_CIRCUIT,
-
-		MACHINE_PARTS,
-		BASIC_DISPLAY,
-		DIGITAL_DISPLAY,
-
-		DATA_STORAGE_CORE,
-		DATA_STORAGE_CHIP,
-		ENERGY_FLOW_CHIP,
-		SUPERCONDUCTOR,
-
-		SPONGE_PIECE,
-		DIAMOND_SAW_BLADE,
-		DIAMOND_GRINDING_HEAD,
-		TUNGSTEN_GRINDING_HEAD,
+		COMPRESSED_PLANTBALL,
 
 		CUPRONICKEL_HEATING_COIL,
-		KANTHAL_HEATING_COIL,
-		NICHROME_HEATING_COIL,
+		DATA_STORAGE_CHIP,
+		DATA_STORAGE_CORE,
 
-		NEUTRON_REFLECTOR,
-		THICK_NEUTRON_REFLECTOR,
-		IRIDIUM_NEUTRON_REFLECTOR,
+		DIAMOND_GRINDING_HEAD,
+		DIAMOND_SAW_BLADE,
+		DIGITAL_DISPLAY,
+		ELECTRONIC_CIRCUIT,
 
-		//java vars can't start with numbers, so these get suffixes
-		WATER_COOLANT_CELL_10K,
-		WATER_COOLANT_CELL_30K,
-		WATER_COOLANT_CELL_60K,
-
-		HELIUM_COOLANT_CELL_60K,
+		ENERGY_FLOW_CHIP,
 		HELIUM_COOLANT_CELL_180K,
 		HELIUM_COOLANT_CELL_360K,
+		HELIUM_COOLANT_CELL_60K,
 
-		NAK_COOLANT_CELL_60K,
+		INDUSTRIAL_CIRCUIT,
+		IRIDIUM_NEUTRON_REFLECTOR,
+		KANTHAL_HEATING_COIL,
+
+		MACHINE_PARTS,
 		NAK_COOLANT_CELL_180K,
 		NAK_COOLANT_CELL_360K,
 
+		NAK_COOLANT_CELL_60K,
+		NEUTRON_REFLECTOR,
+		NICHROME_HEATING_COIL,
+
+		PLANTBALL,
 		RUBBER,
 		SAP,
-		SCRAP,
-		UU_MATTER,
-		PLANTBALL,
-		COMPRESSED_PLANTBALL,
 
-		SYNTHETIC_REDSTONE_CRYSTAL;
+		SCRAP,
+		SPONGE_PIECE,
+		SUPERCONDUCTOR,
+
+		SYNTHETIC_REDSTONE_CRYSTAL,
+		THICK_NEUTRON_REFLECTOR,
+		TUNGSTEN_GRINDING_HEAD,
+		UU_MATTER,
+		WATER_COOLANT_CELL_10K,
+		WATER_COOLANT_CELL_30K,
+
+		WATER_COOLANT_CELL_60K;
 
 		public final String name;
 		public final Item item;

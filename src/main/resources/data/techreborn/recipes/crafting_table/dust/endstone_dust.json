@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:endstone_small_dust"
+	  "item": "techreborn:endstone_tiny_dust"
 	},
 	{
-	  "item": "techreborn:endstone_small_dust"
+	  "item": "techreborn:endstone_tiny_dust"
 	},
 	{
-	  "item": "techreborn:endstone_small_dust"
+	  "item": "techreborn:endstone_tiny_dust"
 	},
 	{
-	  "item": "techreborn:endstone_small_dust"
+	  "item": "techreborn:endstone_tiny_dust"
 	}
   ],
   "result": {

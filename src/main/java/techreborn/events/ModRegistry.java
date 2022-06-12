@@ -106,12 +106,20 @@ public class ModRegistry {
 
 	private static void registerItems() {
 		Arrays.stream(Ingots.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(DoubleIngots.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Nuggets.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Gems.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(Cogs.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Dusts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(SmallDusts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(TinyDusts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(CrushedDusts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Plates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(LargePlates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(CurvedPlates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Cogs.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Wires.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Rods.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Bolts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Rings.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Parts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Upgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 

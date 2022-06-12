@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:cinnabar_small_dust"
+	  "item": "techreborn:cinnabar_tiny_dust"
 	},
 	{
-	  "item": "techreborn:cinnabar_small_dust"
+	  "item": "techreborn:cinnabar_tiny_dust"
 	},
 	{
-	  "item": "techreborn:cinnabar_small_dust"
+	  "item": "techreborn:cinnabar_tiny_dust"
 	},
 	{
-	  "item": "techreborn:cinnabar_small_dust"
+	  "item": "techreborn:cinnabar_tiny_dust"
 	}
   ],
   "result": {

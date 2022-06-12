@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:amethyst_small_dust"
+	  "item": "techreborn:amethyst_tiny_dust"
 	},
 	{
-	  "item": "techreborn:amethyst_small_dust"
+	  "item": "techreborn:amethyst_tiny_dust"
 	},
 	{
-	  "item": "techreborn:amethyst_small_dust"
+	  "item": "techreborn:amethyst_tiny_dust"
 	},
 	{
-	  "item": "techreborn:amethyst_small_dust"
+	  "item": "techreborn:amethyst_tiny_dust"
 	}
   ],
   "result": {

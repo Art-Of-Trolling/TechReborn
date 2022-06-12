@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:aluminum_small_dust"
+	  "item": "techreborn:aluminum_tiny_dust"
 	},
 	{
-	  "item": "techreborn:aluminum_small_dust"
+	  "item": "techreborn:aluminum_tiny_dust"
 	},
 	{
-	  "item": "techreborn:aluminum_small_dust"
+	  "item": "techreborn:aluminum_tiny_dust"
 	},
 	{
-	  "item": "techreborn:aluminum_small_dust"
+	  "item": "techreborn:aluminum_tiny_dust"
 	}
   ],
   "result": {

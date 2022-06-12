@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:quartz_small_dust"
+	  "item": "techreborn:quartz_tiny_dust"
 	},
 	{
-	  "item": "techreborn:quartz_small_dust"
+	  "item": "techreborn:quartz_tiny_dust"
 	},
 	{
-	  "item": "techreborn:quartz_small_dust"
+	  "item": "techreborn:quartz_tiny_dust"
 	},
 	{
-	  "item": "techreborn:quartz_small_dust"
+	  "item": "techreborn:quartz_tiny_dust"
 	}
   ],
   "result": {

@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:sapphire_small_dust"
+	  "item": "techreborn:sapphire_tiny_dust"
 	},
 	{
-	  "item": "techreborn:sapphire_small_dust"
+	  "item": "techreborn:sapphire_tiny_dust"
 	},
 	{
-	  "item": "techreborn:sapphire_small_dust"
+	  "item": "techreborn:sapphire_tiny_dust"
 	},
 	{
-	  "item": "techreborn:sapphire_small_dust"
+	  "item": "techreborn:sapphire_tiny_dust"
 	}
   ],
   "result": {

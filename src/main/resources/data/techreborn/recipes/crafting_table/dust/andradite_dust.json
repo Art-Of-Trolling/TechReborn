@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:andradite_small_dust"
+	  "item": "techreborn:andradite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:andradite_small_dust"
+	  "item": "techreborn:andradite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:andradite_small_dust"
+	  "item": "techreborn:andradite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:andradite_small_dust"
+	  "item": "techreborn:andradite_tiny_dust"
 	}
   ],
   "result": {

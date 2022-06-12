@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:netherrack_small_dust"
+	  "item": "techreborn:netherrack_tiny_dust"
 	},
 	{
-	  "item": "techreborn:netherrack_small_dust"
+	  "item": "techreborn:netherrack_tiny_dust"
 	},
 	{
-	  "item": "techreborn:netherrack_small_dust"
+	  "item": "techreborn:netherrack_tiny_dust"
 	},
 	{
-	  "item": "techreborn:netherrack_small_dust"
+	  "item": "techreborn:netherrack_tiny_dust"
 	}
   ],
   "result": {

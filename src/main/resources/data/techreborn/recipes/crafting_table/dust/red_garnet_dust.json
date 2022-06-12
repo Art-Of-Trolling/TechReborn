@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:red_garnet_small_dust"
+	  "item": "techreborn:red_garnet_tiny_dust"
 	},
 	{
-	  "item": "techreborn:red_garnet_small_dust"
+	  "item": "techreborn:red_garnet_tiny_dust"
 	},
 	{
-	  "item": "techreborn:red_garnet_small_dust"
+	  "item": "techreborn:red_garnet_tiny_dust"
 	},
 	{
-	  "item": "techreborn:red_garnet_small_dust"
+	  "item": "techreborn:red_garnet_tiny_dust"
 	}
   ],
   "result": {

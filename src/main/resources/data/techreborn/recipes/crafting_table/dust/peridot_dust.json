@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:peridot_small_dust"
+	  "item": "techreborn:peridot_tiny_dust"
 	},
 	{
-	  "item": "techreborn:peridot_small_dust"
+	  "item": "techreborn:peridot_tiny_dust"
 	},
 	{
-	  "item": "techreborn:peridot_small_dust"
+	  "item": "techreborn:peridot_tiny_dust"
 	},
 	{
-	  "item": "techreborn:peridot_small_dust"
+	  "item": "techreborn:peridot_tiny_dust"
 	}
   ],
   "result": {

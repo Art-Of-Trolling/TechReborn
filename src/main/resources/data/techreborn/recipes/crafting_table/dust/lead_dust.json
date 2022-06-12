@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:lead_small_dust"
+	  "item": "techreborn:lead_tiny_dust"
 	},
 	{
-	  "item": "techreborn:lead_small_dust"
+	  "item": "techreborn:lead_tiny_dust"
 	},
 	{
-	  "item": "techreborn:lead_small_dust"
+	  "item": "techreborn:lead_tiny_dust"
 	},
 	{
-	  "item": "techreborn:lead_small_dust"
+	  "item": "techreborn:lead_tiny_dust"
 	}
   ],
   "result": {

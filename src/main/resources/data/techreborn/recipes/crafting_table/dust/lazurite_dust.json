@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:lazurite_small_dust"
+	  "item": "techreborn:lazurite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:lazurite_small_dust"
+	  "item": "techreborn:lazurite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:lazurite_small_dust"
+	  "item": "techreborn:lazurite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:lazurite_small_dust"
+	  "item": "techreborn:lazurite_tiny_dust"
 	}
   ],
   "result": {

@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:diorite_small_dust"
+	  "item": "techreborn:diorite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:diorite_small_dust"
+	  "item": "techreborn:diorite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:diorite_small_dust"
+	  "item": "techreborn:diorite_tiny_dust"
 	},
 	{
-	  "item": "techreborn:diorite_small_dust"
+	  "item": "techreborn:diorite_tiny_dust"
 	}
   ],
   "result": {

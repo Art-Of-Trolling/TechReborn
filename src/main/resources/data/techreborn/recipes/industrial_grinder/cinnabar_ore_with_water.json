@@ -17,11 +17,11 @@
 	  "count": 5
 	},
 	{
-	  "item": "techreborn:redstone_small_dust",
+	  "item": "techreborn:redstone_tiny_dust",
 	  "count": 2
 	},
 	{
-	  "item": "techreborn:glowstone_small_dust"
+	  "item": "techreborn:glowstone_tiny_dust"
 	}
   ]
 }

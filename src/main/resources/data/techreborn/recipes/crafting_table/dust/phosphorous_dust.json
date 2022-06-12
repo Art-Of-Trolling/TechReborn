@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:phosphorous_small_dust"
+	  "item": "techreborn:phosphorous_tiny_dust"
 	},
 	{
-	  "item": "techreborn:phosphorous_small_dust"
+	  "item": "techreborn:phosphorous_tiny_dust"
 	},
 	{
-	  "item": "techreborn:phosphorous_small_dust"
+	  "item": "techreborn:phosphorous_tiny_dust"
 	},
 	{
-	  "item": "techreborn:phosphorous_small_dust"
+	  "item": "techreborn:phosphorous_tiny_dust"
 	}
   ],
   "result": {

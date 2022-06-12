@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
 	{
-	  "item": "techreborn:bismuth_small_dust"
+	  "item": "techreborn:bismuth_tiny_dust"
 	},
 	{
-	  "item": "techreborn:bismuth_small_dust"
+	  "item": "techreborn:bismuth_tiny_dust"
 	},
 	{
-	  "item": "techreborn:bismuth_small_dust"
+	  "item": "techreborn:bismuth_tiny_dust"
 	},
 	{
-	  "item": "techreborn:bismuth_small_dust"
+	  "item": "techreborn:bismuth_tiny_dust"
 	}
   ],
   "result": {
