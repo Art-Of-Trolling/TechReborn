@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"ABC",
+	"DEF",
+	"GHI"
+  ],
+  "key": {
+	"A": {
+	  "item": "techreborn:steel_ingot"
+	},
+	"B": {
+	  "item": "techreborn:superconductor_ingot"
+	},
+	"C": {
+	  "item": "techreborn:advanced_alloy_ingot"
+	},
+	"D": {
+	  "item": "techreborn:platinum_ingot"
+	},
+	"E": {
+	  "item": "techreborn:caesium_ingot"
+	},
+	"F": {
+	  "item": "techreborn:uranium_ingot"
+	},
+	"G": {
+	  "item": "techreborn:mixed_iridium_ingot"
+	},
+	"H": {
+	  "item": "techreborn:mixed_metal_ingot"
+	},
+	"I": {
+	  "item": "techreborn:mixed_blastproof_ingot"
+	}
+  },
+  "result": {
+	"item": "techreborn:unicorn_storage_block"
+  }
+}

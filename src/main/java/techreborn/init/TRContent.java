@@ -473,6 +473,7 @@ public class TRContent {
 		TITANIUM,
 		TUNGSTEN,
 		TUNGSTENSTEEL,
+		UNICORN,
 		YELLOW_GARNET,
 		ZINC;
 
