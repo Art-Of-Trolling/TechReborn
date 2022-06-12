@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:extractor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:antimony_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:antimony_nugget",
+	  "count": 9
+	}
+  ]
+}

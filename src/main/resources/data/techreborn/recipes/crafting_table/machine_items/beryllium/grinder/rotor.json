@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:beryllium_rotor",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:beryllium_dust",
+	  "count": 3
+	}
+  ]
+}

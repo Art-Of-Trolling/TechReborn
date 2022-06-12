@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"x"
+  ],
+  "key": {
+	"x": {
+	  "item": "techreborn:neodymium_dust"
+	}
+  },
+  "result": {
+	"item": "techreborn:neodymium_tiny_dust",
+	"count": 9
+  }
+}

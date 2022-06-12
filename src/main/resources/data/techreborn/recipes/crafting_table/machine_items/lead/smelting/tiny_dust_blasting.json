@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.08,
+  "ingredient": {
+	"item": "techreborn:lead_tiny_dust"
+  },
+  "result": "techreborn:lead_nugget"
+}

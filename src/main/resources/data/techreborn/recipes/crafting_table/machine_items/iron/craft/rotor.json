@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"bBb",
+	"BRB",
+	"bBb"
+  ],
+  "key": {
+	"b": {
+	  "item": "techreborn:iron_bolt"
+	},
+	"B": {
+	  "item": "techreborn:iron_blade"
+	},
+	"R": {
+	  "item": "techreborn:iron_ring"
+	}
+  },
+  "result": {
+	"item": "techreborn:iron_rotor",
+	"count": 1
+  }
+}

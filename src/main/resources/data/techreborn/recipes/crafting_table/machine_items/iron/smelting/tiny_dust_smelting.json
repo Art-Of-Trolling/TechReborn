@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.08,
+  "ingredient": {
+	"item": "techreborn:iron_tiny_dust"
+  },
+  "result": "minecraft:iron_nugget"
+}

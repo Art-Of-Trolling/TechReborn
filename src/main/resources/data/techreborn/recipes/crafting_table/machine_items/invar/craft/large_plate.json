@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:invar_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:invar_large_plate",
+	"count": 1
+  }
+}

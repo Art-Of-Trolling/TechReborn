@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"x"
+  ],
+  "key": {
+	"x": {
+	  "item": "techreborn:steel_storage_block"
+	}
+  },
+  "result": {
+	"item": "techreborn:steel_ingot",
+	"count": 9
+  }
+}

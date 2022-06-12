@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:tin_blade",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:tin_tiny_dust",
+	  "count": 5
+	}
+  ]
+}

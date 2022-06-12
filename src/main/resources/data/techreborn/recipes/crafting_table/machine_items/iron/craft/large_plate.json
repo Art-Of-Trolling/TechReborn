@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:iron_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:iron_large_plate",
+	"count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xxx",
+	"x x",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "item": "techreborn:superconductor_wire"
+	}
+  },
+  "result": {
+	"item": "techreborn:superconductor_coil",
+	"count": 1
+  }
+}

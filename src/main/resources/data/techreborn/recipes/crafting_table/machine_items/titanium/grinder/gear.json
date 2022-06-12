@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:titanium_gears",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:titanium_dust",
+	  "count": 2
+	}
+  ]
+}

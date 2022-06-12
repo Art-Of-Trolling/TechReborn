@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:extractor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:steel_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:steel_nugget",
+	  "count": 9
+	}
+  ]
+}

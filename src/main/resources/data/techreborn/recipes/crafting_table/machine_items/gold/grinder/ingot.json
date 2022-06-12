@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:gold_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:gold_dust",
+	  "count": 1
+	}
+  ]
+}

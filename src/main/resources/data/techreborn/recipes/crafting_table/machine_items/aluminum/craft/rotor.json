@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"bBb",
+	"BRB",
+	"bBb"
+  ],
+  "key": {
+	"b": {
+	  "item": "techreborn:aluminum_bolt"
+	},
+	"B": {
+	  "item": "techreborn:aluminum_blade"
+	},
+	"R": {
+	  "item": "techreborn:aluminum_ring"
+	}
+  },
+  "result": {
+	"item": "techreborn:aluminum_rotor",
+	"count": 1
+  }
+}

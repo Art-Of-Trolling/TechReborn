@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:platinum_nuggets",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:platinum_tiny_dust",
+	  "count": 1
+	}
+  ]
+}

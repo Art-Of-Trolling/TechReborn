@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"P",
+	"P",
+	"I"
+  ],
+  "key": {
+	"P": {
+	  "tag": "c:copper_plates"
+	},
+	"I": {
+	  "item": "techreborn:copper_rod"
+	}
+  },
+  "result": {
+	"item": "techreborn:copper_blade",
+	"count": 4
+  }
+}

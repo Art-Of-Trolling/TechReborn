@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:extractor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:superconductor_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:superconductor_nugget",
+	  "count": 9
+	}
+  ]
+}

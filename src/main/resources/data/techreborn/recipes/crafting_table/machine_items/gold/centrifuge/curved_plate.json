@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:gold_large_plate",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:gold_curved_plate",
+	  "count": 3
+	}
+  ]
+}

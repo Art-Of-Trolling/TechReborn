@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"bBb",
+	"BRB",
+	"bBb"
+  ],
+  "key": {
+	"b": {
+	  "item": "techreborn:titanium_bolt"
+	},
+	"B": {
+	  "item": "techreborn:titanium_blade"
+	},
+	"R": {
+	  "item": "techreborn:titanium_ring"
+	}
+  },
+  "result": {
+	"item": "techreborn:titanium_rotor",
+	"count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"bBb",
+	"BRB",
+	"bBb"
+  ],
+  "key": {
+	"b": {
+	  "item": "techreborn:beryllium_bolt"
+	},
+	"B": {
+	  "item": "techreborn:beryllium_blade"
+	},
+	"R": {
+	  "item": "techreborn:beryllium_ring"
+	}
+  },
+  "result": {
+	"item": "techreborn:beryllium_rotor",
+	"count": 1
+  }
+}

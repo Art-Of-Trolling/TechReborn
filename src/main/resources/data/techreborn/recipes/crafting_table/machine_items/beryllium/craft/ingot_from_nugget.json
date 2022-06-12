@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"yxx",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:beryllium_nuggets"
+	},
+	"y": {
+	  "item": "techreborn:beryllium_nugget"
+	}
+  },
+  "result": {
+	"item": "techreborn:beryllium_ingot",
+	"count": 1
+  }
+}

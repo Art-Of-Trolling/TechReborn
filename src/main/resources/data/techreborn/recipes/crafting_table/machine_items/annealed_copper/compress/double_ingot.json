@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:annealed_copper_ingots",
+	  "count": 2
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:annealed_copper_double_ingot",
+	  "count": 1
+	}
+  ]
+}

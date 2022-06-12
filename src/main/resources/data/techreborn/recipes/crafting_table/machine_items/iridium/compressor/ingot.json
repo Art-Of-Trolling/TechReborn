@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:iridium_nuggets",
+	  "count": 9
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:iridium_ingot",
+	  "count": 1
+	}
+  ]
+}

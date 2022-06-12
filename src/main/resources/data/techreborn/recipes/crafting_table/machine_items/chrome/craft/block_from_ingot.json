@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"yxx",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:chrome_ingots"
+	},
+	"y": {
+	  "item": "techreborn:chrome_ingot"
+	}
+  },
+  "result": {
+	"item": "techreborn:chrome_storage_block",
+	"count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"x"
+  ],
+  "key": {
+	"x": {
+	  "item": "techreborn:aluminum_storage_block"
+	}
+  },
+  "result": {
+	"item": "techreborn:aluminum_ingot",
+	"count": 9
+  }
+}

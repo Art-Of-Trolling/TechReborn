@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:tin_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:tin_large_plate",
+	"count": 1
+  }
+}

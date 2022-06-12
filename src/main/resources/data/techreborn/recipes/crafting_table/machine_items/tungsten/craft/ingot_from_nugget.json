@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"yxx",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:tungsten_nuggets"
+	},
+	"y": {
+	  "item": "techreborn:tungsten_nugget"
+	}
+  },
+  "result": {
+	"item": "techreborn:tungsten_ingot",
+	"count": 1
+  }
+}

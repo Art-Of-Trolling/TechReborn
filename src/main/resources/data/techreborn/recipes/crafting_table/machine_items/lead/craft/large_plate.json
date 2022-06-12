@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:lead_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:lead_large_plate",
+	"count": 1
+  }
+}

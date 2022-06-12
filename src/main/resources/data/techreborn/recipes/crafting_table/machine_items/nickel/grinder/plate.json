@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:nickel_plates",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:nickel_dust",
+	  "count": 1
+	}
+  ]
+}

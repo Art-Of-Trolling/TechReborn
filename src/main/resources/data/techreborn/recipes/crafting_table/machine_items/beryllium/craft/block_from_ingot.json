@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"yxx",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:beryllium_ingots"
+	},
+	"y": {
+	  "item": "techreborn:beryllium_ingot"
+	}
+  },
+  "result": {
+	"item": "techreborn:beryllium_storage_block",
+	"count": 1
+  }
+}

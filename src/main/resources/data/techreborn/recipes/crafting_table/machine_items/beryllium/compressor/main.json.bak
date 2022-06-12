@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:compressor",
+  "power": 2,
+  "time": 200,
+    "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "c:beryllium_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:beryllium_plate",
+	  "count": 1
+	}
+  ]
+}

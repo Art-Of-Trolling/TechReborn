@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:steel_ingots",
+	  "count": 2
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:steel_double_ingot",
+	  "count": 1
+	}
+  ]
+}

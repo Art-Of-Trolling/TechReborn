@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:iron_gears",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:iron_dust",
+	  "count": 2
+	}
+  ]
+}

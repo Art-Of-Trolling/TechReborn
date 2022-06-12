@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"x"
+  ],
+  "key": {
+	"x": {
+	  "item": "techreborn:titanium_dust"
+	}
+  },
+  "result": {
+	"item": "techreborn:titanium_tiny_dust",
+	"count": 9
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:beryllium_bolt",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:beryllium_tiny_dust",
+	  "count": 2
+	}
+  ]
+}

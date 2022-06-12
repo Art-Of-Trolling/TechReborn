@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:extractor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:cadmium_dusts",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cadmium_tiny_dust",
+	  "count": 9
+	}
+  ]
+}

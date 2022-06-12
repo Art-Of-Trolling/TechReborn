@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:cutting_machine",
+  "power": 2,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "c:alloy_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:alloy_plate",
+	  "count": 1
+	}
+  ]
+}

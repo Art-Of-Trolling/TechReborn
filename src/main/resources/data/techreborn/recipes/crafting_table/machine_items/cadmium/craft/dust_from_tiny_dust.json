@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"yxx",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:cadmium_tiny_dusts"
+	},
+	"y": {
+	  "item": "techreborn:cadmium_tiny_dust"
+	}
+  },
+  "result": {
+	"item": "techreborn:cadmium_dust",
+	"count": 1
+  }
+}

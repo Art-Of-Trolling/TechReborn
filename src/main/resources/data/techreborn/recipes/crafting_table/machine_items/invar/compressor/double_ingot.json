@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:invar_double_ingot",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:invar_plate",
+	  "count": 2
+	}
+  ]
+}

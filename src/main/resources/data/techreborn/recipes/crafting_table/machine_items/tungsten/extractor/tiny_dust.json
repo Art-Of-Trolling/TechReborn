@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:extractor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:tungsten_dusts",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:tungsten_tiny_dust",
+	  "count": 9
+	}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"P",
+	"P",
+	"I"
+  ],
+  "key": {
+	"P": {
+	  "tag": "c:steel_plates"
+	},
+	"I": {
+	  "item": "techreborn:steel_rod"
+	}
+  },
+  "result": {
+	"item": "techreborn:steel_blade",
+	"count": 4
+  }
+}

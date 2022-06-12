@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:vacuum_freezer",
+  "power": 32,
+  "time": 250,
+  "ingredients": [
+	{
+	  "item": "techreborn:chrome_hot_ingot",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:chrome_ingot",
+	  "count": 1
+	}
+  ]
+}

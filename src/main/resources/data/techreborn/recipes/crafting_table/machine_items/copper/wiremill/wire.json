@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:wiremill",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:copper_plates",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:copper_wire",
+	  "count": 2
+	}
+  ]
+}

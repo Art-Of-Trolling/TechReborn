@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:chrome_double_ingot",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:chrome_dust",
+	  "count": 2
+	}
+  ]
+}

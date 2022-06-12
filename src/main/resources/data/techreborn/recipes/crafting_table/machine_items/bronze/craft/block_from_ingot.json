@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"yxx",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:bronze_ingots"
+	},
+	"y": {
+	  "item": "techreborn:bronze_ingot"
+	}
+  },
+  "result": {
+	"item": "techreborn:bronze_storage_block",
+	"count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:gold_nuggets",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:gold_tiny_dust",
+	  "count": 1
+	}
+  ]
+}

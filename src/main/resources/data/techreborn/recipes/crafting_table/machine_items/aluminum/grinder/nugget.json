@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:aluminum_nuggets",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:aluminum_tiny_dust",
+	  "count": 1
+	}
+  ]
+}

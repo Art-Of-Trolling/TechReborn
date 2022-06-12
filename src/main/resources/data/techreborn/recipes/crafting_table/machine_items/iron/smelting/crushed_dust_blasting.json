@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+	"item": "techreborn:iron_crushed_dust"
+  },
+  "result": "minecraft:iron_ingot"
+}

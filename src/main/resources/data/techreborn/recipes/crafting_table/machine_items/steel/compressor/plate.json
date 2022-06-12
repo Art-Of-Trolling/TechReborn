@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:steel_plates",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:steel_curved_plate",
+	  "count": 1
+	}
+  ]
+}

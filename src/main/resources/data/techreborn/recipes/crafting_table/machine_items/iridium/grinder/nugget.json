@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:grinder",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:iridium_nuggets",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:iridium_tiny_dust",
+	  "count": 1
+	}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:vacuum_freezer",
+  "power": 32,
+  "time": 250,
+  "ingredients": [
+	{
+	  "item": "techreborn:annealed_copper_hot_ingot",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:annealed_copper_ingot",
+	  "count": 1
+	}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"yxx",
+	"xxx",
+	"xxx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:antimony_ingots"
+	},
+	"y": {
+	  "item": "techreborn:antimony_ingot"
+	}
+  },
+  "result": {
+	"item": "techreborn:antimony_storage_block",
+	"count": 1
+  }
+}

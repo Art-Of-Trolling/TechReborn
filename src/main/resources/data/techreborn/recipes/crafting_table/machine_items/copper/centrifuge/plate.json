@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:copper_double_ingot",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:copper_plate",
+	  "count": 1
+	}
+  ]
+}

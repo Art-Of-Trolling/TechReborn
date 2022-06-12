@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"x"
+  ],
+  "key": {
+	"x": {
+	  "item": "techreborn:carbon_dust"
+	}
+  },
+  "result": {
+	"item": "techreborn:carbon_tiny_dust",
+	"count": 9
+  }
+}

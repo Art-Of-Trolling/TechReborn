@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:compressor",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:tungsten_tiny_dusts",
+	  "count": 9
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:tungsten_dust",
+	  "count": 1
+	}
+  ]
+}

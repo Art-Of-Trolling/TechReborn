@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+	"item": "techreborn:tin_crushed_dust"
+  },
+  "result": "techreborn:tin_ingot"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:centrifuge",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:iron_ores",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:iron_crushed_dust",
+	  "count": 2
+	}
+  ]
+}
