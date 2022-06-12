@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/machines/structure/advanced_machine_casing"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/machines/structure/advanced_machine_casing" }
+    }
 }

@@ -1,7 +1,5 @@
 {
-  "variants": {
-	"": {
-	  "model": "techreborn:block/storage/brass_storage_block"
-	}
-  }
+    "variants": {
+        "": { "model": "techreborn:block/storage/brass_storage_block" }
+    }
 }

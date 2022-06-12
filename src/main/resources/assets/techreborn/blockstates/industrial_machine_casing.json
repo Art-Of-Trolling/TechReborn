@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "techreborn:block/machines/industrial_machine_casing/industrial_machine_casing" }
+        "": { "model": "techreborn:block/machines/structure/industrial_machine_casing" }
     }
 }

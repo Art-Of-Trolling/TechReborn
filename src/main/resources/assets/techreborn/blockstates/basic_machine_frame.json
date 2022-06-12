@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "techreborn:block/machines/basic_machine_frame/basic_machine_frame" }
+        "": { "model": "techreborn:block/machines/structure/basic_machine_frame" }
     }
 }
