@@ -1657,6 +1657,187 @@ public class TRContent {
 			return item;
 		}
 	}
+	public enum Blades implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		Blades() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_blade");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
+	public enum Rotors implements ItemConvertible {
+		ADVANCED_ALLOY,
+		ALMANDINE,
+		ALUMINUM,
+		AMETHYST,
+		ANDESITE,
+		ANDRADITE,
+		BASALT,
+		BAUXITE,
+		BERYLLIUM,
+		BISMUTH,
+		BRASS,
+		BRONZE,
+		CALCITE,
+		CHARCOAL,
+		CHROME,
+		CINNABAR,
+		CLAY,
+		COAL,
+		COPPER,
+		DIAMOND,
+		DIORITE,
+		ELECTRUM,
+		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		GALENA,
+		GOLD,
+		GRANITE,
+		GROSSULAR,
+		INVAR,
+		IRIDIUM_ALLOY,
+		IRON,
+		LAZURITE,
+		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
+		MIXED_METAL,
+		NETHERITE,
+		NETHERRACK,
+		NICKEL,
+		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
+		PLATINUM,
+		PYRITE,
+		PYROPE,
+		QUARTZ,
+		REFINED_IRON,
+		RUBY,
+		SALTPETER,
+		SAPPHIRE,
+		SILVER,
+		SODALITE,
+		SPESSARTINE,
+		SPHALERITE,
+		STEEL,
+		TIN,
+		TITANIUM,
+		TUNGSTEN,
+		TUNGSTENSTEEL,
+		UVAROVITE,
+		WOOD,
+		ZINC;
+
+		public final String name;
+		public final Item item;
+
+		Rotors() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name + "_rotor");
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
 
 	public enum Wires implements ItemConvertible {
 		ADVANCED_ALLOY,

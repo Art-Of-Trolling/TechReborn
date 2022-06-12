@@ -120,6 +120,8 @@ public class ModRegistry {
 		Arrays.stream(Rods.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Bolts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rings.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Rotors.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Blades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Parts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Upgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 
