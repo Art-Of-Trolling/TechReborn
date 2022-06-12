@@ -1,7 +1,7 @@
 {
   "variants": {
 	"": {
-	  "model": "techreborn:block/machines/tier1_machines/advanced_tank_unit"
+	  "model": "techreborn:block/machines/storage/advanced/advanced_tank_unit"
 	}
   }
 }

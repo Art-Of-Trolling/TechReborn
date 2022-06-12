@@ -1,3 +1,3 @@
 {
-	"parent": "techreborn:block/machines/thermal_generator/thermal_generator"
+	"parent": "techreborn:block/machines/generators/thermal_generator"
 }

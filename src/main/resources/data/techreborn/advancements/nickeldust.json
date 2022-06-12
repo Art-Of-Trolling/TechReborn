@@ -1,26 +1,26 @@
 {
   "display": {
-    "icon": {
-      "item": "techreborn:nickel_small_dust"
-    },
-    "title": {
-      "translate": "advancements.techreborn.nickeldust"
-    },
-    "description": {
-      "translate": "advancements.techreborn.nickeldust.desc"
-    }
+	"icon": {
+	  "item": "techreborn:nickel_small_dust"
+	},
+	"title": {
+	  "translate": "advancements.techreborn.nickeldust"
+	},
+	"description": {
+	  "translate": "advancements.techreborn.nickeldust.desc"
+	}
   },
   "parent": "techreborn:industrialcentrifuge",
   "criteria": {
-    "crit1": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "techreborn:nickel_small_dust"
-          }
-        ]
-      }
-    }
+	"crit1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"item": "techreborn:nickel_small_dust"
+		  }
+		]
+	  }
+	}
   }
 }

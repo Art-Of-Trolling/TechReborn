@@ -1,0 +1,16 @@
+{
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "textures":[
+            "workspace:block/machines/energy/lapotronic_su_front_ctm"
+        ],
+        "extra":{
+            "ignore_states":true,
+            "connect_to":[
+                {"block":"workspace:lsu_storage"},
+                {"block":"workspace:lapotronic_su"}
+            ]
+        }
+    }
+}

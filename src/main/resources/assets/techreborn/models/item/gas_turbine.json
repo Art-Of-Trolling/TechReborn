@@ -1,3 +1,3 @@
 {
-	"parent": "techreborn:block/machines/gas_turbine/gas_turbine"
+	"parent": "techreborn:block/machines/generators/gas_turbine"
 }

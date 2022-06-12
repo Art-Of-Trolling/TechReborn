@@ -1,6 +1,0 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-        "layer0": "techreborn:item/plate/industrial_alloy_plate"
-    }
-}

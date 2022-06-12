@@ -69,7 +69,7 @@ public class IndustrialJackhammerItem extends JackhammerItem implements MultiBlo
 			ItemUtils.switchActive(stack, cost, isClient, messageId);
 			stack.getOrCreateTag().putBoolean("AOE5", false);
 			if (isClient) {
-				ChatUtils.sendNoSpamMessages(messageId, new TranslatableText("techreborn.message.setTo").formatted(Formatting.GRAY).append(" ").append(new LiteralText("3*3").formatted(Formatting.GOLD)));
+				ChatUtils.sendNoSpamMessages(messageId, new TranslatableText("techreborn.message.setTo").formatted(Formatting.GRAY).append(" ").append(new LiteralText("3 x 3").formatted(Formatting.GREEN)));
 			}
 		} else {
 			if (isAOE5(stack)) {
@@ -78,7 +78,7 @@ public class IndustrialJackhammerItem extends JackhammerItem implements MultiBlo
 			} else {
 				stack.getOrCreateTag().putBoolean("AOE5", true);
 				if (isClient) {
-					ChatUtils.sendNoSpamMessages(messageId, new TranslatableText("techreborn.message.setTo").formatted(Formatting.GRAY).append(" ").append(new LiteralText("5*5").formatted(Formatting.GOLD)));
+					ChatUtils.sendNoSpamMessages(messageId, new TranslatableText("techreborn.message.setTo").formatted(Formatting.GRAY).append(" ").append(new LiteralText("5 x 5").formatted(Formatting.GREEN)));
 				}
 			}
 		}
@@ -150,9 +150,9 @@ public class IndustrialJackhammerItem extends JackhammerItem implements MultiBlo
 		ItemUtils.buildActiveTooltip(stack, tooltip);
 		if (ItemUtils.isActive(stack)) {
 			if (isAOE5(stack)) {
-				tooltip.add(new LiteralText("5*5").formatted(Formatting.RED));
+				tooltip.add(new LiteralText("5 x 5").formatted(Formatting.GREEN));
 			} else {
-				tooltip.add(new LiteralText("3*3").formatted(Formatting.RED));
+				tooltip.add(new LiteralText("3 x 3").formatted(Formatting.GREEN));
 			}
 		}
 	}

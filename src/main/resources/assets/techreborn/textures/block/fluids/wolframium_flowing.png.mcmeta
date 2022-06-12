@@ -1,3 +1,5 @@
-﻿{
-  "animation": {}
+{ 
+   "animation":{
+      "frametime":4
+   }
 }

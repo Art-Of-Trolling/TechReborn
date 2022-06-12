@@ -10,7 +10,7 @@
 	  "item": "techreborn:industrial_solar_panel"
 	},
 	"C": {
-	  "item": "techreborn:industrial_circuit"
+	  "item": "techreborn:advanced_circuit"
 	},
 	"D": {
 	  "tag": "c:diamond_dusts"

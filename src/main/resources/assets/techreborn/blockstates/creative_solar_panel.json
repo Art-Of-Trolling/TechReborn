@@ -1,5 +1,5 @@
 {
     "variants": {
-        "": { "model": "techreborn:block/machines/creative_solar_panel/creative_solar_panel" }
+        "": { "model": "techreborn:block/machines/panels/creative/creative_solar_panel" }
     }
 }

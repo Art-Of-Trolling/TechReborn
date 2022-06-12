@@ -5,7 +5,7 @@
 		"1": "techreborn:block/machines/tier0_machines/resin_basin/resin_bucket_side",
 		"2": "techreborn:block/machines/tier0_machines/resin_basin/resin_bucket_bottom",
 		"4": "techreborn:block/machines/tier0_machines/resin_basin/resin_bucket_inner",
-		"8": "techreborn:block/machines/tier0_machines/resin_basin/sap_flowing",
+		"8": "techreborn:block/machines/tier0_machines/resin_basin/sap_still",
 		"particle": "techreborn:block/machines/tier0_machines/resin_basin/sap_flowing"
 	},
 	"elements": [

@@ -71,9 +71,9 @@ var chorus = "minecraft:popped_chorus_fruit";
 TRTweaker.addRollingMachine([[chorus, chorus, chorus], [chorus, "", chorus]], "minecraft:shulker_shell");
 
 //Create a pattern/dictionary set for a shaped recipe
-var pattern = [ '/ /',
-                '/_/',
-                '/ /'];
+var pattern = ['/ /',
+    '/_/',
+    '/ /'];
 var dict = {
     "/": "minecraft:stick",
     "_": "#minecraft:wooden_slabs"
