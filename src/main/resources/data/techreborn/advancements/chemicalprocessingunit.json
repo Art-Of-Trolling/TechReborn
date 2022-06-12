@@ -1,0 +1,26 @@
+{
+  "display": {
+	"icon": {
+	  "item": "techreborn:chemical_processing_unit"
+	},
+	"title": {
+	  "translate": "advancements.techreborn.chemicalprocessingunit"
+	},
+	"description": {
+	  "translate": "advancements.techreborn.chemicalprocessingunit.desc"
+	}
+  },
+  "parent": "techreborn:electricfurnace",
+  "criteria": {
+	"crit1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+		"items": [
+		  {
+			"item": "techreborn:chemical_processing_unit"
+		  }
+		]
+	  }
+	}
+  }
+}
