@@ -1,4 +1,2 @@
 Battery:
 Futureazoo
-gears, plates:
-szumaster

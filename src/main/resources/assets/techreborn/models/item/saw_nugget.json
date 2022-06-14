@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "techreborn:item/nugget/saw_blade"
+        "layer0": "techreborn:item/nugget/saw_nugget"
     }
 }
