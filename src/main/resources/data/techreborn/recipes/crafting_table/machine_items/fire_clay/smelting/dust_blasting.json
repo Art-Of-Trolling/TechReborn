@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "cookingtime": 100,
-  "experience": 0.7,
-  "ingredient": {
-	"item": "techreborn:fire_clay_dust"
-  },
-  "result": "techreborn:fire_clay_brick"
-}

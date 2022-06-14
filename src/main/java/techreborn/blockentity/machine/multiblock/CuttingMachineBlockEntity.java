@@ -50,36 +50,38 @@ public class CuttingMachineBlockEntity extends GenericMachineBlockEntity impleme
 	int ticksSinceLastChange;
 
 	public CuttingMachineBlockEntity() {
-		super(TRBlockEntities.CUTTING_MACHINE, "CuttingMachine", TechRebornConfig.cuttingMachineMaxInput, TechRebornConfig.cuttingMachineMaxEnergy, TRContent.Machine.CUTTING_MACHINE.block, 6);
-		final int[] inputs = new int[]{0, 1};
-		final int[] outputs = new int[]{2, 3, 4, 5};
-		this.inventory = new RebornInventory<>(8, "CuttingMachineBlockEntity", 64, this);
-		this.crafter = new RecipeCrafter(ModRecipes.CUTTING_MACHINE, this, 1, 3, this.inventory, inputs, outputs);
-		this.tank = new Tank("CuttingMachineBlockEntity", CuttingMachineBlockEntity.TANK_CAPACITY, this);
-		this.ticksSinceLastChange = 0;
-	}
+			super(TRBlockEntities.CUTTING_MACHINE, "CuttingMachine", TechRebornConfig.cuttingMachineMaxInput, TechRebornConfig.cuttingMachineMaxEnergy, TRContent.Machine.CUTTING_MACHINE.block, 9);
+			final int[] inputs = new int[]{0, 1};
+			final int[] outputs = new int[]{2, 3, 4, 5, 6, 7};
+			this.inventory = new RebornInventory<>(10, "CuttingMachineBlockEntity", 64, this);
+			this.crafter = new RecipeCrafter(ModRecipes.CUTTING_MACHINE, this, 1, 6, this.inventory, inputs, outputs);
+			this.tank = new Tank("CuttingMachineBlockEntity", CuttingMachineBlockEntity.TANK_CAPACITY, this);
+			this.ticksSinceLastChange = 0;
+		}
+
 
 	@Override
 	public void writeMultiblock(MultiblockWriter writer) {
-		BlockState industrial = TRContent.MachineBlocks.INDUSTRIAL.getCasing().getDefaultState();
 		BlockState advanced = TRContent.MachineBlocks.ADVANCED.getCasing().getDefaultState();
+		BlockState industrial = TRContent.MachineBlocks.INDUSTRIAL.getCasing().getDefaultState();
 		writer.translate(1, -1, -1)
-				.fill(0, 0, 0, 3, 1, 3, industrial)
-				.ring(Direction.Axis.Y, 3, 1, 3, (view, pos) -> view.getBlockState(pos) == advanced, advanced, (view, pos) -> view.getBlockState(pos).getMaterial() == Material.WATER, Blocks.WATER.getDefaultState())
-				.fill(0, 2, 0, 3, 3, 3, industrial);
+				.fill(0, 0, 0, 3, 1, 3, advanced)
+				.ring(Direction.Axis.Y, 3, 1, 3, (view, pos) -> view.getBlockState(pos) == industrial, industrial, (view, pos) -> view.getBlockState(pos).getMaterial() == Material.WATER, Blocks.WATER.getDefaultState())
+				.fill(0, 2, 0, 3, 3, 3, advanced);
 	}
 
 	// TilePowerAcceptor
 	@Override
 	public void tick() {
-		if (world == null) {
+		if (world == null){
 			return;
 		}
 		ticksSinceLastChange++;
+		// Check cells input slot 2 time per second
 		if (!world.isClient && ticksSinceLastChange >= 10) {
 			if (!inventory.getStack(1).isEmpty()) {
-				FluidUtils.drainContainers(tank, inventory, 1, 4);
-				FluidUtils.fillContainers(tank, inventory, 1, 4);
+				FluidUtils.drainContainers(tank, inventory, 1, 8);
+				FluidUtils.fillContainers(tank, inventory, 1, 8);
 			}
 			ticksSinceLastChange = 0;
 		}
@@ -110,6 +112,7 @@ public class CuttingMachineBlockEntity extends GenericMachineBlockEntity impleme
 	// IContainerProvider
 	@Override
 	public BuiltScreenHandler createScreenHandler(int syncID, final PlayerEntity player) {
+		// fluidSlot first to support automation and shift-click
 		return new ScreenHandlerBuilder("cuttingmachine").player(player.inventory).inventory().hotbar().addInventory()
 				.blockEntity(this)
 				.fluidSlot(1, 34, 35)
@@ -117,8 +120,12 @@ public class CuttingMachineBlockEntity extends GenericMachineBlockEntity impleme
 				.outputSlot(2, 126, 25)
 				.outputSlot(3, 126, 43)
 				.outputSlot(4, 126, 61)
-				.outputSlot(5, 34, 55)
-				.energySlot(6, 8, 72)
+				.outputSlot(5, 144, 25)
+				.outputSlot(6, 144, 43)
+				.outputSlot(7, 144, 61)
+				.outputSlot(8, 34, 55)
+				.energySlot(9, 8, 72)
 				.sync(tank).syncEnergyValue().syncCrafterValue().addInventory().create(this, syncID);
 	}
+
 }

@@ -9,20 +9,11 @@
   "ingredients": [
 	{
 	  "item": "techreborn:nickel_plate"
-	},
-	{
-	  "item": "techreborn:nickel_plate"
-	},
-	{
-	  "item": "techreborn:nickel_plate"
-	},
-	{
-	  "item": "techreborn:nickel_plate"
 	}
   ],
   "results": [
 	{
-	  "item": "techreborn:nickel_cog"
+	  "item": "techreborn:nickel_gear"
 	}
   ]
 }

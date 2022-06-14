@@ -115,7 +115,7 @@ public class ModRegistry {
 		Arrays.stream(Plates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(LargePlates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(CurvedPlates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(Cogs.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Gears.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Wires.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rods.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Bolts.values()).forEach(value -> RebornRegistry.registerItem(value.item));

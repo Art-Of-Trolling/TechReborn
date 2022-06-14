@@ -56,6 +56,9 @@ public class GuiCuttingMachine extends GuiBase<BuiltScreenHandler> {
 		drawSlot(matrixStack, 126, 25, layer);
 		drawSlot(matrixStack, 126, 43, layer);
 		drawSlot(matrixStack, 126, 61, layer);
+		drawSlot(matrixStack, 144, 25, layer);
+		drawSlot(matrixStack, 144, 43, layer);
+		drawSlot(matrixStack, 144, 61, layer);
 
 
 		builder.drawJEIButton(matrixStack, this, 158, 5, layer);

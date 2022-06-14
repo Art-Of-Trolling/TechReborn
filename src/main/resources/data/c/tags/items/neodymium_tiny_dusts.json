@@ -1,5 +1,6 @@
 {
+  "replace": false,
   "values": [
-    "techreborn:neodymium_tiny_dust"
+	"techreborn:neodymium_tiny_dust"
   ]
 }
