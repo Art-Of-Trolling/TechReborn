@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "ingredient": {
+    "tag": "c:iron_plates"
+  },
+  "result": "techreborn:refined_iron_plate"
+}

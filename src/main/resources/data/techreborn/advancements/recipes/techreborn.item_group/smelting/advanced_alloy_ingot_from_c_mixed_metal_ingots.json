@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tag_c_mixed_metal_ingots": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:mixed_metal_ingots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:smelting/advanced_alloy_ingot_from_c_mixed_metal_ingots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tag_c_mixed_metal_ingots",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:smelting/advanced_alloy_ingot_from_c_mixed_metal_ingots"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tag_minecraft_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:stairs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "techreborn:grinder/saw_tiny_dust_from_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tag_minecraft_stairs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "techreborn:grinder/saw_tiny_dust_from_stairs"
+    ]
+  }
+}

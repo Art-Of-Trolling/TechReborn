@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "ingredient": {
+    "tag": "c:mixed_metal_ingots"
+  },
+  "result": "techreborn:advanced_alloy_ingot"
+}

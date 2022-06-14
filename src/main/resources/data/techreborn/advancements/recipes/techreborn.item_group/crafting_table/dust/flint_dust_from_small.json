@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_flint_tiny_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "techreborn:flint_tiny_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "techreborn:crafting_table/dust/flint_dust_from_small"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_flint_tiny_dust",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "techreborn:crafting_table/dust/flint_dust_from_small"
+    ]
+  }
+}

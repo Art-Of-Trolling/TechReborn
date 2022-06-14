@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tag_c_yellow_garnet_dusts": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:yellow_garnet_dusts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "techreborn:compressor/yellow_garnet_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tag_c_yellow_garnet_dusts",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "techreborn:compressor/yellow_garnet_plate"
+    ]
+  }
+}

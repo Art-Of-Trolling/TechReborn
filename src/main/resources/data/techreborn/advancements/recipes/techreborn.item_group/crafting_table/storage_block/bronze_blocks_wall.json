@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tag_c_bronze_blocks": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:bronze_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "techreborn:crafting_table/storage_block/bronze_blocks_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tag_c_bronze_blocks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "techreborn:crafting_table/storage_block/bronze_blocks_wall"
+    ]
+  }
+}

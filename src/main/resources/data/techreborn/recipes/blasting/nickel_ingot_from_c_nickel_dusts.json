@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "ingredient": {
+    "tag": "c:nickel_dusts"
+  },
+  "result": "techreborn:nickel_ingot"
+}

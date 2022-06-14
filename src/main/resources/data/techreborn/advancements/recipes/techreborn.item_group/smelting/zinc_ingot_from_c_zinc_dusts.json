@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tag_c_zinc_dusts": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:zinc_dusts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:smelting/zinc_ingot_from_c_zinc_dusts"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tag_c_zinc_dusts",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:smelting/zinc_ingot_from_c_zinc_dusts"
+    ]
+  }
+}
