@@ -1,15 +1,17 @@
 {
   "type": "techreborn:compressor",
-  "power": 10,
-  "time": 250,
+  "power": 2,
+  "time": 200,
   "ingredients": [
 	{
-	  "tag": "c:diamond_dusts"
+	  "item": "minecraft:diamond",
+	  "count": 1
 	}
   ],
   "results": [
 	{
-	  "item": "techreborn:diamond_plate"
+	  "item": "techreborn:diamond_plate",
+	  "count": 1
 	}
   ]
 }
