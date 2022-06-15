@@ -72,7 +72,7 @@ import org.jetbrains.annotations.Nullable;
 public class DynamicCellItem extends Item implements ItemFluidInfo {
 
 	public DynamicCellItem() {
-		super(new Item.Settings().group(TechReborn.ITEMGROUP).maxCount(64));
+		super(new Item.Settings().group(TechReborn.ITEMGROUP).maxCount(16));
 	}
 
 	// Thanks vanilla :)

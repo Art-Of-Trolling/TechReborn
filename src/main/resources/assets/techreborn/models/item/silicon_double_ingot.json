@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "techreborn:item/ingot/silicon_double_ingot"
-  }
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "techreborn:item/doubleingot/silicon_double_ingot"
+    }
 }

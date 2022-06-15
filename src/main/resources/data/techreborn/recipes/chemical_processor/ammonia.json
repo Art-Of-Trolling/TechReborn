@@ -6,18 +6,18 @@
 	{
 	  "fluid": "techreborn:hydrogen",
 	  "holder": "techreborn:cell",
-	  "count": 32
+	  "count": 8
 	},
 	{
 	  "fluid": "techreborn:nitrogen",
 	  "holder": "techreborn:cell",
-	  "count": 16
+	  "count": 8
 	}
   ],
   "results": [
 	{
 	  "item": "techreborn:cell",
-	  "count": 48,
+	  "count": 16,
 	  "nbt": {
 		"fluid": "techreborn:ammonia"
 	  }

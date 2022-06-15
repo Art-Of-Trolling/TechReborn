@@ -1,7 +1,11 @@
 {
-  "type": "techreborn:compressor",
-  "power": 2,
-  "time": 200,
+  "type": "techreborn:cutting_machine",
+  "power": 64,
+  "time": 100,
+  "tank": {
+	"fluid": "minecraft:water",
+	"amount": 1000
+  },
   "ingredients": [
 	{
 	  "item": "techreborn:aluminum_double_ingot",
@@ -10,8 +14,8 @@
   ],
   "results": [
 	{
-	  "item": "techreborn:aluminum_plate",
-	  "count": 2
+	  "item": "techreborn:aluminum_rod",
+	  "count": 4
 	}
   ]
 }

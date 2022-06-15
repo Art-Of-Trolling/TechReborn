@@ -1,11 +1,21 @@
 {
   "replace": false,
   "values": [
-	"techreborn:gold_plate",
-	"techreborn:gold_cable",
-	"techreborn:insulated_gold_cable",
+	"techreborn:electrum_bolt",
+	"techreborn:electrum_curved_plate",
 	"techreborn:electrum_ingot",
+	"techreborn:electrum_large_plate",
 	"techreborn:electrum_plate",
-	"techreborn:electrum_storage_block"
+	"techreborn:electrum_rod",
+	"techreborn:electrum_storage_block",
+	"techreborn:electrum_wire",
+	"techreborn:gold_bolt",
+	"techreborn:gold_cable",
+	"techreborn:gold_curved_plate",
+	"techreborn:gold_large_plate",
+	"techreborn:gold_plate",
+	"techreborn:gold_rod",
+	"techreborn:gold_wire",
+	"techreborn:insulated_gold_cable"
   ]
 }

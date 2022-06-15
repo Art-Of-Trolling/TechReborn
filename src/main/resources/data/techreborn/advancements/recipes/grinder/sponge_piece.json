@@ -11,7 +11,7 @@
 	  "conditions": {
 		"items": [
 		  {
-			"tag": "c:sponges"
+			"item": "techreborn:sponge_piece"
 		  }
 		]
 	  }

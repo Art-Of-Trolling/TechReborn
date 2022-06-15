@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:cutting_machine",
+  "power": 2,
+  "time": 200,
+  "tank": {
+	"fluid": "techreborn:mercury",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "c:cadmium_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:cadmium_rod",
+	  "count": 2
+	}
+  ]
+}

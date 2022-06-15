@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:cutting_machine",
+  "power": 2,
+  "time": 100,
+  "tank": {
+	"fluid": "techreborn:mercury",
+	"amount": 1000
+  },
+  "ingredients": [
+	{
+	  "tag": "c:platinum_ingots",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:platinum_plate",
+	  "count": 1
+	}
+  ]
+}

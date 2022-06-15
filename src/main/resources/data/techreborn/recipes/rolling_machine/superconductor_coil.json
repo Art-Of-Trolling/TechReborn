@@ -1,0 +1,22 @@
+{
+  "type": "techreborn:rolling_machine",
+  "shaped": {
+	"pattern": [
+	  "NCN",
+	  "C C",
+	  "NCN"
+	],
+	"key": {
+	  "N": {
+		"tag": "c:superconductor_ingots"
+	  },
+	  "C": {
+		"tag": "c:superconductor_double_ingots"
+	  }
+	},
+	"result": {
+	  "item": "techreborn:superconductor_coil",
+	  "count": 3
+	}
+  }
+}

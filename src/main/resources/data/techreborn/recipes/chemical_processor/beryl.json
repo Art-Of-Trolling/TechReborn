@@ -6,12 +6,12 @@
 	{
 	  "fluid": "techreborn:chromium",
 	  "holder": "techreborn:cell",
-	  "count": 16
+	  "count": 8
 	},
 	{
 	  "fluid": "techreborn:sulfur",
 	  "holder": "techreborn:cell",
-	  "count": 16
+	  "count": 8
 	}
   ],
   "results": [
