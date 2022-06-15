@@ -1,0 +1,22 @@
+{
+  "type": "techreborn:rolling_machine",
+  "shaped": {
+    "pattern": [
+      " S ",
+      " A ",
+      " S "
+    ],
+    "key": {
+      "A": {
+        "item": "techreborn:advanced_alloy_plate"
+      },
+      "S": {
+        "tag": "c:steel_plates"
+      }
+    },
+    "result": {
+      "item": "techreborn:drill_tube",
+      "count": 6
+    }
+  }
+}

@@ -68,6 +68,7 @@ import techreborn.blocks.machine.tier0.IronAlloyFurnaceBlock;
 import techreborn.blocks.machine.tier0.IronFurnaceBlock;
 import techreborn.blocks.machine.tier1.PlayerDetectorBlock;
 import techreborn.blocks.machine.tier1.ResinBasinBlock;
+import techreborn.blocks.machine.tier2.QuarryBlock;
 import techreborn.blocks.misc.*;
 import techreborn.blocks.storage.energy.*;
 import techreborn.blocks.storage.fluid.TankUnitBlock;
@@ -77,6 +78,8 @@ import techreborn.client.GuiType;
 import techreborn.config.TechRebornConfig;
 import techreborn.entities.EntityNukePrimed;
 import techreborn.items.DynamicCellItem;
+import techreborn.items.IQuarryUpgrade;
+import techreborn.items.QuarryUpgradeItem;
 import techreborn.items.UpgradeItem;
 import techreborn.items.armor.QuantumSuitItem;
 import techreborn.items.tool.MiningLevel;
@@ -95,6 +98,7 @@ public class TRContent {
 	// Misc Blocks
 	public static Block COMPUTER_CUBE;
 	public static Block NUKE;
+	public static Block DRILL_TUBE = new BlockDrillTube();
 	public static Block REFINED_IRON_FENCE;
 	public static Block REINFORCED_GLASS;
 	public static Block RUBBER_LEAVES;
@@ -440,7 +444,7 @@ public class TRContent {
 		}
 
 		@SuppressWarnings("deprecation")
-		public DataDrivenFeature asNewOres(Identifier identifier, Predicate<BiomeSelectionContext> targetType, RuleTest ruleTest) {
+		public DataDrivenFeature asNewOres(Identifier identifier, Predicate < BiomeSelectionContext > targetType, RuleTest ruleTest) {
 			return new DataDrivenFeature(identifier, targetType, ruleTest, block.getDefaultState(), maxY, veinSize, veinsPerChunk);
 		}
 
@@ -503,13 +507,13 @@ public class TRContent {
 			return block.asItem();
 		}
 
-		public static Stream<Block> blockStream() {
+		public static Stream < Block > blockStream() {
 			return Arrays.stream(values())
 					.map(StorageBlocks::allBlocks)
 					.flatMap(Collection::stream);
 		}
 
-		private List<Block> allBlocks() {
+		private List < Block > allBlocks() {
 			return Collections.unmodifiableList(Arrays.asList(
 					block, stairsBlock, slabBlock, wallBlock
 			));
@@ -542,7 +546,7 @@ public class TRContent {
 		}
 
 		public static ItemConvertible[] getCasings() {
-			return Arrays.stream(MachineBlocks.values()).map((Function<MachineBlocks, ItemConvertible>) machineBlocks -> () -> Item.fromBlock(machineBlocks.casing)).toArray(ItemConvertible[]::new);
+			return Arrays.stream(MachineBlocks.values()).map((Function < MachineBlocks, ItemConvertible > ) machineBlocks -> () -> Item.fromBlock(machineBlocks.casing)).toArray(ItemConvertible[]::new);
 		}
 	}
 
@@ -605,7 +609,7 @@ public class TRContent {
 		SEMI_FLUID_GENERATOR(new GenericGeneratorBlock(GuiType.SEMIFLUID_GENERATOR, SemiFluidGeneratorBlockEntity::new)),
 		SOLID_CANNING_MACHINE(new GenericMachineBlock(GuiType.SOLID_CANNING_MACHINE, SoildCanningMachineBlockEntity::new)),
 		SOLID_FUEL_GENERATOR(new GenericGeneratorBlock(GuiType.GENERATOR, SolidFuelGeneratorBlockEntity::new)),
-
+		QUARRY(new QuarryBlock()),
 		THERMAL_GENERATOR(new GenericGeneratorBlock(GuiType.THERMAL_GENERATOR, ThermalGeneratorBlockEntity::new)),
 		VACUUM_FREEZER(new GenericMachineBlock(GuiType.VACUUM_FREEZER, VacuumFreezerBlockEntity::new)),
 		WATER_MILL(new GenericGeneratorBlock(null, WaterMillBlockEntity::new)),
@@ -615,7 +619,8 @@ public class TRContent {
 		public final String name;
 		public final Block block;
 
-		<B extends Block> Machine(B block) {
+		<
+				B extends Block > Machine(B block) {
 			this.name = this.toString().toLowerCase(Locale.ROOT);
 			this.block = block;
 			InitUtils.setup(block, name);
@@ -699,24 +704,19 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
-
 		Gears() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_gear");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
@@ -791,7 +791,6 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
 
@@ -800,21 +799,17 @@ public class TRContent {
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_ring");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
-
 	public enum CrushedDusts implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -1195,7 +1190,6 @@ public class TRContent {
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_tiny_dust");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
@@ -1203,13 +1197,11 @@ public class TRContent {
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
-
 	public enum Gems implements ItemConvertible {
 		AMETHYST,
 		BISMUTH,
@@ -1395,30 +1387,24 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
-
 		Bolts() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_bolt");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
-
 	public enum LargePlates implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -1490,24 +1476,19 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
-
 		LargePlates() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_large_plate");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
@@ -1587,7 +1568,6 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
 
@@ -1596,21 +1576,17 @@ public class TRContent {
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_double_ingot");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
-
 	public enum CurvedPlates implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -1681,30 +1657,24 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
-
 		CurvedPlates() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_curved_plate");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
-
 	public enum Blades implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -1775,20 +1745,16 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
-
 		Blades() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_blade");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
@@ -1869,7 +1835,6 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
-
 		public final String name;
 		public final Item item;
 
@@ -1878,21 +1843,17 @@ public class TRContent {
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_rotor");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
-
 	public enum Wires implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -1943,24 +1904,19 @@ public class TRContent {
 		TUNGSTENSTEEL,
 		UVAROVITE,
 		ZINC;
-
 		public final String name;
 		public final Item item;
-
 		Wires() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_wire");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
-
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
@@ -2049,7 +2005,6 @@ public class TRContent {
 		WOOD,
 		YELLOW_GARNET,
 		ZINC;
-
 		public final String name;
 		public final Item item;
 
@@ -2058,7 +2013,6 @@ public class TRContent {
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_nugget");
 		}
-
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
@@ -2072,7 +2026,6 @@ public class TRContent {
 			return item;
 		}
 	}
-
 	public enum Parts implements ItemConvertible {
 		CUPRONICKEL_HEATING_COIL,
 		KANTHAL_HEATING_COIL,
@@ -2088,15 +2041,12 @@ public class TRContent {
 		ADVANCED_CIRCUIT,
 		ELECTRONIC_CIRCUIT,
 		INDUSTRIAL_CIRCUIT,
-
 		TUNGSTEN_GRINDING_HEAD,
 		DIAMOND_GRINDING_HEAD,
 		DIAMOND_SAW_BLADE,
-
 		HELIUM_COOLANT_CELL_60K,
 		HELIUM_COOLANT_CELL_180K,
 		HELIUM_COOLANT_CELL_360K,
-
 		NEUTRON_REFLECTOR,
 		IRIDIUM_NEUTRON_REFLECTOR,
 		THICK_NEUTRON_REFLECTOR,
@@ -2104,10 +2054,8 @@ public class TRContent {
 		NAK_COOLANT_CELL_60K,
 		NAK_COOLANT_CELL_180K,
 		NAK_COOLANT_CELL_360K,
-
 		PLANTBALL,
 		COMPRESSED_PLANTBALL,
-
 		SCRAP,
 		SAP,
 		RUBBER,
@@ -2223,7 +2171,6 @@ public class TRContent {
 		WOOD,
 		YELLOW_GARNET,
 		ZINC;
-
 		public final String name;
 		public final Item item;
 
@@ -2287,21 +2234,64 @@ public class TRContent {
 				aesu.superconductors += TechRebornConfig.superConductorCount;
 			}
 		});
-
 		public String name;
 		public Item item;
-
 		Upgrades(IUpgrade upgrade) {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new UpgradeItem(name, upgrade);
 			InitUtils.setup(item, name + "_upgrade");
 		}
-
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
 
-	public static EntityType<EntityNukePrimed> ENTITY_NUKE;
+	/**
+	 * <a href="https://github.com/TED-inc/FabricQuarry">Created by TED-INC</a>
+	 * **/
+	public enum QuarryUpgrades implements ItemConvertible {
+		RANGE_EXTENDER_LVL1((quarryBlockEntity, stack) -> {
+			quarryBlockEntity.rangeExtenderLevel = Math.max(quarryBlockEntity.rangeExtenderLevel, 1);
+		}),
+		RANGE_EXTENDER_LVL2((quarryBlockEntity, stack) -> {
+			quarryBlockEntity.rangeExtenderLevel = Math.max(quarryBlockEntity.rangeExtenderLevel, 2);
+		}),
+		RANGE_EXTENDER_LVL3((quarryBlockEntity, stack) -> {
+			quarryBlockEntity.rangeExtenderLevel = Math.max(quarryBlockEntity.rangeExtenderLevel, 3);
+		}),
+		FORTUNE_LVL1((quarryBlockEntity, stack) -> {
+			quarryBlockEntity.fortuneLevel = Math.max(quarryBlockEntity.fortuneLevel, 1);
+		}),
+		FORTUNE_LVL2((quarryBlockEntity, stack) -> {
+			quarryBlockEntity.fortuneLevel = Math.max(quarryBlockEntity.fortuneLevel, 2);
+		}),
+		FORTUNE_LVL3((quarryBlockEntity, stack) -> {
+			quarryBlockEntity.fortuneLevel = Math.max(quarryBlockEntity.fortuneLevel, 3);
+		}),
+		SILKTOUCH((quarryBlockEntity, stack) -> {
+			quarryBlockEntity.isSilkTouch |= true;
+		});
+		public final String name;
+		public final Item item;
+
+		QuarryUpgrades(IQuarryUpgrade upgrade) {
+			name = this.toString().toLowerCase(Locale.ROOT) + "_upgrade";
+			item = new QuarryUpgradeItem(name, upgrade);
+			InitUtils.setup(item, name);
+		}
+		@Override
+		public Item asItem() {
+			return item;
+		}
+		public static QuarryUpgrades getFrom(QuarryUpgradeItem item) {
+			for (QuarryUpgrades upgrade: values()) {
+				if (upgrade.item == item)
+					return upgrade;
+			}
+
+			throw null;
+		}
+	}
+	public static EntityType < EntityNukePrimed > ENTITY_NUKE;
 }

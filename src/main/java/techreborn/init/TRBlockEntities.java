@@ -51,6 +51,7 @@ import techreborn.blockentity.machine.multiblock.casing.MachineCasingBlockEntity
 import techreborn.blockentity.machine.tier1.*;
 import techreborn.blockentity.machine.multiblock.CuttingMachineBlockEntity;
 import techreborn.blockentity.machine.tier2.GrinderBlockEntity;
+import techreborn.blockentity.machine.tier2.QuarryBlockEntity;
 import techreborn.blockentity.machine.tier3.ChunkLoaderBlockEntity;
 import techreborn.blockentity.machine.tier3.IndustrialCentrifugeBlockEntity;
 import techreborn.blockentity.machine.tier3.MatterFabricatorBlockEntity;
@@ -140,6 +141,7 @@ public class TRBlockEntities {
 	public static final BlockEntityType<CuttingMachineBlockEntity> CUTTING_MACHINE = register(CuttingMachineBlockEntity::new, "cutting_machine", TRContent.Machine.CUTTING_MACHINE);
 	public static final BlockEntityType<ChemicalProcessingUnitBlockEntity> CHEMICAL_PROCESSING_UNIT = register(ChemicalProcessingUnitBlockEntity::new, "chemical_processing_unit", TRContent.Machine.CHEMICAL_PROCESSING_UNIT);
 	public static final BlockEntityType<GrinderBlockEntity> GRINDER = register(GrinderBlockEntity::new, "grinder", TRContent.Machine.GRINDER);
+	public static final BlockEntityType<QuarryBlockEntity> QUARRY = register(QuarryBlockEntity::new, "quarry", TRContent.Machine.QUARRY);;
 
 	public static <T extends BlockEntity> BlockEntityType<T> register(Supplier<T> supplier, String name, ItemConvertible... items) {
 		return register(supplier, name, Arrays.stream(items).map(itemConvertible -> Block.getBlockFromItem(itemConvertible.asItem())).toArray(Block[]::new));

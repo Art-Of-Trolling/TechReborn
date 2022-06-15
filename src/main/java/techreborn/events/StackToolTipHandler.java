@@ -40,7 +40,9 @@ import techreborn.TechReborn;
 import techreborn.blockentity.cable.CableBlockEntity;
 import techreborn.blocks.cable.CableBlock;
 import techreborn.init.TRContent;
+import techreborn.items.QuarryUpgradeItem;
 import techreborn.items.UpgradeItem;
+import techreborn.utils.QuarryToolTipAssistUtils;
 import techreborn.utils.ToolTipAssistUtils;
 
 import java.util.List;
@@ -79,6 +81,13 @@ public class StackToolTipHandler implements ItemTooltipCallback {
 			ToolTipAssistUtils.addInfo(item.getTranslationKey(), tooltipLines, false);
 			tooltipLines.addAll(ToolTipAssistUtils.getUpgradeStats(TRContent.Upgrades.valueOf(upgrade.name.toUpperCase()), stack.getCount(), Screen.hasShiftDown()));
 		}
+
+		if (item instanceof QuarryUpgradeItem)
+			tooltipLines.addAll(
+					QuarryToolTipAssistUtils.getUpgradeStats(
+							TRContent.QuarryUpgrades.getFrom((QuarryUpgradeItem) item),
+							stack.getCount(),
+							Screen.hasShiftDown()));
 	}
 
 	private static boolean isTRItem(Item item) {

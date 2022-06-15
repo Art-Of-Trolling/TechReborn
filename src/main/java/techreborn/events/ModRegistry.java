@@ -30,6 +30,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterials;
+import net.minecraft.util.Identifier;
 import reborncore.RebornRegistry;
 import team.reborn.energy.EnergyTier;
 import techreborn.TechReborn;
@@ -99,8 +100,8 @@ public class ModRegistry {
 		RebornRegistry.registerBlock(TRContent.RUBBER_BUTTON = InitUtils.setup(new RubberButtonBlock(), "rubber_button"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.RUBBER_PRESSURE_PLATE = InitUtils.setup(new RubberPressurePlateBlock(), "rubber_pressure_plate"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.RUBBER_DOOR = InitUtils.setup(new RubberDoorBlock(), "rubber_door"), itemGroup);
+		RebornRegistry.registerBlock(TRContent.DRILL_TUBE = InitUtils.setup(new BlockDrillTube(), "drill_tube"), itemGroup);
 		RebornRegistry.registerBlockNoItem(TRContent.POTTED_RUBBER_SAPLING = InitUtils.setup(new FlowerPotBlock(TRContent.RUBBER_SAPLING, AbstractBlock.Settings.of(Material.SUPPORTED).breakInstantly().nonOpaque()), "potted_rubber_sapling"));
-
 		TechReborn.LOGGER.debug("TechReborns Blocks Loaded");
 	}
 
@@ -124,6 +125,7 @@ public class ModRegistry {
 		Arrays.stream(Blades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Parts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Upgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(QuarryUpgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 
 		RebornRegistry.registerItem(TRContent.QUANTUM_HELMET = InitUtils.setup(new QuantumSuitItem(TRArmorMaterials.QUANTUM, EquipmentSlot.HEAD), "quantum_helmet"));
 		RebornRegistry.registerItem(TRContent.QUANTUM_CHESTPLATE = InitUtils.setup(new QuantumSuitItem(TRArmorMaterials.QUANTUM, EquipmentSlot.CHEST), "quantum_chestplate"));

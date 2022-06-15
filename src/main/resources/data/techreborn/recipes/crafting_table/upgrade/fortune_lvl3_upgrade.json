@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "UIU",
+      "CPC",
+      " U "
+    ],
+    "key": {
+      "C": {
+        "item": "techreborn:industrial_circuit"
+      },
+      "P": {
+        "item": "techreborn:peridot_block"
+      },
+      "U": {
+        "item": "techreborn:fortune_lvl2_upgrade"
+      },
+      "I": {
+        "item": "techreborn:iridium_alloy_plate"
+      }
+    },
+    "result": {
+      "item": "techreborn:fortune_lvl3_upgrade"
+    }
+  }

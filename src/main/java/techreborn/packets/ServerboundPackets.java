@@ -36,6 +36,7 @@ import techreborn.blockentity.machine.iron.IronFurnaceBlockEntity;
 import techreborn.blockentity.machine.multiblock.FusionControlComputerBlockEntity;
 import techreborn.blockentity.machine.tier1.AutoCraftingTableBlockEntity;
 import techreborn.blockentity.machine.tier1.RollingMachineBlockEntity;
+import techreborn.blockentity.machine.tier2.QuarryBlockEntity;
 import techreborn.blockentity.machine.tier3.ChunkLoaderBlockEntity;
 import techreborn.blockentity.storage.energy.AdjustableSUBlockEntity;
 import techreborn.blockentity.storage.item.StorageUnitBaseBlockEntity;
@@ -52,6 +53,7 @@ public class ServerboundPackets {
 	public static final Identifier REFUND = new Identifier(TechReborn.MOD_ID, "refund");
 	public static final Identifier CHUNKLOADER = new Identifier(TechReborn.MOD_ID, "chunkloader");
 	public static final Identifier EXPERIENCE = new Identifier(TechReborn.MOD_ID, "experience");
+	public static final Identifier QUARRY_MINE_ALL = new Identifier(TechReborn.MOD_ID, "quarry_mine_all");
 
 	public static void init() {
 		NetworkManager.registerServerBoundHandler(AESU, (server, player, handler, buf, responseSender) -> {
@@ -157,6 +159,18 @@ public class ServerboundPackets {
 				}
 			});
 		});
+
+		NetworkManager.registerServerBoundHandler(QUARRY_MINE_ALL, (server, player, handler, buf, responseSender) -> {
+			BlockPos machinePos = buf.readBlockPos();
+			boolean mineAll = buf.readBoolean();
+
+			server.execute(() -> {
+				BlockEntity BlockEntity = player.world.getBlockEntity(machinePos);
+				if (BlockEntity instanceof QuarryBlockEntity) {
+					((QuarryBlockEntity) BlockEntity).setMineAll(mineAll);
+				}
+			});
+		});
 	}
 
 	public static IdentifiedPacket createPacketAesu(int buttonID, boolean shift, boolean ctrl, AdjustableSUBlockEntity blockEntity) {
@@ -215,4 +229,10 @@ public class ServerboundPackets {
 		return NetworkManager.createServerBoundPacket(EXPERIENCE, extendedPacketBuffer -> extendedPacketBuffer.writeBlockPos(blockEntity.getPos()));
 	}
 
+	public static IdentifiedPacket createPacketQuarryMineAll(QuarryBlockEntity machine, boolean mineAll) {
+		return NetworkManager.createServerBoundPacket(QUARRY_MINE_ALL, buf -> {
+			buf.writeBlockPos(machine.getPos());
+			buf.writeBoolean(mineAll);
+		});
+	}
 }
