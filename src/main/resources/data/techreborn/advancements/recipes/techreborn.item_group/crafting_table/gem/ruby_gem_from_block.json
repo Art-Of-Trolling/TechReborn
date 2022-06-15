@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ruby_storage_block": {
+    "has_ruby_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:ruby_storage_block"
+              "techreborn:ruby_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_ruby_storage_block",
+      "has_ruby_block",
       "has_the_recipe"
     ]
   ],

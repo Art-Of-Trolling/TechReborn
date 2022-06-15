@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-	"item": "techreborn:bismuth_storage_block"
-  },
-  "result": "techreborn:bismuth_storage_block_slab",
-  "count": 2
-}

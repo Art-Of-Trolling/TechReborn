@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_yellow_garnet_storage_block": {
+    "has_yellow_garnet_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:yellow_garnet_storage_block"
+              "techreborn:yellow_garnet_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_yellow_garnet_storage_block",
+      "has_yellow_garnet_block",
       "has_the_recipe"
     ]
   ],

@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_zinc_storage_block": {
+    "has_zinc_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:zinc_storage_block"
+              "techreborn:zinc_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_zinc_storage_block",
+      "has_zinc_block",
       "has_the_recipe"
     ]
   ],

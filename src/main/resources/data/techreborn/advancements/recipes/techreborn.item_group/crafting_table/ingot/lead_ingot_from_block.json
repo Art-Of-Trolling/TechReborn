@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lead_storage_block": {
+    "has_lead_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:lead_storage_block"
+              "techreborn:lead_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_lead_storage_block",
+      "has_lead_block",
       "has_the_recipe"
     ]
   ],

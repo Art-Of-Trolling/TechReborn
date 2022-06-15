@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tungstensteel_storage_block": {
+    "has_tungstensteel_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:tungstensteel_storage_block"
+              "techreborn:tungstensteel_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_tungstensteel_storage_block",
+      "has_tungstensteel_block",
       "has_the_recipe"
     ]
   ],

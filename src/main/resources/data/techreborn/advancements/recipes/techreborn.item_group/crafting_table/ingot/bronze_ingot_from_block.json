@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bronze_storage_block": {
+    "has_bronze_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:bronze_storage_block"
+              "techreborn:bronze_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bronze_storage_block",
+      "has_bronze_block",
       "has_the_recipe"
     ]
   ],

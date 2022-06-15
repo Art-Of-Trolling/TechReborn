@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-	"item": "techreborn:amethyst_storage_block"
-  },
-  "result": "techreborn:amethyst_storage_block_slab",
-  "count": 2
-}

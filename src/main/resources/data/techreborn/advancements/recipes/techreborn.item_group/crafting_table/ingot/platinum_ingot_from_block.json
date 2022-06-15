@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_platinum_storage_block": {
+    "has_platinum_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:platinum_storage_block"
+              "techreborn:platinum_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_platinum_storage_block",
+      "has_platinum_block",
       "has_the_recipe"
     ]
   ],

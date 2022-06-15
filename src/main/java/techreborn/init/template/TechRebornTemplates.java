@@ -79,7 +79,7 @@ public class TechRebornTemplates {
 	}
 
 	private static void process(TemplateProcessor processor) throws IOException {
-		processor.processSimpleBlocks("storage_blocks", Arrays.stream(TRContent.StorageBlocks.values())
+		processor.processSimpleBlocks("blocks", Arrays.stream(TRContent.StorageBlocks.values())
 				.map(storageBlocks -> storageBlocks.block)
 				.collect(Collectors.toList())
 		);

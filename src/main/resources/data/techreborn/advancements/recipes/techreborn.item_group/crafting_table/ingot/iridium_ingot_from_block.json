@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iridium_storage_block": {
+    "has_iridium_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:iridium_storage_block"
+              "techreborn:iridium_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_iridium_storage_block",
+      "has_iridium_block",
       "has_the_recipe"
     ]
   ],

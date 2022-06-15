@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_advanced_alloy_storage_block": {
+    "has_advanced_alloy_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:advanced_alloy_storage_block"
+              "techreborn:advanced_alloy_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_advanced_alloy_storage_block",
+      "has_advanced_alloy_block",
       "has_the_recipe"
     ]
   ],

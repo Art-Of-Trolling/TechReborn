@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_peridot_storage_block": {
+    "has_peridot_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:peridot_storage_block"
+              "techreborn:peridot_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_peridot_storage_block",
+      "has_peridot_block",
       "has_the_recipe"
     ]
   ],

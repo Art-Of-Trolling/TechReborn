@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_silver_storage_block": {
+    "has_silver_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:silver_storage_block"
+              "techreborn:silver_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_silver_storage_block",
+      "has_silver_block",
       "has_the_recipe"
     ]
   ],

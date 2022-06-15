@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_titanium_storage_block": {
+    "has_titanium_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:titanium_storage_block"
+              "techreborn:titanium_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_titanium_storage_block",
+      "has_titanium_block",
       "has_the_recipe"
     ]
   ],

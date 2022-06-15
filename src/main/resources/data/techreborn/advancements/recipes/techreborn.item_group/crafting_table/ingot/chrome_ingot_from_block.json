@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chrome_storage_block": {
+    "has_chrome_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:chrome_storage_block"
+              "techreborn:chrome_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_chrome_storage_block",
+      "has_chrome_block",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_refined_iron_storage_block": {
+    "has_refined_iron_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:refined_iron_storage_block"
+              "techreborn:refined_iron_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_refined_iron_storage_block",
+      "has_refined_iron_block",
       "has_the_recipe"
     ]
   ],

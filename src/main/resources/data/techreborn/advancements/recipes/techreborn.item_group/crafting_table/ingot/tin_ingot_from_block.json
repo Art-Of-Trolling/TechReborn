@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tin_storage_block": {
+    "has_tin_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:tin_storage_block"
+              "techreborn:tin_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_tin_storage_block",
+      "has_tin_block",
       "has_the_recipe"
     ]
   ],

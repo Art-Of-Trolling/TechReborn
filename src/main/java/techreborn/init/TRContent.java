@@ -486,16 +486,16 @@ public class TRContent {
 		StorageBlocks() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			block = new BlockStorage();
-			InitUtils.setup(block, name + "_storage_block");
+			InitUtils.setup(block, name + "_block");
 
 			stairsBlock = new TechRebornStairsBlock(block.getDefaultState(), FabricBlockSettings.copyOf(block));
-			InitUtils.setup(stairsBlock, name + "_storage_block_stairs");
+			InitUtils.setup(stairsBlock, name + "_block_stairs");
 
 			slabBlock = new SlabBlock(FabricBlockSettings.copyOf(block));
-			InitUtils.setup(slabBlock, name + "_storage_block_slab");
+			InitUtils.setup(slabBlock, name + "_block_slab");
 
 			wallBlock = new WallBlock(FabricBlockSettings.copyOf(block));
-			InitUtils.setup(wallBlock, name + "_storage_block_wall");
+			InitUtils.setup(wallBlock, name + "_block_wall");
 		}
 
 		@Override

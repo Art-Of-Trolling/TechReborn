@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_invar_storage_block": {
+    "has_invar_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:invar_storage_block"
+              "techreborn:invar_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_invar_storage_block",
+      "has_invar_block",
       "has_the_recipe"
     ]
   ],

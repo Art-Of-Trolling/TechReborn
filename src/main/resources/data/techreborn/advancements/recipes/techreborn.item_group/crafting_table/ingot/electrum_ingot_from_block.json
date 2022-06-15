@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_electrum_storage_block": {
+    "has_electrum_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:electrum_storage_block"
+              "techreborn:electrum_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_electrum_storage_block",
+      "has_electrum_block",
       "has_the_recipe"
     ]
   ],

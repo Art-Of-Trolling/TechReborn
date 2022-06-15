@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_brass_storage_block": {
+    "has_brass_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:brass_storage_block"
+              "techreborn:brass_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_brass_storage_block",
+      "has_brass_block",
       "has_the_recipe"
     ]
   ],

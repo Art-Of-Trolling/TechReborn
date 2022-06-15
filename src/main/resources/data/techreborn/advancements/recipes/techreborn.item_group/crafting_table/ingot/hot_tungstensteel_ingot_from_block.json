@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hot_tungstensteel_storage_block": {
+    "has_hot_tungstensteel_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "techreborn:hot_tungstensteel_storage_block"
+              "techreborn:hot_tungstensteel_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_hot_tungstensteel_storage_block",
+      "has_hot_tungstensteel_block",
       "has_the_recipe"
     ]
   ],
