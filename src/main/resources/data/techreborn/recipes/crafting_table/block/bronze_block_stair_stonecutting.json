@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:bronze_block"
+  },
+  "result": "techreborn:bronze_block_stairs",
+  "count": 1
+}

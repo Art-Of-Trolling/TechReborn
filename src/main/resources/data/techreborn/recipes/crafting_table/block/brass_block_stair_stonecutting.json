@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:brass_block"
+  },
+  "result": "techreborn:brass_block_stairs",
+  "count": 1
+}

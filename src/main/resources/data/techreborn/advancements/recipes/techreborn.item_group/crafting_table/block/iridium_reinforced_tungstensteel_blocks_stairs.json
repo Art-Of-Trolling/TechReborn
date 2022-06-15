@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tag_c_iridium_reinforced_tungstensteel_blocks": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:iridium_reinforced_tungstensteel_blocks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "techreborn:crafting_table/block/iridium_reinforced_tungstensteel_blocks_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_tag_c_iridium_reinforced_tungstensteel_blocks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "techreborn:crafting_table/block/iridium_reinforced_tungstensteel_blocks_stairs"
+    ]
+  }
+}

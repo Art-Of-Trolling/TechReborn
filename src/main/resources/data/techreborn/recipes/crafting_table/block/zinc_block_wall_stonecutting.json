@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:zinc_block"
+  },
+  "result": "techreborn:zinc_block_wall",
+  "count": 1
+}

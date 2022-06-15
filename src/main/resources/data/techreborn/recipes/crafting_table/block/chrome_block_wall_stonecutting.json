@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:chrome_block"
+  },
+  "result": "techreborn:chrome_block_wall",
+  "count": 1
+}

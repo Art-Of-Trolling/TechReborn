@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"AAA",
+	"AAA",
+	"AAA"
+  ],
+  "key": {
+	"A": {
+	  "tag": "c:platinum_ingots"
+	}
+  },
+  "result": {
+	"item": "techreborn:platinum_block"
+  }
+}

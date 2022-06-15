@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:steel_block"
+  },
+  "result": "techreborn:steel_block_slab",
+  "count": 2
+}

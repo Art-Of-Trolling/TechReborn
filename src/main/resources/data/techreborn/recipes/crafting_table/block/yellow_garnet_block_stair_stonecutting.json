@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:yellow_garnet_block"
+  },
+  "result": "techreborn:yellow_garnet_block_stairs",
+  "count": 1
+}

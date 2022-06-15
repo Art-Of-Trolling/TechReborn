@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:bismuth_block"
+  },
+  "result": "techreborn:bismuth_block_stairs",
+  "count": 1
+}

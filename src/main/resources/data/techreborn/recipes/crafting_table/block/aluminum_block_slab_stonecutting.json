@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:aluminum_block"
+  },
+  "result": "techreborn:aluminum_block_slab",
+  "count": 2
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"###"
+  ],
+  "key": {
+	"#": {
+	  "item": "techreborn:amethyst_block"
+	}
+  },
+  "result": {
+	"item": "techreborn:amethyst_block_slab",
+	"count": 6
+  }
+}

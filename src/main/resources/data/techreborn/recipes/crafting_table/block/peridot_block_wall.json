@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"###",
+	"###"
+  ],
+  "key": {
+	"#": {
+	  "item": "techreborn:peridot_block"
+	}
+  },
+  "result": {
+	"item": "techreborn:peridot_block_wall",
+	"count": 6
+  }
+}

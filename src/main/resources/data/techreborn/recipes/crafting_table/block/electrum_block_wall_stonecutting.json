@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:electrum_block"
+  },
+  "result": "techreborn:electrum_block_wall",
+  "count": 1
+}

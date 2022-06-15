@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:tungstensteel_block"
+  },
+  "result": "techreborn:tungstensteel_block_wall",
+  "count": 1
+}
