@@ -3,7 +3,7 @@
   "power": 2,
   "time": 200,
   "tank": {
-	"fluid": "techreborn:mercury",
+	"fluid": "minecraft:water",
 	"amount": 1000
   },
   "ingredients": [
