@@ -2,8 +2,8 @@
   "parent": "minecraft:block/orientable",
   "textures": {
 	"top": "techreborn:block/machines/tier2_machines/vacuum_freezer_top_on",
-	"side": "techreborn:block/machines/tier1_machines/machine_side",
-	"bottom": "techreborn:block/machines/tier1_machines/machine_bottom",
+	"side": "techreborn:block/machines/tier2_machines/machine_west",
+	"bottom": "techreborn:block/machines/tier2_machines/machine_bottom",
 	"front": "techreborn:block/machines/tier2_machines/vacuum_freezer_front_on"
   }
 }
