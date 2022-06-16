@@ -24,10 +24,10 @@ public class GuiChemicalProcessingUnit extends GuiBase<BuiltScreenHandler> {
 		// Battery slot
 		drawSlot(matrixStack, 8, 72, layer);
 		// Input slots
-		drawSlot(matrixStack, 35, 27, layer);
-		drawSlot(matrixStack, 35, 47, layer);
+		drawSlot(matrixStack, 35, 35, layer);
+		drawSlot(matrixStack, 35, 55, layer);
 		// Four output slots
-		drawOutputSlotBar(matrixStack, 78, 36, 4, layer);
+		drawOutputSlotBar(matrixStack, 78, 41, 4, layer);
 		// JEI Button
 		builder.drawJEIButton(matrixStack, this, 158, 5, layer);
 	}
@@ -37,7 +37,7 @@ public class GuiChemicalProcessingUnit extends GuiBase<BuiltScreenHandler> {
 		super.drawForeground(matrixStack, mouseX, mouseY);
 		final Layer layer = Layer.FOREGROUND;
 
-		builder.drawProgressBar(matrixStack, this, blockEntity.getProgressScaled(100), 100, 55, 40, mouseX, mouseY, GuiBuilder.ProgressDirection.RIGHT, layer);
+		builder.drawProgressBar(matrixStack, this, blockEntity.getProgressScaled(100), 100, 55, 49, mouseX, mouseY, GuiBuilder.ProgressDirection.RIGHT, layer);
 
 		if (blockEntity.isMultiblockValid()) {
 			addHologramButton(6, 4, 212, layer).clickHandler(this::onClick);

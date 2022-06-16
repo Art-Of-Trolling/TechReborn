@@ -50,10 +50,10 @@ public class GuiCentrifuge extends GuiBase<BuiltScreenHandler> {
 		drawSlot(matrixStack, 40, 34, layer);
 		drawSlot(matrixStack, 40, 54, layer);
 
-		drawSlot(matrixStack, 82, 44, layer);
-		drawSlot(matrixStack, 101, 25, layer);
-		drawSlot(matrixStack, 120, 44, layer);
-		drawSlot(matrixStack, 101, 63, layer);
+		drawSlot(matrixStack, 101, 35, layer);
+		drawSlot(matrixStack, 101, 53, layer);
+		drawSlot(matrixStack, 119, 35, layer);
+		drawSlot(matrixStack, 119, 53, layer);
 
 		builder.drawJEIButton(matrixStack, this, 158, 5, layer);
 	}
@@ -63,7 +63,7 @@ public class GuiCentrifuge extends GuiBase<BuiltScreenHandler> {
 		super.drawForeground(matrixStack, mouseX, mouseY);
 		final Layer layer = Layer.FOREGROUND;
 
-		builder.drawProgressBar(matrixStack, this, blockEntity.getProgressScaled(100), 100, 61, 47, mouseX, mouseY, GuiBuilder.ProgressDirection.RIGHT, layer);
+		builder.drawProgressBar(matrixStack, this, blockEntity.getProgressScaled(100), 100, 71, 47, mouseX, mouseY, GuiBuilder.ProgressDirection.RIGHT, layer);
 		builder.drawMultiEnergyBar(matrixStack, this, 9, 19, (int) blockEntity.getEnergy(), (int) blockEntity.getMaxStoredPower(), mouseX, mouseY, 0, layer);
 	}
 }

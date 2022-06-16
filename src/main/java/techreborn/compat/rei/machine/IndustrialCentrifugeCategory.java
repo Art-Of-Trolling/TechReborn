@@ -46,13 +46,14 @@ public class IndustrialCentrifugeCategory<R extends RebornRecipe> extends Abstra
 	@Override
 	public List<Widget> setupDisplay(MachineRecipeDisplay<R> recipeDisplay, Rectangle bounds) {
 		List<Widget> widgets = super.setupDisplay(recipeDisplay, bounds);
-		widgets.add(Widgets.createSlot(new Point(bounds.x + 55 - 17, bounds.y + 35 - 19)).entries(getInput(recipeDisplay, 0)).markInput());
-		widgets.add(Widgets.createSlot(new Point(bounds.x + 55 - 17, bounds.y + 55 - 19)).entries(getInput(recipeDisplay, 1)).markInput());
-		widgets.add(Widgets.createSlot(new Point(bounds.x + 97 - 17, bounds.y + 45 - 19)).entries(getOutput(recipeDisplay, 0)).markOutput());
-		widgets.add(Widgets.createSlot(new Point(bounds.x + 116 - 17, bounds.y + 26 - 19)).entries(getOutput(recipeDisplay, 1)).markOutput());
-		widgets.add(Widgets.createSlot(new Point(bounds.x + 135 - 17, bounds.y + 45 - 19)).entries(getOutput(recipeDisplay, 2)).markOutput());
-		widgets.add(Widgets.createSlot(new Point(bounds.x + 116 - 17, bounds.y + 64 - 19)).entries(getOutput(recipeDisplay, 3)).markOutput());
-		widgets.add(ReiPlugin.createProgressBar(bounds.x + 76 - 17, bounds.y + 48 - 19, recipeDisplay.getTime() * 50, GuiBuilder.ProgressDirection.RIGHT));
+		widgets.add(Widgets.createSlot(new Point(bounds.x + 55 - 17, bounds.y + 37 - 19)).entries(getInput(recipeDisplay, 0)).markInput());
+		widgets.add(Widgets.createSlot(new Point(bounds.x + 55 - 17, bounds.y + 57 - 19)).entries(getInput(recipeDisplay, 1)).markInput());
+
+		widgets.add(Widgets.createSlot(new Point(bounds.x + 112 - 17, bounds.y + 37 - 18)).entries(getOutput(recipeDisplay, 0)).markOutput());
+		widgets.add(Widgets.createSlot(new Point(bounds.x + 112 - 17, bounds.y + 55 - 18)).entries(getOutput(recipeDisplay, 1)).markOutput());
+		widgets.add(Widgets.createSlot(new Point(bounds.x + 131 - 17, bounds.y + 37 - 18)).entries(getOutput(recipeDisplay, 2)).markOutput());
+		widgets.add(Widgets.createSlot(new Point(bounds.x + 131 - 17, bounds.y + 55 - 18)).entries(getOutput(recipeDisplay, 3)).markOutput());
+		widgets.add(ReiPlugin.createProgressBar(bounds.x + 84 - 17, bounds.y + 48 - 17, recipeDisplay.getTime() * 50, GuiBuilder.ProgressDirection.RIGHT));
 
 		widgets.add(Widgets.createLabel(new Point(bounds.x + 24, bounds.y + 5), new TranslatableText("techreborn.jei.recipe.processing.time.3", new DecimalFormat("###.##").format(recipeDisplay.getTime() / 20.0)))
 				.shadow(false)

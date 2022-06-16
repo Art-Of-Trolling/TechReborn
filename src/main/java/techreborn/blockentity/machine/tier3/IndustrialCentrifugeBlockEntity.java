@@ -61,8 +61,11 @@ public class IndustrialCentrifugeBlockEntity extends GenericMachineBlockEntity i
 				.addInventory().blockEntity(this)
 				.filterSlot(1, 40, 54, stack -> ItemUtils.isItemEqual(stack, DynamicCellItem.getEmptyCell(1), true, true))
 				.filterSlot(0, 40, 34, stack -> !ItemUtils.isItemEqual(stack, DynamicCellItem.getEmptyCell(1), true, true))
-				.outputSlot(2, 82, 44).outputSlot(3, 101, 25)
-				.outputSlot(4, 120, 44).outputSlot(5, 101, 63).energySlot(6, 8, 72).syncEnergyValue()
+				.outputSlot(2, 101, 35)
+				.outputSlot(3, 101, 53)
+				.outputSlot(4, 119, 35)
+				.outputSlot(5, 119, 53)
+				.energySlot(6, 8, 72).syncEnergyValue()
 				.syncCrafterValue().addInventory().create(this, syncID);
 	}
 
