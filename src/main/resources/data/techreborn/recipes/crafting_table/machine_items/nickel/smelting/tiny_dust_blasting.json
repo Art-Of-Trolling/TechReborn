@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "cookingtime": 100,
-  "experience": 0.08,
-  "ingredient": {
-	"item": "techreborn:nickel_tiny_dust"
-  },
-  "result": "techreborn:nickel_nugget"
-}
