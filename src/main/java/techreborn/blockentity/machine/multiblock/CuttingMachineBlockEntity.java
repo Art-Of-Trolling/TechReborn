@@ -50,11 +50,11 @@ public class CuttingMachineBlockEntity extends GenericMachineBlockEntity impleme
 	int ticksSinceLastChange;
 
 	public CuttingMachineBlockEntity() {
-			super(TRBlockEntities.CUTTING_MACHINE, "CuttingMachine", TechRebornConfig.cuttingMachineMaxInput, TechRebornConfig.cuttingMachineMaxEnergy, TRContent.Machine.CUTTING_MACHINE.block, 9);
+			super(TRBlockEntities.CUTTING_MACHINE, "CuttingMachine", TechRebornConfig.cuttingMachineMaxInput, TechRebornConfig.cuttingMachineMaxEnergy, TRContent.Machine.CUTTING_MACHINE.block, 4);
 			final int[] inputs = new int[]{0, 1};
-			final int[] outputs = new int[]{2, 3, 4, 5, 6, 7};
-			this.inventory = new RebornInventory<>(11, "CuttingMachineBlockEntity", 64, this);
-			this.crafter = new RecipeCrafter(ModRecipes.CUTTING_MACHINE, this, 1, 6, this.inventory, inputs, outputs);
+			final int[] outputs = new int[]{2};
+			this.inventory = new RebornInventory<>(5, "CuttingMachineBlockEntity", 64, this);
+			this.crafter = new RecipeCrafter(ModRecipes.CUTTING_MACHINE, this, 1, 1, this.inventory, inputs, outputs);
 			this.tank = new Tank("CuttingMachineBlockEntity", CuttingMachineBlockEntity.TANK_CAPACITY, this);
 			this.ticksSinceLastChange = 0;
 		}
@@ -80,8 +80,8 @@ public class CuttingMachineBlockEntity extends GenericMachineBlockEntity impleme
 		// Check cells input slot 2 time per second
 		if (!world.isClient && ticksSinceLastChange >= 10) {
 			if (!inventory.getStack(1).isEmpty()) {
-				FluidUtils.drainContainers(tank, inventory, 1, 8);
-				FluidUtils.fillContainers(tank, inventory, 1, 8);
+				FluidUtils.drainContainers(tank, inventory, 1, 3);
+				FluidUtils.fillContainers(tank, inventory, 1, 3);
 			}
 			ticksSinceLastChange = 0;
 		}
@@ -117,14 +117,9 @@ public class CuttingMachineBlockEntity extends GenericMachineBlockEntity impleme
 				.blockEntity(this)
 				.fluidSlot(1, 34, 35)
 				.slot(0, 84, 43)
-				.outputSlot(2, 126, 25)
-				.outputSlot(3, 126, 43)
-				.outputSlot(4, 126, 61)
-				.outputSlot(5, 144, 25)
-				.outputSlot(6, 144, 43)
-				.outputSlot(7, 144, 61)
-				.outputSlot(8, 34, 55)
-				.energySlot(9, 8, 72)
+				.outputSlot(2, 126, 43)
+				.outputSlot(3, 34, 55)
+				.energySlot(4, 8, 72)
 				.sync(tank).syncEnergyValue().syncCrafterValue().addInventory().create(this, syncID);
 	}
 

@@ -60,7 +60,7 @@ public class MillingCutterCategory<R extends RebornRecipe> extends AbstractEnerg
 		widgets.add(Widgets.createSlot(new Point(bounds.x + 132 - 17, bounds.y + 26 + 18)).entries(getOutput(recipeDisplay, 8)).markOutput());
 		widgets.add(ReiPlugin.createProgressBar(bounds.x + 84 - 19, bounds.y + 48 - 20, recipeDisplay.getTime() * 50, GuiBuilder.ProgressDirection.UP));
 
-		widgets.add(Widgets.createLabel(new Point(bounds.x + 26, bounds.y + 5), new TranslatableText("techreborn.jei.recipe.processing.time.3", new DecimalFormat("###.##").format(recipeDisplay.getTime() / 20.0)))
+		widgets.add(Widgets.createLabel(new Point(bounds.x + 26, bounds.y + 6), new TranslatableText("techreborn.jei.recipe.processing.time.3", new DecimalFormat("###.##").format(recipeDisplay.getTime() / 20.0)))
 				.shadow(false)
 				.leftAligned()
 				.color(0xFF404040, 0xFFBBBBBB)

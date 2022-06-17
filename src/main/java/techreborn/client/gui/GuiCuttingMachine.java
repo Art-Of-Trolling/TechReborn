@@ -53,13 +53,7 @@ public class GuiCuttingMachine extends GuiBase<BuiltScreenHandler> {
 		// Solid material input slot
 		drawSlot(matrixStack, 84, 43, layer);
 		// Output slots
-		drawSlot(matrixStack, 126, 25, layer);
 		drawSlot(matrixStack, 126, 43, layer);
-		drawSlot(matrixStack, 126, 61, layer);
-		drawSlot(matrixStack, 144, 25, layer);
-		drawSlot(matrixStack, 144, 43, layer);
-		drawSlot(matrixStack, 144, 61, layer);
-
 
 		builder.drawJEIButton(matrixStack, this, 158, 5, layer);
 		if (blockEntity.isMultiblockValid()) {
