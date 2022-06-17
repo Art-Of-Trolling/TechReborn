@@ -72,6 +72,10 @@ public class TechReborn implements ModInitializer {
 		INSTANCE = this;
 		new Configuration(TechRebornConfig.class, "techreborn");
 
+		// Done to force the class to load
+		//noinspection ResultOfMethodCallIgnored
+		ModRecipes.GRINDER.getName();
+
 		ClientboundPackets.init();
 		ServerboundPackets.init();
 
@@ -83,11 +87,11 @@ public class TechReborn implements ModInitializer {
 		ModLoot.init();
 		WorldGenerator.initWorldGen();
 		FluidGeneratorRecipes.init();
+		//Force loads the block entities at the right time
 		//noinspection ResultOfMethodCallIgnored
 		TRBlockEntities.THERMAL_GEN.toString();
 		//noinspection ResultOfMethodCallIgnored
 		GuiType.AESU.getIdentifier();
-
 		TRDispenserBehavior.init();
 		PoweredCraftingHandler.setup();
 		UseBlockHandler.init();

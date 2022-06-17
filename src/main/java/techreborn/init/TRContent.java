@@ -56,6 +56,7 @@ import techreborn.blockentity.machine.tier2.GrinderBlockEntity;
 import techreborn.blockentity.machine.tier3.ChunkLoaderBlockEntity;
 import techreborn.blockentity.machine.tier3.IndustrialCentrifugeBlockEntity;
 import techreborn.blockentity.machine.tier3.MatterFabricatorBlockEntity;
+import techreborn.blockentity.machine.tier3.MillingCutterBlockEntity;
 import techreborn.blockentity.storage.energy.AdjustableSUBlockEntity;
 import techreborn.blocks.GenericMachineBlock;
 import techreborn.blocks.cable.CableBlock;
@@ -96,9 +97,9 @@ import java.util.stream.Stream;
 public class TRContent {
 
 	// Misc Blocks
+	public static Block DRILL_TUBE = new BlockDrillTube();
 	public static Block COMPUTER_CUBE;
 	public static Block NUKE;
-	public static Block DRILL_TUBE = new BlockDrillTube();
 	public static Block REFINED_IRON_FENCE;
 	public static Block REINFORCED_GLASS;
 	public static Block RUBBER_LEAVES;
@@ -610,6 +611,7 @@ public class TRContent {
 		SOLID_CANNING_MACHINE(new GenericMachineBlock(GuiType.SOLID_CANNING_MACHINE, SoildCanningMachineBlockEntity::new)),
 		SOLID_FUEL_GENERATOR(new GenericGeneratorBlock(GuiType.GENERATOR, SolidFuelGeneratorBlockEntity::new)),
 		QUARRY(new QuarryBlock()),
+		MILLING_CUTTER(new GenericGeneratorBlock(GuiType.MILLING_CUTTER, MillingCutterBlockEntity::new)),
 		THERMAL_GENERATOR(new GenericGeneratorBlock(GuiType.THERMAL_GENERATOR, ThermalGeneratorBlockEntity::new)),
 		VACUUM_FREEZER(new GenericMachineBlock(GuiType.VACUUM_FREEZER, VacuumFreezerBlockEntity::new)),
 		WATER_MILL(new GenericGeneratorBlock(null, WaterMillBlockEntity::new)),

@@ -52,6 +52,9 @@ public class IronFurnaceBlockEntity extends AbstractIronMachineBlockEntity imple
 
 	private Recipe<?> lastRecipe = null;
 
+	private boolean previousValid = false;
+	private ItemStack previousStack = ItemStack.EMPTY;
+
 	public IronFurnaceBlockEntity() {
 		super(TRBlockEntities.IRON_FURNACE, 2, TRContent.Machine.IRON_FURNACE.block);
 		this.inventory = new RebornInventory<>(3, "IronFurnaceBlockEntity", 64, this);
@@ -73,6 +76,9 @@ public class IronFurnaceBlockEntity extends AbstractIronMachineBlockEntity imple
 	private ItemStack getResultFor(ItemStack stack) {
 		if (stack.isEmpty()) {
 			// Fast fail if there is no input, no point checking the recipes if the machine is empty
+			return ItemStack.EMPTY;
+		}
+		if (previousStack.isItemEqualIgnoreDamage(stack) && !previousValid){
 			return ItemStack.EMPTY;
 		}
 
@@ -124,9 +130,21 @@ public class IronFurnaceBlockEntity extends AbstractIronMachineBlockEntity imple
 		if (inputStack.isEmpty())
 			return false;
 
+		if (previousStack != inputStack) {
+			previousStack = inputStack;
+			previousValid = true;
+		}
+
 		ItemStack outputStack = getResultFor(inputStack);
-		if (outputStack.isEmpty())
+
+		if (outputStack.isEmpty()) {
+			previousValid = false;
 			return false;
+
+		} else {
+
+			previousValid = true;
+		}
 
 		ItemStack outputSlotStack = inventory.getStack(outputSlot);
 		if (outputSlotStack.isEmpty())

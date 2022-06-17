@@ -106,6 +106,7 @@ public class ReiPlugin implements REIPluginV0 {
 		iconMap.put(ModRecipes.INDUSTRIAL_ELECTROLYZER, Machine.INDUSTRIAL_ELECTROLYZER);
 		iconMap.put(ModRecipes.INDUSTRIAL_GRINDER, Machine.INDUSTRIAL_GRINDER);
 		iconMap.put(ModRecipes.INDUSTRIAL_SAWMILL, Machine.INDUSTRIAL_SAWMILL);
+		iconMap.put(ModRecipes.MILLING_CUTTER, Machine.MILLING_CUTTER);
 		iconMap.put(ModRecipes.ROLLING_MACHINE, Machine.ROLLING_MACHINE);
 		iconMap.put(ModRecipes.SCRAPBOX, TRContent.SCRAP_BOX);
 		iconMap.put(ModRecipes.SOLID_CANNING_MACHINE, Machine.SOLID_CANNING_MACHINE);
@@ -142,6 +143,7 @@ public class ReiPlugin implements REIPluginV0 {
 		recipeHelper.registerCategory(new TwoInputsCenterOutputCategory<>(ModRecipes.SOLID_CANNING_MACHINE));
 		recipeHelper.registerCategory(new OneInputOneOutputCategory<>(ModRecipes.VACUUM_FREEZER));
 		recipeHelper.registerCategory(new OneInputOneOutputCategory<>(ModRecipes.WIRE_MILL));
+		recipeHelper.registerCategory(new MillingCutterCategory<>(ModRecipes.MILLING_CUTTER));
 
 		recipeHelper.registerCategory(new FluidGeneratorRecipeCategory(Machine.THERMAL_GENERATOR));
 		recipeHelper.registerCategory(new FluidGeneratorRecipeCategory(Machine.GAS_TURBINE));
@@ -175,6 +177,7 @@ public class ReiPlugin implements REIPluginV0 {
 		recipeHelper.registerWorkingStations(ModRecipes.EXTRACTOR.getName(), EntryStack.create(Machine.EXTRACTOR));
 		recipeHelper.registerWorkingStations(ModRecipes.FLUID_REPLICATOR.getName(), EntryStack.create(Machine.FLUID_REPLICATOR));
 		recipeHelper.registerWorkingStations(ModRecipes.FUSION_REACTOR.getName(), EntryStack.create(Machine.FUSION_CONTROL_COMPUTER));
+		recipeHelper.registerWorkingStations(ModRecipes.MILLING_CUTTER.getName(), EntryStack.create(Machine.MILLING_CUTTER));
 		recipeHelper.registerWorkingStations(ModRecipes.GRINDER.getName(), EntryStack.create(Machine.GRINDER));
 		recipeHelper.registerWorkingStations(ModRecipes.IMPLOSION_COMPRESSOR.getName(), EntryStack.create(Machine.IMPLOSION_COMPRESSOR));
 		recipeHelper.registerWorkingStations(ModRecipes.INDUSTRIAL_ELECTROLYZER.getName(), EntryStack.create(Machine.INDUSTRIAL_ELECTROLYZER));

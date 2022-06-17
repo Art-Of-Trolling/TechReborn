@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"TCT",
+	"TAT",
+	"TRT"
+  ],
+  "key": {
+	"T": {
+	  "item": "techreborn:industrial_machine_frame"
+	},
+	"C": {
+	  "item": "techreborn:diamond_saw_blade"
+	},
+	"A": {
+	  "item": "techreborn:cutting_machine"
+	},
+	"R": {
+	  "item": "techreborn:industrial_sawmill"
+	}
+  },
+  "result": {
+	"item": "techreborn:milling_cutter"
+  }
+}

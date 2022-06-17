@@ -56,6 +56,7 @@ public class ModRecipes {
 	public static final RebornRecipeType<RebornRecipe> SOLID_CANNING_MACHINE = RecipeManager.newRecipeType(RebornRecipe::new, new Identifier("techreborn:solid_canning_machine"));
 	public static final RebornRecipeType<RebornRecipe> WIRE_MILL = RecipeManager.newRecipeType(RebornRecipe::new, new Identifier("techreborn:wire_mill"));
 	public static final RebornRecipeType<RebornRecipe> CHEMICAL_PROCESSING_UNIT = RecipeManager.newRecipeType(RebornRecipe::new, new Identifier("techreborn:chemical_processing_unit"));
+	public static final RebornRecipeType<RebornRecipe> MILLING_CUTTER = RecipeManager.newRecipeType(RebornRecipe::new, new Identifier("techreborn:milling_cutter"));
 
 	public static RebornRecipeType<?> byName(Identifier identifier) {
 		return (RebornRecipeType<?>) Registry.RECIPE_SERIALIZER.get(identifier);

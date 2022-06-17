@@ -504,6 +504,12 @@ public class TechRebornConfig {
 	@Config(config = "machines", category = "centrifuge", key = "CentrifugeMaxEnergy", comment = "Centrifuge Max Energy (Value in EU)")
 	public static int industrialCentrifugeMaxEnergy = 10_000;
 
+	@Config(config = "machines", category = "milling_cutter", key = "MillingCutterMaxInput", comment = "Milling Cutter Max Input (Value in EU)")
+	public static int millingCutterMaxInput = 32;
+
+	@Config(config = "machines", category = "milling_cutter", key = "MillingCutterMaxEnergy", comment = "Milling Cutter Max Energy (Value in EU)")
+	public static int millingCutterMaxEnergy = 10_000;
+
 	@Config(config = "machines", category = "chemical_reactor", key = "ChemicalReactorMaxInput", comment = "Chemical Reactor Max Input (Value in EU)")
 	public static int chemicalReactorMaxInput = 128;
 
