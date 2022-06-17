@@ -732,6 +732,7 @@ public class TRContent {
 		AMETHYST,
 		ANDESITE,
 		ANDRADITE,
+		ANNEALED_COPPER,
 		BASALT,
 		BAUXITE,
 		BERYLLIUM,
@@ -781,11 +782,13 @@ public class TRContent {
 		RUBY,
 		SALTPETER,
 		SAPPHIRE,
+		SILICON,
 		SILVER,
 		SODALITE,
 		SPESSARTINE,
 		SPHALERITE,
 		STEEL,
+		SUPERCONDUCTOR,
 		TIN,
 		TITANIUM,
 		TUNGSTEN,
@@ -801,17 +804,21 @@ public class TRContent {
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_ring");
 		}
+
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
+
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
+
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
+
 	public enum CrushedDusts implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -969,11 +976,13 @@ public class TRContent {
 		RUBY,
 		SALTPETER,
 		SAPPHIRE,
+		SILICON,
 		SILVER,
 		SODALITE,
 		SPESSARTINE,
 		SPHALERITE,
 		STEEL,
+		SUPERCONDUCTOR,
 		TIN,
 		TITANIUM,
 		TUNGSTEN,
@@ -1677,6 +1686,7 @@ public class TRContent {
 			return item;
 		}
 	}
+
 	public enum Blades implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -1747,16 +1757,20 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
+
 		public final String name;
 		public final Item item;
+
 		Blades() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_blade");
 		}
+
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
+
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
@@ -1824,6 +1838,7 @@ public class TRContent {
 		RUBY,
 		SALTPETER,
 		SAPPHIRE,
+		SILICON,
 		SILVER,
 		SODALITE,
 		SPESSARTINE,
@@ -1845,17 +1860,21 @@ public class TRContent {
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_rotor");
 		}
+
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
+
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
+
 		@Override
 		public Item asItem() {
 			return item;
 		}
 	}
+
 	public enum Wires implements ItemConvertible {
 		ADVANCED_ALLOY,
 		ALMANDINE,
@@ -2141,6 +2160,7 @@ public class TRContent {
 		MAGNESIUM,
 		MANGANESE,
 		MARBLE,
+		MIXED_METAL,
 		NEODYMIUM,
 		NETHERRACK,
 		NICKEL,

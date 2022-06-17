@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:sodalite_blade",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:sodalite_ring",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:sodalite_rotor",
+	  "count": 1
+	}
+  ]
+}

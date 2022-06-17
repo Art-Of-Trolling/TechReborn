@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 8,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:almandine_plates",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:almandine_rod",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:almandine_blade",
+	  "count": 4
+	}
+  ]
+}

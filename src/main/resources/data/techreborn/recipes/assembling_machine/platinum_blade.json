@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 8,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:platinum_plates",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:platinum_rod",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:platinum_blade",
+	  "count": 4
+	}
+  ]
+}

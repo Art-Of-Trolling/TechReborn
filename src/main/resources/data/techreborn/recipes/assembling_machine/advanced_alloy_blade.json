@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 8,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:advanced_alloy_plates",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:advanced_alloy_rod",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:advanced_alloy_blade",
+	  "count": 4
+	}
+  ]
+}

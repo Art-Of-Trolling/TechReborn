@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 8,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:sodalite_plates",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:sodalite_rod",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:sodalite_blade",
+	  "count": 4
+	}
+  ]
+}

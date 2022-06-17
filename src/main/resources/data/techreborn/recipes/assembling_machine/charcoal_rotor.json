@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:charcoal_blade",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:charcoal_ring",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:charcoal_rotor",
+	  "count": 1
+	}
+  ]
+}

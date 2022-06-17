@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 8,
+  "time": 200,
+  "ingredients": [
+	{
+	  "tag": "c:grossular_plates",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:grossular_rod",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:grossular_blade",
+	  "count": 4
+	}
+  ]
+}

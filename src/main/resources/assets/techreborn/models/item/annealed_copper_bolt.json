@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "techreborn:item/bolt/annealed_copper_alloy_bolt"
+        "layer0": "techreborn:item/bolt/annealed_copper_bolt"
     }
 }

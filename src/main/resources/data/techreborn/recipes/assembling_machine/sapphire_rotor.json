@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:sapphire_blade",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:sapphire_ring",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:sapphire_rotor",
+	  "count": 1
+	}
+  ]
+}

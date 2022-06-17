@@ -1,0 +1,21 @@
+{
+  "type": "techreborn:assembling_machine",
+  "power": 2,
+  "time": 200,
+  "ingredients": [
+	{
+	  "item": "techreborn:manganese_blade",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:manganese_ring",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:manganese_rotor",
+	  "count": 1
+	}
+  ]
+}

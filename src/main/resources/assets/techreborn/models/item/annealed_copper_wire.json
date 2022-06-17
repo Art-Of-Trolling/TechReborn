@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "techreborn:item/wire/annealed_copper_alloy_wire"
+        "layer0": "techreborn:item/wire/annealed_copper_wire"
     }
 }
