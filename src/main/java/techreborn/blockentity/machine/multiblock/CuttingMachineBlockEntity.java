@@ -53,7 +53,7 @@ public class CuttingMachineBlockEntity extends GenericMachineBlockEntity impleme
 			super(TRBlockEntities.CUTTING_MACHINE, "CuttingMachine", TechRebornConfig.cuttingMachineMaxInput, TechRebornConfig.cuttingMachineMaxEnergy, TRContent.Machine.CUTTING_MACHINE.block, 9);
 			final int[] inputs = new int[]{0, 1};
 			final int[] outputs = new int[]{2, 3, 4, 5, 6, 7};
-			this.inventory = new RebornInventory<>(10, "CuttingMachineBlockEntity", 64, this);
+			this.inventory = new RebornInventory<>(11, "CuttingMachineBlockEntity", 64, this);
 			this.crafter = new RecipeCrafter(ModRecipes.CUTTING_MACHINE, this, 1, 6, this.inventory, inputs, outputs);
 			this.tank = new Tank("CuttingMachineBlockEntity", CuttingMachineBlockEntity.TANK_CAPACITY, this);
 			this.ticksSinceLastChange = 0;

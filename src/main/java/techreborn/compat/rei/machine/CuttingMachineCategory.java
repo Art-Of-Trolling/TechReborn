@@ -37,6 +37,7 @@ public class CuttingMachineCategory<R extends RebornRecipe> extends AbstractMach
 			list.add(ClientHelper.getInstance().getFormattedModFromIdentifier(new Identifier("techreborn", "")));
 			return Tooltip.create(point, list);
 		}));
+
 		widgets.add(Widgets.createSlot(new Point(bounds.x + 55, bounds.y + 26)).entries(getInput(recipeDisplay, 0)).markInput());
 		widgets.add(Widgets.createSlot(new Point(bounds.x + 55 + 43, bounds.y + 26 - 18)).entries(getOutput(recipeDisplay, 0)).markOutput());
 		widgets.add(Widgets.createSlot(new Point(bounds.x + 55 + 43, bounds.y + 26)).entries(getOutput(recipeDisplay, 1)).markOutput());
