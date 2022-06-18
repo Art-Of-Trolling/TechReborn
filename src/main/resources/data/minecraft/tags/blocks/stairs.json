@@ -30,6 +30,15 @@
 	"techreborn:tungsten_block_stairs",
 	"techreborn:tungstensteel_block_stairs",
 	"techreborn:yellow_garnet_block_stairs",
-	"techreborn:zinc_block_stairs"
+	"techreborn:zinc_block_stairs",
+	"techreborn:uranium_block_stairs",
+	"techreborn:beryllium_block_stairs",
+	"techreborn:cadmium_block_stairs",
+	"techreborn:blastproof_alloy_block_stairs",
+	"techreborn:annealed_copper_block_stairs",
+	"techreborn:annealed_copper_hot_block_stairs",
+	"techreborn:advanced_alloy_block_stairs",
+	"techreborn:antimony_block_stairs",
+	"techreborn:battery_alloy_block_stairs"
   ]
 }

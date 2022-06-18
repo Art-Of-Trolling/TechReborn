@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"BCB",
+	"AMA",
+	"FCF"
+  ],
+  "key": {
+	"A": {
+	  "tag": "c:advanced_alloy_plates"
+	},
+	"C": {
+	  "tag": "c:platinum_plates"
+	},
+	"B": {
+	  "tag": "c:blastproof_alloy_plates"
+	},
+	"F": {
+	  "tag": "c:titanium_large_plates"
+	},
+	"M": {
+	  "item": "techreborn:industrial_machine_frame"
+	}
+  },
+  "result": {
+	"item": "techreborn:quantum_machine_frame"
+  }
+}

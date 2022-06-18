@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:cadmium_block"
+  },
+  "result": "techreborn:cadmium_block_stairs",
+  "count": 1
+}

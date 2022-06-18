@@ -29,6 +29,15 @@
 	"techreborn:tungsten_block_wall",
 	"techreborn:tungstensteel_block_wall",
 	"techreborn:yellow_garnet_block_wall",
-	"techreborn:zinc_block_wall"
+	"techreborn:zinc_block_wall",
+	"techreborn:uranium_block_wall",
+	"techreborn:beryllium_block_wall",
+	"techreborn:cadmium_block_wall",
+	"techreborn:blastproof_alloy_block_wall",
+	"techreborn:annealed_copper_block_wall",
+	"techreborn:annealed_copper_hot_block_wall",
+	"techreborn:advanced_alloy_block_wall",
+	"techreborn:antimony_block_wall",
+	"techreborn:battery_alloy_block_wall"
   ]
 }

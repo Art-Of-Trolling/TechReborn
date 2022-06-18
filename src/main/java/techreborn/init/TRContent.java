@@ -452,11 +452,19 @@ public class TRContent {
 	}
 
 	public enum StorageBlocks implements ItemConvertible {
+		ADVANCED_ALLOY,
 		ALUMINUM,
 		AMETHYST,
+		ANNEALED_COPPER,
+		ANNEALED_COPPER_HOT,
+		ANTIMONY,
+		BATTERY_ALLOY,
+		BERYLLIUM,
 		BISMUTH,
+		BLASTPROOF_ALLOY,
 		BRASS,
 		BRONZE,
+		CADMIUM,
 		CHROME,
 		COPPER,
 		ELECTRUM,
@@ -479,6 +487,7 @@ public class TRContent {
 		TUNGSTEN,
 		TUNGSTENSTEEL,
 		UNICORN,
+		URANIUM,
 		YELLOW_GARNET,
 		ZINC;
 
@@ -514,7 +523,7 @@ public class TRContent {
 					.flatMap(Collection::stream);
 		}
 
-		private List <Block> allBlocks() {
+		private List<Block> allBlocks() {
 			return Collections.unmodifiableList(Arrays.asList(
 					block, stairsBlock, slabBlock, wallBlock
 			));
@@ -524,7 +533,8 @@ public class TRContent {
 	public enum MachineBlocks {
 		BASIC(1020 / 25),
 		ADVANCED(1700 / 25),
-		INDUSTRIAL(2380 / 25);
+		INDUSTRIAL(2380 / 25),
+		QUANTUM(3060 / 25);
 
 		public final String name;
 		public final Block frame;

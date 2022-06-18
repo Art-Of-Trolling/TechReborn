@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:antimony_block"
+  },
+  "result": "techreborn:antimony_block_stairs",
+  "count": 1
+}

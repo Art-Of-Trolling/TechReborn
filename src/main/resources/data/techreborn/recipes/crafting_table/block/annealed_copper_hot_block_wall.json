@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"###",
+	"###"
+  ],
+  "key": {
+	"#": {
+	  "item": "techreborn:annealed_copper_hot_block"
+	}
+  },
+  "result": {
+	"item": "techreborn:annealed_copper_hot_block_wall",
+	"count": 6
+  }
+}

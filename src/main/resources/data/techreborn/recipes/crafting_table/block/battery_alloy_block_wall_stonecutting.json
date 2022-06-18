@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:battery_alloy_block"
+  },
+  "result": "techreborn:battery_alloy_block_wall",
+  "count": 1
+}

@@ -30,6 +30,15 @@
 	"techreborn:tungstensteel_block_slab",
 	"techreborn:unicorn_block_slab",
 	"techreborn:yellow_garnet_block_slab",
+	"techreborn:uranium_block_slab",
+	"techreborn:beryllium_block_slab",
+	"techreborn:cadmium_block_slab",
+	"techreborn:blastproof_alloy_block_slab",
+	"techreborn:annealed_copper_block_slab",
+	"techreborn:annealed_copper_hot_block_slab",
+	"techreborn:advanced_alloy_block_slab",
+	"techreborn:antimony_block_slab",
+	"techreborn:battery_alloy_block_slab",
 	"techreborn:zinc_block_slab"
   ]
 }

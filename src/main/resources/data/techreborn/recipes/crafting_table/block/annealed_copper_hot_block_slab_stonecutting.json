@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+	"item": "techreborn:annealed_copper_hot_block"
+  },
+  "result": "techreborn:annealed_copper_hot_block_slab",
+  "count": 2
+}

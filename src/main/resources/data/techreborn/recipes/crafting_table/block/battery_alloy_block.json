@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"AAA",
+	"AAA",
+	"AAA"
+  ],
+  "key": {
+	"A": {
+	  "tag": "c:battery_alloy_ingots"
+	}
+  },
+  "result": {
+	"item": "techreborn:battery_alloy_block"
+  }
+}
