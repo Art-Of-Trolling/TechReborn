@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-	"DT ",
-	"DT ",
+	"DTP",
+	"dTd",
 	"DCB"
   ],
   "key": {
@@ -11,6 +11,12 @@
 	},
 	"T": {
 	  "tag": "c:titanium_ingots"
+	},
+	"P": {
+	  "tag": "c:titanium_rods"
+	},
+	"d": {
+	  "tag": "c:diamond_rods"
 	},
 	"C": {
 	  "item": "techreborn:electronic_circuit"

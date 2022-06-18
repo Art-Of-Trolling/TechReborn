@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-	"DSD",
+	"ITI",
 	"TBT",
-	" D "
+	"DSD"
   ],
   "key": {
 	"D": {
@@ -11,6 +11,9 @@
 	},
 	"B": {
 	  "item": "techreborn:lithium_ion_battery"
+	},
+	"I": {
+	  "item": "techreborn:aluminum_rod"
 	},
 	"T": {
 	  "tag": "c:titanium_ingots"

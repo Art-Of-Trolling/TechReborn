@@ -75,7 +75,7 @@ public class MillingCutterBlockEntity extends GenericMachineBlockEntity implemen
 	public void addInfo(final List<Text> info, final boolean isReal, boolean hasData) {
 		super.addInfo(info, isReal, hasData);
 		if (Screen.hasControlDown()) {
-			info.add(new LiteralText("Big THINGS"));
+			info.add(new LiteralText("Milling operations!"));
 		}
 	}
 }

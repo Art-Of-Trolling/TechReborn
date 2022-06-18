@@ -97,7 +97,6 @@ import java.util.stream.Stream;
 public class TRContent {
 
 	// Misc Blocks
-	public static Block DRILL_TUBE = new BlockDrillTube();
 	public static Block COMPUTER_CUBE;
 	public static Block NUKE;
 	public static Block REFINED_IRON_FENCE;
@@ -118,6 +117,8 @@ public class TRContent {
 	public static Block RUBBER_WOOD;
 	public static Block STRIPPED_RUBBER_WOOD;
 	public static Block POTTED_RUBBER_SAPLING;
+
+	public static Block DRILL_TUBE = new BlockDrillTube();
 
 	// Armor
 	public static Item CLOAKING_DEVICE;
@@ -306,7 +307,6 @@ public class TRContent {
 		public final String name;
 		public final Block block;
 
-		// How many blocks it can hold
 		public int capacity;
 
 
@@ -508,13 +508,13 @@ public class TRContent {
 			return block.asItem();
 		}
 
-		public static Stream < Block > blockStream() {
+		public static Stream<Block> blockStream() {
 			return Arrays.stream(values())
 					.map(StorageBlocks::allBlocks)
 					.flatMap(Collection::stream);
 		}
 
-		private List < Block > allBlocks() {
+		private List <Block> allBlocks() {
 			return Collections.unmodifiableList(Arrays.asList(
 					block, stairsBlock, slabBlock, wallBlock
 			));
@@ -553,76 +553,75 @@ public class TRContent {
 
 
 	public enum Machine implements ItemConvertible {
-		ADJUSTABLE_SU(new AdjustableSUBlock()),
-		ALARM(new BlockAlarm()),
 		ALLOY_SMELTER(new GenericMachineBlock(GuiType.ALLOY_SMELTER, AlloySmelterBlockEntity::new)),
 		ASSEMBLY_MACHINE(new GenericMachineBlock(GuiType.ASSEMBLING_MACHINE, AssemblingMachineBlockEntity::new)),
 		AUTO_CRAFTING_TABLE(new GenericMachineBlock(GuiType.AUTO_CRAFTING_TABLE, AutoCraftingTableBlockEntity::new)),
-		CHARGE_O_MAT(new GenericMachineBlock(GuiType.CHARGEBENCH, ChargeOMatBlockEntity::new)),
-		CHEMICAL_PROCESSING_UNIT(new GenericMachineBlock(GuiType.CHEMICAL_PROCESSING_UNIT, ChemicalProcessingUnitBlockEntity::new)),
 		CHEMICAL_REACTOR(new GenericMachineBlock(GuiType.CHEMICAL_REACTOR, ChemicalReactorBlockEntity::new)),
-		CHUNK_LOADER(new GenericMachineBlock(GuiType.CHUNK_LOADER, ChunkLoaderBlockEntity::new)),
+		CHEMICAL_PROCESSING_UNIT(new GenericMachineBlock(GuiType.CHEMICAL_PROCESSING_UNIT, ChemicalProcessingUnitBlockEntity::new)),
 		COMPRESSOR(new GenericMachineBlock(GuiType.COMPRESSOR, CompressorBlockEntity::new)),
-		CUTTING_MACHINE(new GenericMachineBlock(GuiType.CUTTING_MACHINE, CuttingMachineBlockEntity::new)),
-		DIESEL_GENERATOR(new GenericGeneratorBlock(GuiType.DIESEL_GENERATOR, DieselGeneratorBlockEntity::new)),
 		DISTILLATION_TOWER(new GenericMachineBlock(GuiType.DISTILLATION_TOWER, DistillationTowerBlockEntity::new)),
-		DRAGON_EGG_SYPHON(new GenericGeneratorBlock(null, DragonEggSyphonBlockEntity::new)),
-		DRAIN(new GenericMachineBlock(null, DrainBlockEntity::new)),
-		ELECTRIC_FURNACE(new GenericMachineBlock(GuiType.ELECTRIC_FURNACE, ElectricFurnaceBlockEntity::new)),
-		EV_TRANSFORMER(new BlockEVTransformer()),
 		EXTRACTOR(new GenericMachineBlock(GuiType.EXTRACTOR, ExtractorBlockEntity::new)),
+		RESIN_BASIN(new ResinBasinBlock(ResinBasinBlockEntity::new)),
 		FLUID_REPLICATOR(new GenericMachineBlock(GuiType.FLUID_REPLICATOR, FluidReplicatorBlockEntity::new)),
-		FUSION_COIL(new BlockFusionCoil()),
-		FUSION_CONTROL_COMPUTER(new BlockFusionControlComputer()),
-		GAS_TURBINE(new GenericGeneratorBlock(GuiType.GAS_TURBINE, GasTurbineBlockEntity::new)),
-		GREENHOUSE_CONTROLLER(new GenericMachineBlock(GuiType.GREENHOUSE_CONTROLLER, GreenhouseControllerBlockEntity::new)),
 		GRINDER(new GenericMachineBlock(GuiType.GRINDER, GrinderBlockEntity::new)),
-		HIGH_VOLTAGE_SU(new HighVoltageSUBlock()),
-		HV_TRANSFORMER(new BlockHVTransformer()),
+		ROLLING_MACHINE(new GenericMachineBlock(GuiType.ROLLING_MACHINE, RollingMachineBlockEntity::new)),
+		ELECTRIC_FURNACE(new GenericMachineBlock(GuiType.ELECTRIC_FURNACE, ElectricFurnaceBlockEntity::new)),
 		IMPLOSION_COMPRESSOR(new GenericMachineBlock(GuiType.IMPLOSION_COMPRESSOR, ImplosionCompressorBlockEntity::new)),
 		INDUSTRIAL_BLAST_FURNACE(new GenericMachineBlock(GuiType.BLAST_FURNACE, IndustrialBlastFurnaceBlockEntity::new)),
 		INDUSTRIAL_CENTRIFUGE(new GenericMachineBlock(GuiType.CENTRIFUGE, IndustrialCentrifugeBlockEntity::new)),
-
 		INDUSTRIAL_ELECTROLYZER(new GenericMachineBlock(GuiType.INDUSTRIAL_ELECTROLYZER, IndustrialElectrolyzerBlockEntity::new)),
 		INDUSTRIAL_GRINDER(new GenericMachineBlock(GuiType.INDUSTRIAL_GRINDER, IndustrialGrinderBlockEntity::new)),
 		INDUSTRIAL_SAWMILL(new GenericMachineBlock(GuiType.SAWMILL, IndustrialSawmillBlockEntity::new)),
-		INTERDIMENSIONAL_SU(new InterdimensionalSUBlock()),
+		CUTTING_MACHINE(new GenericMachineBlock(GuiType.CUTTING_MACHINE, CuttingMachineBlockEntity::new)),
+		MILLING_CUTTER(new GenericMachineBlock(GuiType.MILLING_CUTTER, MillingCutterBlockEntity::new)),
 		IRON_ALLOY_FURNACE(new IronAlloyFurnaceBlock()),
 		IRON_FURNACE(new IronFurnaceBlock()),
-		LAMP_INCANDESCENT(new LampBlock(4, 10, 8)),
-		LAMP_LED(new LampBlock(1, 1, 12)),
-		LAPOTRONIC_SU(new LapotronicSUBlock()),
-		LIGHTNING_ROD(new GenericGeneratorBlock(null, LightningRodBlockEntity::new)),
-		LOW_VOLTAGE_SU(new LowVoltageSUBlock()),
-		LSU_STORAGE(new LSUStorageBlock()),
-
-		LV_TRANSFORMER(new BlockLVTransformer()),
-
 		MATTER_FABRICATOR(new GenericMachineBlock(GuiType.MATTER_FABRICATOR, MatterFabricatorBlockEntity::new)),
-		MEDIUM_VOLTAGE_SU(new MediumVoltageSUBlock()),
-		MV_TRANSFORMER(new BlockMVTransformer()),
-		PLASMA_GENERATOR(new GenericGeneratorBlock(GuiType.PLASMA_GENERATOR, PlasmaGeneratorBlockEntity::new)),
-		PLAYER_DETECTOR(new PlayerDetectorBlock()),
 		RECYCLER(new GenericMachineBlock(GuiType.RECYCLER, RecyclerBlockEntity::new)),
-		RESIN_BASIN(new ResinBasinBlock(ResinBasinBlockEntity::new)),
-		ROLLING_MACHINE(new GenericMachineBlock(GuiType.ROLLING_MACHINE, RollingMachineBlockEntity::new)),
-		SCRAPBOXINATOR(new GenericMachineBlock(GuiType.SCRAPBOXINATOR, ScrapboxinatorBlockEntity::new)),
-		SEMI_FLUID_GENERATOR(new GenericGeneratorBlock(GuiType.SEMIFLUID_GENERATOR, SemiFluidGeneratorBlockEntity::new)),
-		SOLID_CANNING_MACHINE(new GenericMachineBlock(GuiType.SOLID_CANNING_MACHINE, SoildCanningMachineBlockEntity::new)),
-		SOLID_FUEL_GENERATOR(new GenericGeneratorBlock(GuiType.GENERATOR, SolidFuelGeneratorBlockEntity::new)),
 		QUARRY(new QuarryBlock()),
-		MILLING_CUTTER(new GenericGeneratorBlock(GuiType.MILLING_CUTTER, MillingCutterBlockEntity::new)),
-		THERMAL_GENERATOR(new GenericGeneratorBlock(GuiType.THERMAL_GENERATOR, ThermalGeneratorBlockEntity::new)),
+		SCRAPBOXINATOR(new GenericMachineBlock(GuiType.SCRAPBOXINATOR, ScrapboxinatorBlockEntity::new)),
 		VACUUM_FREEZER(new GenericMachineBlock(GuiType.VACUUM_FREEZER, VacuumFreezerBlockEntity::new)),
+		SOLID_CANNING_MACHINE(new GenericMachineBlock(GuiType.SOLID_CANNING_MACHINE, SoildCanningMachineBlockEntity::new)),
+		WIRE_MILL(new GenericMachineBlock(GuiType.WIRE_MILL, WireMillBlockEntity::new)),
+		GREENHOUSE_CONTROLLER(new GenericMachineBlock(GuiType.GREENHOUSE_CONTROLLER, GreenhouseControllerBlockEntity::new)),
+		DIESEL_GENERATOR(new GenericGeneratorBlock(GuiType.DIESEL_GENERATOR, DieselGeneratorBlockEntity::new)),
+		DRAGON_EGG_SYPHON(new GenericGeneratorBlock(null, DragonEggSyphonBlockEntity::new)),
+		FUSION_COIL(new BlockFusionCoil()),
+		FUSION_CONTROL_COMPUTER(new BlockFusionControlComputer()),
+		GAS_TURBINE(new GenericGeneratorBlock(GuiType.GAS_TURBINE, GasTurbineBlockEntity::new)),
+		LIGHTNING_ROD(new GenericGeneratorBlock(null, LightningRodBlockEntity::new)),
+		PLASMA_GENERATOR(new GenericGeneratorBlock(GuiType.PLASMA_GENERATOR, PlasmaGeneratorBlockEntity::new)),
+		SEMI_FLUID_GENERATOR(new GenericGeneratorBlock(GuiType.SEMIFLUID_GENERATOR, SemiFluidGeneratorBlockEntity::new)),
+		SOLID_FUEL_GENERATOR(new GenericGeneratorBlock(GuiType.GENERATOR, SolidFuelGeneratorBlockEntity::new)),
+		THERMAL_GENERATOR(new GenericGeneratorBlock(GuiType.THERMAL_GENERATOR, ThermalGeneratorBlockEntity::new)),
 		WATER_MILL(new GenericGeneratorBlock(null, WaterMillBlockEntity::new)),
 		WIND_MILL(new GenericGeneratorBlock(null, WindMillBlockEntity::new)),
-		WIRE_MILL(new GenericMachineBlock(GuiType.WIRE_MILL, WireMillBlockEntity::new));
+
+		DRAIN(new GenericMachineBlock(null, DrainBlockEntity::new)),
+
+		ADJUSTABLE_SU(new AdjustableSUBlock()),
+		CHARGE_O_MAT(new GenericMachineBlock(GuiType.CHARGEBENCH, ChargeOMatBlockEntity::new)),
+		INTERDIMENSIONAL_SU(new InterdimensionalSUBlock()),
+		LAPOTRONIC_SU(new LapotronicSUBlock()),
+		LSU_STORAGE(new LSUStorageBlock()),
+		LOW_VOLTAGE_SU(new LowVoltageSUBlock()),
+		MEDIUM_VOLTAGE_SU(new MediumVoltageSUBlock()),
+		HIGH_VOLTAGE_SU(new HighVoltageSUBlock()),
+		LV_TRANSFORMER(new BlockLVTransformer()),
+		MV_TRANSFORMER(new BlockMVTransformer()),
+		HV_TRANSFORMER(new BlockHVTransformer()),
+		EV_TRANSFORMER(new BlockEVTransformer()),
+
+		ALARM(new BlockAlarm()),
+		CHUNK_LOADER(new GenericMachineBlock(GuiType.CHUNK_LOADER, ChunkLoaderBlockEntity::new)),
+		LAMP_INCANDESCENT(new LampBlock(4, 10, 8)),
+		LAMP_LED(new LampBlock(1, 1, 12)),
+		PLAYER_DETECTOR(new PlayerDetectorBlock());
 
 		public final String name;
 		public final Block block;
 
-		<
-				B extends Block > Machine(B block) {
+		<B extends Block> Machine(B block) {
 			this.name = this.toString().toLowerCase(Locale.ROOT);
 			this.block = block;
 			InitUtils.setup(block, name);
@@ -966,6 +965,7 @@ public class TRContent {
 		NICKEL,
 		OBSIDIAN,
 		OLIVINE,
+		IRIDIUM,
 		PERIDOT,
 		PHOSPHOROUS,
 		PLATINUM,
@@ -1398,6 +1398,7 @@ public class TRContent {
 		UVAROVITE,
 		WOOD,
 		ZINC;
+
 		public final String name;
 		public final Item item;
 		Bolts() {
@@ -1721,6 +1722,7 @@ public class TRContent {
 		GRANITE,
 		GROSSULAR,
 		INVAR,
+		IRIDIUM,
 		IRIDIUM_ALLOY,
 		IRON,
 		LAZURITE,
@@ -2063,16 +2065,20 @@ public class TRContent {
 		ADVANCED_CIRCUIT,
 		ELECTRONIC_CIRCUIT,
 		INDUSTRIAL_CIRCUIT,
+
 		TUNGSTEN_GRINDING_HEAD,
 		DIAMOND_GRINDING_HEAD,
 		DIAMOND_SAW_BLADE,
+
 		HELIUM_COOLANT_CELL_60K,
 		HELIUM_COOLANT_CELL_180K,
 		HELIUM_COOLANT_CELL_360K,
+
+		MACHINE_PARTS,
 		NEUTRON_REFLECTOR,
 		IRIDIUM_NEUTRON_REFLECTOR,
 		THICK_NEUTRON_REFLECTOR,
-		MACHINE_PARTS,
+
 		NAK_COOLANT_CELL_60K,
 		NAK_COOLANT_CELL_180K,
 		NAK_COOLANT_CELL_360K,
@@ -2083,8 +2089,9 @@ public class TRContent {
 		RUBBER,
 		SPONGE_PIECE,
 		SUPERCONDUCTOR,
-		SYNTHETIC_REDSTONE_CRYSTAL,
 		UU_MATTER,
+		SYNTHETIC_REDSTONE_CRYSTAL,
+
 		WATER_COOLANT_CELL_10K,
 		WATER_COOLANT_CELL_30K,
 		WATER_COOLANT_CELL_60K;
@@ -2194,6 +2201,7 @@ public class TRContent {
 		WOOD,
 		YELLOW_GARNET,
 		ZINC;
+
 		public final String name;
 		public final Item item;
 

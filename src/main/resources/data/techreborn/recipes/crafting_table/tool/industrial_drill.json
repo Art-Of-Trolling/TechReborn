@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-	" I ",
+	"IYI",
 	"NCN",
 	"OAO"
   ],
   "key": {
 	"I": {
 	  "item": "techreborn:iridium_alloy_plate"
+	},
+	"Y": {
+	  "item": "techreborn:titanium_rod"
 	},
 	"N": {
 	  "tag": "c:iridium_nuggets"

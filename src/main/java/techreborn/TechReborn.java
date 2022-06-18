@@ -72,6 +72,9 @@ public class TechReborn implements ModInitializer {
 		INSTANCE = this;
 		new Configuration(TechRebornConfig.class, "techreborn");
 
+		// Done to force the class to load
+		//noinspection ResultOfMethodCallIgnored
+		ModRecipes.GRINDER.getName();
 		ClientboundPackets.init();
 		ServerboundPackets.init();
 
@@ -80,9 +83,7 @@ public class TechReborn implements ModInitializer {
 			if (TechRebornConfig.machineSoundVolume > 1) TechRebornConfig.machineSoundVolume = 1F;
 			RecipeCrafter.soundHanlder = new ModSounds.SoundHandler();
 		}
-		// Done to force the class to load
-		//noinspection ResultOfMethodCallIgnored
-		ModRecipes.GRINDER.getName();
+
 		ModLoot.init();
 		WorldGenerator.initWorldGen();
 		FluidGeneratorRecipes.init();
