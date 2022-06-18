@@ -453,7 +453,7 @@ public class TechRebornConfig {
 	public static int nukeMaxInput = 64;
 
 	@Config(config = "machines", category = "nukeprocessingunit", key = "NukeProcessingUnitMaxEnergy", comment = "Nuke Processing Unit Max Energy (Value in EU)")
-	public static int nukeMaxEnergy = 400_000;
+	public static int nukeMaxEnergy = 100_000;
 
 	@Config(config = "machines", category = "electric_furnace", key = "ElectricFurnaceInput", comment = "Electric Furnace Max Input (Value in EU)")
 	public static int electricFurnaceMaxInput = 32;
