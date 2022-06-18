@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"TNT",
+	"QOQ",
+	"UWU"
+  ],
+  "key": {
+	"T": {
+	  "item": "techreborn:blastproof_alloy_large_plate"
+	},
+	"N": {
+	  "item": "minecraft:tnt"
+	},
+	"U": {
+	  "item": "techreborn:quantum_machine_frame"
+	},
+	"W": {
+	  "item": "techreborn:quantum_machine_casing"
+	},
+	"O": {
+	  "item": "techreborn:digital_display"
+	},
+	"Q": {
+	  "tag": "c:titanium_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:nuke_processing_unit"
+  }
+}

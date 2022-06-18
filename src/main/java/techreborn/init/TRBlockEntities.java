@@ -51,6 +51,7 @@ import techreborn.blockentity.machine.multiblock.casing.MachineCasingBlockEntity
 import techreborn.blockentity.machine.tier1.*;
 import techreborn.blockentity.machine.multiblock.CuttingMachineBlockEntity;
 import techreborn.blockentity.machine.tier2.GrinderBlockEntity;
+import techreborn.blockentity.machine.tier2.NukeProcessingUnitBlockEntity;
 import techreborn.blockentity.machine.tier2.QuarryBlockEntity;
 import techreborn.blockentity.machine.tier3.ChunkLoaderBlockEntity;
 import techreborn.blockentity.machine.tier3.IndustrialCentrifugeBlockEntity;
@@ -78,7 +79,6 @@ import java.util.function.Supplier;
 public class TRBlockEntities {
 
 	private static final List<BlockEntityType<?>> TYPES = new ArrayList<>();
-
 
 	public static final BlockEntityType<StorageUnitBaseBlockEntity> STORAGE_UNIT = register(StorageUnitBaseBlockEntity::new, "storage_unit", TRContent.StorageUnit.values());
 	public static final BlockEntityType<TankUnitBaseBlockEntity> TANK_UNIT = register(TankUnitBaseBlockEntity::new, "tank_unit", TRContent.TankUnit.values());
@@ -143,8 +143,8 @@ public class TRBlockEntities {
 	public static final BlockEntityType<ChemicalProcessingUnitBlockEntity> CHEMICAL_PROCESSING_UNIT = register(ChemicalProcessingUnitBlockEntity::new, "chemical_processing_unit", TRContent.Machine.CHEMICAL_PROCESSING_UNIT);
 	public static final BlockEntityType<GrinderBlockEntity> GRINDER = register(GrinderBlockEntity::new, "grinder", TRContent.Machine.GRINDER);
 	public static final BlockEntityType<QuarryBlockEntity> QUARRY = register(QuarryBlockEntity::new, "quarry", TRContent.Machine.QUARRY);
-	public static final BlockEntityType<MillingCutterBlockEntity> MILLING_CUTTER = register(MillingCutterBlockEntity::new, "milling_cutter", TRContent.Machine.MILLING_CUTTER);;
-
+	public static final BlockEntityType<MillingCutterBlockEntity> MILLING_CUTTER = register(MillingCutterBlockEntity::new, "milling_cutter", TRContent.Machine.MILLING_CUTTER);
+	public static final BlockEntityType<NukeProcessingUnitBlockEntity> NUKE_PROCESSING_UNIT = register(NukeProcessingUnitBlockEntity::new, "nuke_processing_unit", TRContent.Machine.NUKE_PROCESSING_UNIT);
 
 	public static <T extends BlockEntity> BlockEntityType<T> register(Supplier<T> supplier, String name, ItemConvertible... items) {
 		return register(supplier, name, Arrays.stream(items).map(itemConvertible -> Block.getBlockFromItem(itemConvertible.asItem())).toArray(Block[]::new));

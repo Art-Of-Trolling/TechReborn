@@ -102,6 +102,7 @@ public class ReiPlugin implements REIPluginV0 {
 		iconMap.put(ModRecipes.FLUID_REPLICATOR, Machine.FLUID_REPLICATOR);
 		iconMap.put(ModRecipes.FUSION_REACTOR, Machine.FUSION_CONTROL_COMPUTER);
 		iconMap.put(ModRecipes.GRINDER, Machine.GRINDER);
+		iconMap.put(ModRecipes.NUKE_PROCESSING_UNIT, Machine.NUKE_PROCESSING_UNIT);
 		iconMap.put(ModRecipes.IMPLOSION_COMPRESSOR, Machine.IMPLOSION_COMPRESSOR);
 		iconMap.put(ModRecipes.INDUSTRIAL_ELECTROLYZER, Machine.INDUSTRIAL_ELECTROLYZER);
 		iconMap.put(ModRecipes.INDUSTRIAL_GRINDER, Machine.INDUSTRIAL_GRINDER);
@@ -131,6 +132,7 @@ public class ReiPlugin implements REIPluginV0 {
 		recipeHelper.registerCategory(new DistillationTowerCategory<>(ModRecipes.DISTILLATION_TOWER));
 		recipeHelper.registerCategory(new ChemicalProcessingUnitCategory<>(ModRecipes.CHEMICAL_PROCESSING_UNIT));
 		recipeHelper.registerCategory(new OneInputOneOutputCategory<>(ModRecipes.EXTRACTOR));
+		recipeHelper.registerCategory(new OneInputOneOutputCategory<>(ModRecipes.NUKE_PROCESSING_UNIT));
 		recipeHelper.registerCategory(new FluidReplicatorRecipeCategory(ModRecipes.FLUID_REPLICATOR));
 		recipeHelper.registerCategory(new TwoInputsCenterOutputCategory<>(ModRecipes.FUSION_REACTOR));
 		recipeHelper.registerCategory(new OneInputOneOutputCategory<>(ModRecipes.GRINDER));
@@ -171,6 +173,7 @@ public class ReiPlugin implements REIPluginV0 {
 		recipeHelper.registerWorkingStations(ModRecipes.CENTRIFUGE.getName(), EntryStack.create(Machine.INDUSTRIAL_CENTRIFUGE));
 		recipeHelper.registerWorkingStations(ModRecipes.CHEMICAL_REACTOR.getName(), EntryStack.create(Machine.CHEMICAL_REACTOR));
 		recipeHelper.registerWorkingStations(ModRecipes.COMPRESSOR.getName(), EntryStack.create(Machine.COMPRESSOR));
+		recipeHelper.registerWorkingStations(ModRecipes.NUKE_PROCESSING_UNIT.getName(), EntryStack.create(Machine.NUKE_PROCESSING_UNIT));
 		recipeHelper.registerWorkingStations(ModRecipes.CUTTING_MACHINE.getName(), EntryStack.create(Machine.CUTTING_MACHINE));
 		recipeHelper.registerWorkingStations(ModRecipes.CHEMICAL_PROCESSING_UNIT.getName(), EntryStack.create(Machine.CHEMICAL_PROCESSING_UNIT));
 		recipeHelper.registerWorkingStations(ModRecipes.DISTILLATION_TOWER.getName(), EntryStack.create(Machine.DISTILLATION_TOWER));

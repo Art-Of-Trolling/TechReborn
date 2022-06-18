@@ -62,6 +62,7 @@ import techreborn.blockentity.machine.multiblock.*;
 import techreborn.blockentity.machine.tier1.*;
 import techreborn.blockentity.machine.multiblock.CuttingMachineBlockEntity;
 import techreborn.blockentity.machine.tier2.GrinderBlockEntity;
+import techreborn.blockentity.machine.tier2.NukeProcessingUnitBlockEntity;
 import techreborn.blockentity.machine.tier2.QuarryBlockEntity;
 import techreborn.blockentity.machine.tier3.ChunkLoaderBlockEntity;
 import techreborn.blockentity.machine.tier3.IndustrialCentrifugeBlockEntity;
@@ -134,6 +135,7 @@ public final class GuiType<T extends BlockEntity> implements IMachineGuiHandler 
 	public static final GuiType<GrinderBlockEntity> GRINDER = register("grinder", () -> () -> GuiGrinder::new);
 	public static final GuiType<QuarryBlockEntity> QUARRY = register("quarry", () -> () -> GuiQuarry::new);
 	public static final GuiType<MillingCutterBlockEntity> MILLING_CUTTER = register("milling_cutter", () -> () -> GuiMillingCutter::new);
+	public static final GuiType<NukeProcessingUnitBlockEntity> NUKE_PROCESSING_UNIT = register("nuke_processing_unit", () -> () -> GuiNukeProcessing::new);
 	public static final GuiType<DataDrivenBEProvider.DataDrivenBlockEntity> DATA_DRIVEN = register("data_driven", () -> () -> DataDrivenGui::new);
 
 	private static <T extends BlockEntity> GuiType<T> register(String id, Supplier<Supplier<GuiFactory<T>>> factorySupplierMeme) {

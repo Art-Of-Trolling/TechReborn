@@ -449,6 +449,11 @@ public class TechRebornConfig {
 
 	@Config(config = "machines", category = "fluidreplicator", key = "FluidReplicatorMaxEnergy", comment = "Fluid Replicator Max Energy (Value in EU)")
 	public static int fluidReplicatorMaxEnergy = 400_000;
+	@Config(config = "machines", category = "nukeprocessingunit", key = "NukeProcessingUnitMaxInput", comment = "Nuke Processing Unit Max Input (Value in EU)")
+	public static int nukeMaxInput = 64;
+
+	@Config(config = "machines", category = "nukeprocessingunit", key = "NukeProcessingUnitMaxEnergy", comment = "Nuke Processing Unit Max Energy (Value in EU)")
+	public static int nukeMaxEnergy = 400_000;
 
 	@Config(config = "machines", category = "electric_furnace", key = "ElectricFurnaceInput", comment = "Electric Furnace Max Input (Value in EU)")
 	public static int electricFurnaceMaxInput = 32;

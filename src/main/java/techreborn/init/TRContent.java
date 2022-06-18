@@ -53,6 +53,7 @@ import techreborn.blockentity.machine.multiblock.*;
 import techreborn.blockentity.machine.tier1.*;
 import techreborn.blockentity.machine.multiblock.CuttingMachineBlockEntity;
 import techreborn.blockentity.machine.tier2.GrinderBlockEntity;
+import techreborn.blockentity.machine.tier2.NukeProcessingUnitBlockEntity;
 import techreborn.blockentity.machine.tier3.ChunkLoaderBlockEntity;
 import techreborn.blockentity.machine.tier3.IndustrialCentrifugeBlockEntity;
 import techreborn.blockentity.machine.tier3.MatterFabricatorBlockEntity;
@@ -626,6 +627,7 @@ public class TRContent {
 		CHUNK_LOADER(new GenericMachineBlock(GuiType.CHUNK_LOADER, ChunkLoaderBlockEntity::new)),
 		LAMP_INCANDESCENT(new LampBlock(4, 10, 8)),
 		LAMP_LED(new LampBlock(1, 1, 12)),
+		NUKE_PROCESSING_UNIT(new GenericMachineBlock(GuiType.NUKE_PROCESSING_UNIT, NukeProcessingUnitBlockEntity::new)),
 		PLAYER_DETECTOR(new PlayerDetectorBlock());
 
 		public final String name;

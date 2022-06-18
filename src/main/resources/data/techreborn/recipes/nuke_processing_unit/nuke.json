@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:nuke_processing_unit",
+  "power": 20,
+  "time": 1000,
+  "ingredients": [
+	{
+	  "item": "minecraft:tnt",
+	  "count": 64
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:nuke",
+	  "count": 1
+	}
+  ]
+}
