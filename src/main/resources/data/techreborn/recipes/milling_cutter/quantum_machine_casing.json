@@ -1,7 +1,7 @@
 {
   "type": "techreborn:milling_cutter",
-  "power": 2,
-  "time": 300,
+  "power": 20,
+  "time": 600,
   "ingredients": [
 	{
 	  "item": "techreborn:quantum_machine_casing",

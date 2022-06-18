@@ -39,8 +39,15 @@ public class ChemicalProcessingUnitBlockEntity extends GenericMachineBlockEntity
 	@Override
 	public BuiltScreenHandler createScreenHandler(int syncID, final PlayerEntity player) {
 		return new ScreenHandlerBuilder("Chemicalprocessing").player(player.inventory).inventory().hotbar().addInventory()
-				.blockEntity(this).slot(0, 35, 27).slot(1, 35, 47).outputSlot(2, 79, 41).outputSlot(3, 99, 41)
-				.outputSlot(4, 119, 41).outputSlot(5, 139, 41).energySlot(6, 8, 72).syncEnergyValue().syncCrafterValue()
+				.blockEntity(this)
+				.slot(0, 35, 35)
+				.slot(1, 35, 55)
+				.outputSlot(2, 79, 41)
+				.outputSlot(3, 99, 41)
+				.outputSlot(4, 119, 41)
+				.outputSlot(5, 139, 41)
+				.energySlot(6, 8, 72)
+				.syncEnergyValue().syncCrafterValue()
 				.addInventory().create(this, syncID);
 	}
 
