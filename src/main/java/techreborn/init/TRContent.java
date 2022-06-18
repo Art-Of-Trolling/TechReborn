@@ -1715,6 +1715,7 @@ public class TRContent {
 		BISMUTH,
 		BRASS,
 		BRONZE,
+		CADMIUM,
 		CALCITE,
 		CHARCOAL,
 		CHROME,
@@ -1898,6 +1899,7 @@ public class TRContent {
 		ANDESITE,
 		ANDRADITE,
 		ANNEALED_COPPER,
+		ANTIMONY,
 		BASALT,
 		BAUXITE,
 		BERYLLIUM,
@@ -1905,27 +1907,53 @@ public class TRContent {
 		BRASS,
 		BRONZE,
 		CADMIUM,
+		CALCITE,
+		CARBON,
 		CHARCOAL,
 		CHROME,
 		CINNABAR,
+		CLAY,
 		COAL,
 		COPPER,
 		DIAMOND,
 		DIORITE,
 		ELECTRUM,
 		EMERALD,
+		ENDER_EYE,
+		ENDER_PEARL,
+		ENDSTONE,
+		FIRE_CLAY,
+		FLINT,
+		GALENA,
 		GOLD,
+		GRANITE,
+		GROSSULAR,
 		INVAR,
+		IRIDIUM,
 		IRIDIUM_ALLOY,
 		IRON,
+		LAZURITE,
 		LEAD,
+		MAGNESIUM,
+		MANGANESE,
+		MARBLE,
 		MIXED_METAL,
+		NEODYMIUM,
 		NETHERITE,
+		NETHERRACK,
 		NICKEL,
 		OBSIDIAN,
+		OLIVINE,
+		PERIDOT,
+		PHOSPHOROUS,
 		PLATINUM,
+		PYRITE,
+		PYROPE,
 		QUARTZ,
+		RED_GARNET,
 		REFINED_IRON,
+		RUBY,
+		SALTPETER,
 		SAPPHIRE,
 		SILICON,
 		SILVER,
@@ -1933,26 +1961,32 @@ public class TRContent {
 		SPESSARTINE,
 		SPHALERITE,
 		STEEL,
+		SULFUR,
 		SUPERCONDUCTOR,
 		TIN,
 		TITANIUM,
 		TUNGSTEN,
 		TUNGSTENSTEEL,
 		UVAROVITE,
+		YELLOW_GARNET,
 		ZINC;
 		public final String name;
 		public final Item item;
+
 		Wires() {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_wire");
 		}
+
 		public ItemStack getStack() {
 			return new ItemStack(item);
 		}
+
 		public ItemStack getStack(int amount) {
 			return new ItemStack(item, amount);
 		}
+
 		@Override
 		public Item asItem() {
 			return item;

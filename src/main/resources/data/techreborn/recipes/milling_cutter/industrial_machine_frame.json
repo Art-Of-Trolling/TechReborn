@@ -1,0 +1,37 @@
+{
+  "type": "techreborn:milling_cutter",
+  "power": 20,
+  "time": 500,
+  "ingredients": [
+	{
+	  "item": "techreborn:industrial_machine_frame",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:titanium_plate",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:chrome_plate",
+	  "count": 4
+	},
+	{
+	  "item": "techreborn:advanced_alloy_plate",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:carbon_plate",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:aluminum_plate",
+	  "count": 2
+	},
+	{
+	  "item": "techreborn:refined_iron_ingot",
+	  "count": 4
+	}
+  ]
+}

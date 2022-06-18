@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:wire_mill",
+  "power": 10,
+  "time": 250,
+  "ingredients": [
+	{
+	  "tag": "c:quartz_plates"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:quartz_wire",
+	  "count": 2
+	}
+  ]
+}

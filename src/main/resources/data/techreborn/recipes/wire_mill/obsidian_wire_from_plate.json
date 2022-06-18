@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:wire_mill",
+  "power": 20,
+  "time": 450,
+  "ingredients": [
+	{
+	  "item": "techreborn:obsidian_plate"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:obsidian_wire",
+	  "count": 3
+	}
+  ]
+}

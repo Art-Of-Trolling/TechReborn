@@ -4,13 +4,13 @@
   "time": 200,
   "ingredients": [
 	{
-	  "item": "techreborn:superconductor_plate",
+	  "tag": "c:gold_plates",
 	  "count": 1
 	}
   ],
   "results": [
 	{
-	  "item": "techreborn:superconductor_wire",
+	  "item": "techreborn:gold_wire",
 	  "count": 2
 	}
   ]

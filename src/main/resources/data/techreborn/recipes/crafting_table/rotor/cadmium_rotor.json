@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"bBb",
+	"BRB",
+	"bBb"
+  ],
+  "key": {
+	"b": {
+	  "item": "techreborn:cadmium_bolt"
+	},
+	"B": {
+	  "item": "techreborn:cadmium_blade"
+	},
+	"R": {
+	  "item": "techreborn:cadmium_ring"
+	}
+  },
+  "result": {
+	"item": "techreborn:cadmium_rotor",
+	"count": 1
+  }
+}

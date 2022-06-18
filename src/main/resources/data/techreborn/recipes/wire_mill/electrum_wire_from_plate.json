@@ -1,11 +1,10 @@
 {
   "type": "techreborn:wire_mill",
-  "power": 2,
-  "time": 200,
+  "power": 10,
+  "time": 300,
   "ingredients": [
 	{
-	  "tag": "c:electrum_plates",
-	  "count": 1
+	  "tag": "c:electrum_plates"
 	}
   ],
   "results": [

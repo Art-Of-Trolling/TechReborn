@@ -1,0 +1,17 @@
+
+{
+  "type": "techreborn:wire_mill",
+  "power": 10,
+  "time": 300,
+  "ingredients": [
+	{
+	  "item": "techreborn:advanced_alloy_plate"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:advanced_alloy_wire",
+	  "count": 2
+	}
+  ]
+}

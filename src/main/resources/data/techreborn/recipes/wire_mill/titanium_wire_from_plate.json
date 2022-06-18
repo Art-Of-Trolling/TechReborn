@@ -4,13 +4,13 @@
   "time": 200,
   "ingredients": [
 	{
-	  "tag": "c:aluminum_plates",
+	  "tag": "c:titanium_plates",
 	  "count": 1
 	}
   ],
   "results": [
 	{
-	  "item": "techreborn:aluminum_wire",
+	  "item": "techreborn:titanium_wire",
 	  "count": 2
 	}
   ]

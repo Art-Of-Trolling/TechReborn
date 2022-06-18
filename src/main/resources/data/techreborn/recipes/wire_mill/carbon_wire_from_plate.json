@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:wire_mill",
+  "power": 20,
+  "time": 400,
+  "ingredients": [
+	{
+	  "item": "techreborn:carbon_mesh"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:carbon_wire",
+	  "count": 2
+	}
+  ]
+}

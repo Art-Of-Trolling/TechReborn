@@ -1,20 +1,23 @@
 {
   "type": "techreborn:milling_cutter",
   "power": 30,
-  "time": 800,
+  "time": 700,
   "ingredients": [
 	{
-	  "item": "techreborn:quantum_machine_frame",
+	  "item": "techreborn:quantum_machine_casing",
 	  "count": 1
+	},
+	{
+	  "item": "techreborn:cell",
+	  "nbt": {
+		"fluid": "techreborn:mercury"
+	  },
+	  "count": 4
 	}
   ],
   "results": [
 	{
 	  "item": "techreborn:titanium_plate",
-	  "count": 4
-	},
-	{
-	  "item": "techreborn:refined_iron_nugget",
 	  "count": 4
 	},
 	{
@@ -26,19 +29,15 @@
 	  "count": 2
 	},
 	{
-	  "item": "techreborn:advanced_alloy_rod",
+	  "item": "techreborn:carbon_mesh",
 	  "count": 2
 	},
 	{
-	  "item": "techreborn:platinum_plate",
+	  "item": "techreborn:data_storage_chip",
 	  "count": 1
 	},
 	{
-	  "item": "techreborn:carbon_plate",
-	  "count": 1
-	},
-	{
-	  "item": "techreborn:advanced_alloy_plate",
+	  "item": "techreborn:industrial_circuit",
 	  "count": 1
 	}
   ]

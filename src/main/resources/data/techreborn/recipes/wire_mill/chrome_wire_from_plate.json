@@ -1,0 +1,16 @@
+{
+  "type": "techreborn:wire_mill",
+  "power": 10,
+  "time": 300,
+  "ingredients": [
+	{
+	  "tag": "c:chrome_plates"
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:chrome_wire",
+	  "count": 2
+	}
+  ]
+}
