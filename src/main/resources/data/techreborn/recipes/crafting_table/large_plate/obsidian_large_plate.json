@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:obsidian_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:obsidian_large_plate",
+	"count": 1
+  }
+}

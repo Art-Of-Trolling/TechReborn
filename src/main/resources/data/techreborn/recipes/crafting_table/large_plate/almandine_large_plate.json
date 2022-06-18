@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:almandine_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:almandine_large_plate",
+	"count": 1
+  }
+}

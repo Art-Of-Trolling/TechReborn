@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:diorite_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:diorite_large_plate",
+	"count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:magnesium_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:magnesium_large_plate",
+	"count": 1
+  }
+}

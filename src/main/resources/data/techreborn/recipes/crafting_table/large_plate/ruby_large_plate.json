@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:ruby_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:ruby_large_plate",
+	"count": 1
+  }
+}

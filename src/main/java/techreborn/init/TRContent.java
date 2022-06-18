@@ -2184,6 +2184,7 @@ public class TRContent {
 		NEODYMIUM,
 		NETHERRACK,
 		NICKEL,
+		NETHERITE,
 		OBSIDIAN,
 		OLIVINE,
 		PERIDOT,

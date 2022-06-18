@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:mixed_metal_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:mixed_metal_large_plate",
+	"count": 1
+  }
+}

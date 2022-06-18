@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"xx",
+	"xx"
+  ],
+  "key": {
+	"x": {
+	  "tag": "c:advanced_alloy_plates"
+	}
+  },
+  "result": {
+	"item": "techreborn:advanced_alloy_large_plate",
+	"count": 1
+  }
+}
