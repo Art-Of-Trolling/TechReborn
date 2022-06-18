@@ -1,5 +1,12 @@
 {
     "variants": {
-        "": { "model": "techreborn:block/machines/generators/lightning_rod" }
+        "facing=north,active=false": { "model": "techreborn:block/machines/generators/lightning_rod" },
+        "facing=south,active=false": { "model": "techreborn:block/machines/generators/lightning_rod", "y": 180 },
+        "facing=west,active=false":  { "model": "techreborn:block/machines/generators/lightning_rod", "y": 270 },
+        "facing=east,active=false":  { "model": "techreborn:block/machines/generators/lightning_rod", "y": 90 },
+        "facing=north,active=true": { "model": "techreborn:block/machines/generators/lightning_rod_on" },
+        "facing=south,active=true": { "model": "techreborn:block/machines/generators/lightning_rod_on", "y": 180 },
+        "facing=west,active=true":  { "model": "techreborn:block/machines/generators/lightning_rod_on", "y": 270 },
+        "facing=east,active=true":  { "model": "techreborn:block/machines/generators/lightning_rod_on", "y": 90 }
     }
 }

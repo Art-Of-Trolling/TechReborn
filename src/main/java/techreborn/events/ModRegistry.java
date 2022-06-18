@@ -74,6 +74,7 @@ public class ModRegistry {
 			RebornRegistry.registerBlock(value.frame, itemGroup);
 			RebornRegistry.registerBlock(value.casing, itemGroup);
 		});
+
 		Arrays.stream(SolarPanels.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
 		Arrays.stream(StorageUnit.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
 		Arrays.stream(TankUnit.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
@@ -118,11 +119,11 @@ public class ModRegistry {
 		Arrays.stream(CurvedPlates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Gears.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Wires.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Blades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rods.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Bolts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rings.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rotors.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(Blades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Parts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Upgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(QuarryUpgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));

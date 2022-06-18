@@ -1655,6 +1655,7 @@ public class TRContent {
 		RUBY,
 		SALTPETER,
 		SAPPHIRE,
+		SILICON,
 		SILVER,
 		SODALITE,
 		SPESSARTINE,

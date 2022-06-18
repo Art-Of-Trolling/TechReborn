@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-	"top": "techreborn:block/machines/energy/interdimensional_su_side",
+	"top": "techreborn:block/machines/energy/idsu_top",
 	"front": "techreborn:block/machines/energy/interdimensional_su_front",
 	"side": "techreborn:block/machines/energy/interdimensional_su_side"
   }

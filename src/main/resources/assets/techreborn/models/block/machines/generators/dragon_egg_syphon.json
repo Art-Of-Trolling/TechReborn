@@ -1,8 +1,9 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
+  "parent": "minecraft:block/orientable",
   "textures": {
 	"top": "techreborn:block/machines/generators/dragon_egg_syphon_top",
 	"bottom": "techreborn:block/machines/generators/generator_bottom",
-	"side": "techreborn:block/machines/generators/dragon_egg_syphon_side_off"
+	"side": "techreborn:block/machines/generators/dragon_egg_energy_siphon_side_off",
+	"front": "techreborn:block/machines/generators/dragon_egg_syphon_front_off"
   }
 }
