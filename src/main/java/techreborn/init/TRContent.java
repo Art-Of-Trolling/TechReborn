@@ -36,6 +36,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Identifier;
 import reborncore.api.blockentity.IUpgrade;
+import reborncore.api.systems.conduit.block.ConduitBlock;
 import reborncore.common.fluid.FluidValue;
 import reborncore.common.powerSystem.PowerAcceptorBlockEntity;
 import team.reborn.energy.EnergySide;
@@ -118,8 +119,8 @@ public class TRContent {
 	public static Block RUBBER_WOOD;
 	public static Block STRIPPED_RUBBER_WOOD;
 	public static Block POTTED_RUBBER_SAPLING;
-
 	public static Block DRILL_TUBE = new BlockDrillTube();
+	public static ConduitBlock<ItemStack> ITEM_CONDUIT;
 
 	// Armor
 	public static Item CLOAKING_DEVICE;
@@ -2140,7 +2141,12 @@ public class TRContent {
 
 		WATER_COOLANT_CELL_10K,
 		WATER_COOLANT_CELL_30K,
-		WATER_COOLANT_CELL_60K;
+		WATER_COOLANT_CELL_60K,
+
+		EXPORT_CONDUIT_ITEM,
+		IMPORT_CONDUIT_ITEM,
+		BLOCK_CONDUIT_ITEM,
+		ONE_WAY_CONDUIT_ITEM;
 
 		public final String name;
 		public final Item item;

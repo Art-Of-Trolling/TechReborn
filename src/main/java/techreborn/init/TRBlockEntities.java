@@ -33,6 +33,7 @@ import net.minecraft.util.registry.Registry;
 import org.apache.commons.lang3.Validate;
 import techreborn.TechReborn;
 import techreborn.blockentity.cable.CableBlockEntity;
+import techreborn.blockentity.conduit.item.ItemConduitBlockEntity;
 import techreborn.blockentity.generator.LightningRodBlockEntity;
 import techreborn.blockentity.generator.PlasmaGeneratorBlockEntity;
 import techreborn.blockentity.generator.SolarPanelBlockEntity;
@@ -145,6 +146,7 @@ public class TRBlockEntities {
 	public static final BlockEntityType<QuarryBlockEntity> QUARRY = register(QuarryBlockEntity::new, "quarry", TRContent.Machine.QUARRY);
 	public static final BlockEntityType<MillingCutterBlockEntity> MILLING_CUTTER = register(MillingCutterBlockEntity::new, "milling_cutter", TRContent.Machine.MILLING_CUTTER);
 	public static final BlockEntityType<NukeProcessingUnitBlockEntity> NUKE_PROCESSING_UNIT = register(NukeProcessingUnitBlockEntity::new, "nuke_processing_unit", TRContent.Machine.NUKE_PROCESSING_UNIT);
+	public static final BlockEntityType<ItemConduitBlockEntity> ITEM_CONDUIT = register(ItemConduitBlockEntity::new, "item_conduit", TRContent.ITEM_CONDUIT);
 
 	public static <T extends BlockEntity> BlockEntityType<T> register(Supplier<T> supplier, String name, ItemConvertible... items) {
 		return register(supplier, name, Arrays.stream(items).map(itemConvertible -> Block.getBlockFromItem(itemConvertible.asItem())).toArray(Block[]::new));

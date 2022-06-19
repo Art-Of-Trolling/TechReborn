@@ -32,8 +32,10 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import reborncore.RebornRegistry;
+import reborncore.api.systems.conduit.block.ConduitBlock;
 import team.reborn.energy.EnergyTier;
 import techreborn.TechReborn;
+import techreborn.blockentity.conduit.item.ItemConduitBlockEntity;
 import techreborn.blocks.misc.*;
 import techreborn.config.TechRebornConfig;
 import techreborn.init.*;
@@ -103,6 +105,7 @@ public class ModRegistry {
 		RebornRegistry.registerBlock(TRContent.RUBBER_DOOR = InitUtils.setup(new RubberDoorBlock(), "rubber_door"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.DRILL_TUBE = InitUtils.setup(new BlockDrillTube(), "drill_tube"), itemGroup);
 		RebornRegistry.registerBlockNoItem(TRContent.POTTED_RUBBER_SAPLING = InitUtils.setup(new FlowerPotBlock(TRContent.RUBBER_SAPLING, AbstractBlock.Settings.of(Material.SUPPORTED).breakInstantly().nonOpaque()), "potted_rubber_sapling"));
+		RebornRegistry.registerBlock(TRContent.ITEM_CONDUIT = InitUtils.setup(new ConduitBlock<>(ItemConduitBlockEntity::new, ItemConduitBlockEntity.class), "item_conduit"), itemGroup);
 		TechReborn.LOGGER.debug("TechReborns Blocks Loaded");
 	}
 
