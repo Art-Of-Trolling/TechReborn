@@ -48,7 +48,6 @@ public class AutoSwitchApiImpl implements AutoSwitchApi {
 
 	}
 	@SuppressWarnings("removal")
-	@Override
 	public void moddedToolGroups(AutoSwitchMap<String, Pair<Tag<Item>, Class<?>>> toolGroupings) {
 
 	}

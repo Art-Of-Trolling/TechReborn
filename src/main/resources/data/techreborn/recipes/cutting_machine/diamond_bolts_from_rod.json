@@ -1,7 +1,7 @@
 {
   "type": "techreborn:cutting_machine",
-  "power": 64,
-  "time": 100,
+  "power": 2,
+  "time": 200,
   "tank": {
 	"fluid": "minecraft:water",
 	"amount": 1000

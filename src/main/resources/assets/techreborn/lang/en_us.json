@@ -1974,6 +1974,11 @@
   "item.techreborn.compressed_plantball": "Compressed Plantball",
   "item.techreborn.synthetic_redstone_crystal": "Synthetic Redstone Crystal",
 
+  "item.techreborn.export_conduit_item": "Export Controller",
+  "item.techreborn.import_conduit_item": "Import Controller",
+  "item.techreborn.block_conduit_item": "Lock Component",
+  "item.techreborn.one_way_conduit_item": "One Way Component",
+
   "_comment25": "Items-Armor",
   "item.techreborn.cloaking_device": "Cloaking Device",
   "item.techreborn.lapotronic_orbpack": "Lapotronic Orbpack",
@@ -2517,6 +2522,7 @@
   "gui.techreborn.fusion.chargingdetailed": "Charging (%s)",
   "gui.techreborn.fusion.crafting": "Crafting",
   "gui.techreborn.fusion.norecipe": "No recipe",
+  "gui.techreborn.fusion.paused": "Paused",
   "gui.techreborn.storage.amount": "Amount:",
   "gui.techreborn.storage.store": "Storing:",
   "gui.techreborn.tank.amount": "Fluid Amount:",

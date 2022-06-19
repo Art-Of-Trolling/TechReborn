@@ -1,0 +1,6 @@
+{
+  "parent": "techreborn:block/conduit/item/conduit_connector",
+  "textures": {
+	"layer0": "techreborn:block/conduit/exporter"
+  }
+}

@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "techreborn:Downloads/pipeglass",
-		"2": "techreborn:Downloads/fluidpipematerial",
-		"particle": "techreborn:Downloads/fluidpipematerial"
+		"1": "techreborn:block/conduit/pipeglass",
+		"2": "techreborn:block/conduit/fluidpipematerial",
+		"particle": "techreborn:block/conduit/fluidpipematerial"
 	},
 	"elements": [
 		{
