@@ -3,7 +3,7 @@
 	"textures": {
 		"1": "techreborn:block/conduit/fluidpipematerial",
 		"2": "techreborn:block/conduit/pipeglass",
-		"particle": "techreborn:Downloads/fluidpipematerial"
+		"particle": "techreborn:block/conduit/fluidpipematerial"
 	},
 	"elements": [
 		{

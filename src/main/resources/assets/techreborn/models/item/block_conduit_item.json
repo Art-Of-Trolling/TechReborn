@@ -1,6 +1,3 @@
 {
-  "parent": "techreborn:block/conduit/item/conduit_connector",
-  "textures": {
-	"layer0": "techreborn:block/conduit/blocking"
-  }
+  "parent": "techreborn:block/conduit/block_conduit_item"
 }

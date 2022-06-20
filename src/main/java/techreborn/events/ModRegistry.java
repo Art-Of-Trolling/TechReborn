@@ -80,12 +80,18 @@ public class ModRegistry {
 		Arrays.stream(SolarPanels.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
 		Arrays.stream(StorageUnit.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
 		Arrays.stream(TankUnit.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
+
 		Arrays.stream(Cables.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
+		RebornRegistry.registerBlock(TRContent.ITEM_CONDUIT = InitUtils.setup(new ConduitBlock<>(ItemConduitBlockEntity::new, ItemConduitBlockEntity.class), "item_conduit"), itemGroup);
+		// exception (Conduit -> Item registry)
+		Arrays.stream(Conduit.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+
 		Arrays.stream(Machine.values()).forEach(value -> RebornRegistry.registerBlock(value.block, itemGroup));
 
 		// Misc. blocks
 		RebornRegistry.registerBlock(TRContent.COMPUTER_CUBE = InitUtils.setup(new BlockComputerCube(), "computer_cube"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.NUKE = InitUtils.setup(new BlockNuke(), "nuke"), itemGroup);
+		RebornRegistry.registerBlock(TRContent.DRILL_TUBE = InitUtils.setup(new BlockDrillTube(), "drill_tube"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.REFINED_IRON_FENCE = InitUtils.setup(new BlockRefinedIronFence(), "refined_iron_fence"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.REINFORCED_GLASS = InitUtils.setup(new BlockReinforcedGlass(), "reinforced_glass"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.RUBBER_LEAVES = InitUtils.setup(new BlockRubberLeaves(), "rubber_leaves"), itemGroup);
@@ -103,33 +109,36 @@ public class ModRegistry {
 		RebornRegistry.registerBlock(TRContent.RUBBER_BUTTON = InitUtils.setup(new RubberButtonBlock(), "rubber_button"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.RUBBER_PRESSURE_PLATE = InitUtils.setup(new RubberPressurePlateBlock(), "rubber_pressure_plate"), itemGroup);
 		RebornRegistry.registerBlock(TRContent.RUBBER_DOOR = InitUtils.setup(new RubberDoorBlock(), "rubber_door"), itemGroup);
-		RebornRegistry.registerBlock(TRContent.DRILL_TUBE = InitUtils.setup(new BlockDrillTube(), "drill_tube"), itemGroup);
 		RebornRegistry.registerBlockNoItem(TRContent.POTTED_RUBBER_SAPLING = InitUtils.setup(new FlowerPotBlock(TRContent.RUBBER_SAPLING, AbstractBlock.Settings.of(Material.SUPPORTED).breakInstantly().nonOpaque()), "potted_rubber_sapling"));
-		RebornRegistry.registerBlock(TRContent.ITEM_CONDUIT = InitUtils.setup(new ConduitBlock<>(ItemConduitBlockEntity::new, ItemConduitBlockEntity.class), "item_conduit"), itemGroup);
 		TechReborn.LOGGER.debug("TechReborns Blocks Loaded");
 	}
 
 	private static void registerItems() {
+		Arrays.stream(Parts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Upgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(QuarryUpgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+
 		Arrays.stream(Ingots.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(DoubleIngots.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(Nuggets.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+
 		Arrays.stream(Gems.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Nuggets.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+
 		Arrays.stream(Dusts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(TinyDusts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(CrushedDusts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+
 		Arrays.stream(Plates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(LargePlates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(CurvedPlates.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+
 		Arrays.stream(Gears.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(Wires.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Blades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rods.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Bolts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rings.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 		Arrays.stream(Rotors.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(Parts.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(Upgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
-		Arrays.stream(QuarryUpgrades.values()).forEach(value -> RebornRegistry.registerItem(value.item));
+		Arrays.stream(Wires.values()).forEach(value -> RebornRegistry.registerItem(value.item));
 
 		RebornRegistry.registerItem(TRContent.QUANTUM_HELMET = InitUtils.setup(new QuantumSuitItem(TRArmorMaterials.QUANTUM, EquipmentSlot.HEAD), "quantum_helmet"));
 		RebornRegistry.registerItem(TRContent.QUANTUM_CHESTPLATE = InitUtils.setup(new QuantumSuitItem(TRArmorMaterials.QUANTUM, EquipmentSlot.CHEST), "quantum_chestplate"));

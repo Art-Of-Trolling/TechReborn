@@ -398,6 +398,107 @@ public class TRContent {
 			return block.asItem();
 		}
 	}
+	public enum Conduit implements ItemConvertible {
+
+		EXPORT_CONDUIT_ITEM,
+		IMPORT_CONDUIT_ITEM,
+		BLOCK_CONDUIT_ITEM,
+		ONE_WAY_CONDUIT_ITEM;
+
+		public final String name;
+		public final Item item;
+
+		Conduit() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name);
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+	public enum Parts implements ItemConvertible {
+
+		CUPRONICKEL_HEATING_COIL,
+		KANTHAL_HEATING_COIL,
+		NICHROME_HEATING_COIL,
+		SUPERCONDUCTOR_COIL,
+
+		CARBON_FIBER,
+		CARBON_MESH,
+
+		DATA_STORAGE_CHIP,
+		DATA_STORAGE_CORE,
+		BASIC_DISPLAY,
+		DIGITAL_DISPLAY,
+		ENERGY_FLOW_CHIP,
+		ADVANCED_CIRCUIT,
+		ELECTRONIC_CIRCUIT,
+		INDUSTRIAL_CIRCUIT,
+
+		TUNGSTEN_GRINDING_HEAD,
+		DIAMOND_GRINDING_HEAD,
+		DIAMOND_SAW_BLADE,
+
+
+		HELIUM_COOLANT_CELL_60K,
+		HELIUM_COOLANT_CELL_180K,
+		HELIUM_COOLANT_CELL_360K,
+
+		NAK_COOLANT_CELL_60K,
+		NAK_COOLANT_CELL_180K,
+		NAK_COOLANT_CELL_360K,
+
+		WATER_COOLANT_CELL_10K,
+		WATER_COOLANT_CELL_30K,
+		WATER_COOLANT_CELL_60K,
+		MACHINE_PARTS,
+		NEUTRON_REFLECTOR,
+		IRIDIUM_NEUTRON_REFLECTOR,
+		THICK_NEUTRON_REFLECTOR,
+		PLANTBALL,
+		COMPRESSED_PLANTBALL,
+		SCRAP,
+		SAP,
+		RUBBER,
+		SPONGE_PIECE,
+		SUPERCONDUCTOR,
+		UU_MATTER,
+
+		SYNTHETIC_REDSTONE_CRYSTAL;
+
+		public final String name;
+		public final Item item;
+
+		Parts() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name);
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
 
 	public enum Ores implements ItemConvertible {
 		AMETHYST(6, 3, 10, 250, MiningLevel.DIAMOND),
@@ -2083,78 +2184,6 @@ public class TRContent {
 			name = this.toString().toLowerCase(Locale.ROOT);
 			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
 			InitUtils.setup(item, name + "_nugget");
-		}
-		public ItemStack getStack() {
-			return new ItemStack(item);
-		}
-
-		public ItemStack getStack(int amount) {
-			return new ItemStack(item, amount);
-		}
-
-		@Override
-		public Item asItem() {
-			return item;
-		}
-	}
-	public enum Parts implements ItemConvertible {
-
-		EXPORT_CONDUIT_ITEM,
-		IMPORT_CONDUIT_ITEM,
-		BLOCK_CONDUIT_ITEM,
-		ONE_WAY_CONDUIT_ITEM,
-		CUPRONICKEL_HEATING_COIL,
-		KANTHAL_HEATING_COIL,
-		NICHROME_HEATING_COIL,
-		SUPERCONDUCTOR_COIL,
-		CARBON_FIBER,
-		CARBON_MESH,
-		DATA_STORAGE_CHIP,
-		DATA_STORAGE_CORE,
-		BASIC_DISPLAY,
-		DIGITAL_DISPLAY,
-		ENERGY_FLOW_CHIP,
-		ADVANCED_CIRCUIT,
-		ELECTRONIC_CIRCUIT,
-		INDUSTRIAL_CIRCUIT,
-
-		TUNGSTEN_GRINDING_HEAD,
-		DIAMOND_GRINDING_HEAD,
-		DIAMOND_SAW_BLADE,
-
-		HELIUM_COOLANT_CELL_60K,
-		HELIUM_COOLANT_CELL_180K,
-		HELIUM_COOLANT_CELL_360K,
-
-		MACHINE_PARTS,
-		NEUTRON_REFLECTOR,
-		IRIDIUM_NEUTRON_REFLECTOR,
-		THICK_NEUTRON_REFLECTOR,
-
-		NAK_COOLANT_CELL_60K,
-		NAK_COOLANT_CELL_180K,
-		NAK_COOLANT_CELL_360K,
-		PLANTBALL,
-		COMPRESSED_PLANTBALL,
-		SCRAP,
-		SAP,
-		RUBBER,
-		SPONGE_PIECE,
-		SUPERCONDUCTOR,
-		UU_MATTER,
-		SYNTHETIC_REDSTONE_CRYSTAL,
-
-		WATER_COOLANT_CELL_10K,
-		WATER_COOLANT_CELL_30K,
-		WATER_COOLANT_CELL_60K;
-
-		public final String name;
-		public final Item item;
-
-		Parts() {
-			name = this.toString().toLowerCase(Locale.ROOT);
-			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
-			InitUtils.setup(item, name);
 		}
 
 		public ItemStack getStack() {

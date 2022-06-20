@@ -254,6 +254,4 @@ public class ConduitBlock<T> extends BlockWithEntity {
 	public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext shapeContext) {
 		return conduitShapeUtil.getShape(state);
 	}
-
-
 }

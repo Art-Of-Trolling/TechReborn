@@ -58,7 +58,7 @@ public class ItemConduitRenderer extends BlockEntityRenderer<ItemConduitBlockEnt
 	public static final Identifier IMPORT_TEXTURE = new Identifier("techreborn:textures/block/conduit/importer.png");
 
 	private static final OneWayModel ONE_WAY_MODEL = new OneWayModel();
-	public static final Identifier ONE_WAY_TEXTURE = new Identifier("techreborn:textures/block/conduit/one-way.png");
+	public static final Identifier ONE_WAY_TEXTURE = new Identifier("techreborn:textures/block/conduit/one_way.png");
 
 	private static final BlockingModel BLOCKING_MODEL = new BlockingModel();
 	public static final Identifier BLOCKING_TEXTURE = new Identifier("techreborn:textures/block/conduit/blocking.png");
