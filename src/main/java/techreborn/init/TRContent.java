@@ -261,6 +261,48 @@ public class TRContent {
 	@Nullable
 	public static Item PERIDOT_BOOTS;
 
+	public enum SolarParts implements ItemConvertible {
+
+		AMORPHOUS_LINK,
+		CRYSTALLINE_LINK,
+		MONOCRYSTALLINE_LINK,
+		POLYCRYSTALLINE_LINK,
+
+		PN_CONNECTOR,
+		FRESNEL_LENSES,
+		ANTI_REFLECTIVE_COATING,
+		I2L_DIGITAL_CIRCUIT,
+
+		MESFE_TRANSISTOR,
+		HEM_TRANSISTOR,
+		JFE_TRANSISTOR,
+		HB_TRANSISTOR,
+
+		QUANTUM_INFRARED_DETECTOR;
+
+		public final String name;
+		public final Item item;
+
+		SolarParts() {
+			name = this.toString().toLowerCase(Locale.ROOT);
+			item = new Item(new Item.Settings().group(TechReborn.ITEMGROUP));
+			InitUtils.setup(item, name);
+		}
+
+		public ItemStack getStack() {
+			return new ItemStack(item);
+		}
+
+		public ItemStack getStack(int amount) {
+			return new ItemStack(item, amount);
+		}
+
+		@Override
+		public Item asItem() {
+			return item;
+		}
+	}
+
 	public enum SolarPanels implements ItemConvertible {
 		BASIC(EnergyTier.MICRO, TechRebornConfig.basicGenerationRateD, TechRebornConfig.basicGenerationRateN),
 		ADVANCED(EnergyTier.LOW, TechRebornConfig.advancedGenerationRateD, TechRebornConfig.advancedGenerationRateN),
