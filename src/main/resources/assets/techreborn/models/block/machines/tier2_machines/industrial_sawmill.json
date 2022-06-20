@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-	"up": "techreborn:block/machines/tier2_machines/machine_top",
-	"down": "techreborn:block/machines/tier2_machines/machine_bottom",
-	"west": "techreborn:block/machines/tier2_machines/machine_west",
-	"east": "techreborn:block/machines/tier2_machines/machine_east",
-	"south": "techreborn:block/machines/tier2_machines/machine_back",
-	"front": "techreborn:block/machines/tier2_machines/industrial_sawmill_front_off"
+	"up": "techreborn:block/machines/tier2_machines/saw/industrial_sawmill_top",
+	"down": "techreborn:block/machines/tier2_machines/saw/industrial_sawmill_bottom",
+	"west": "techreborn:block/machines/tier2_machines/saw/industrial_sawmill_side",
+	"east": "techreborn:block/machines/tier2_machines/saw/industrial_sawmill_side",
+	"south": "techreborn:block/machines/tier2_machines/saw/industrial_sawmill_side",
+	"front": "techreborn:block/machines/tier2_machines/saw/industrial_sawmill_front_off"
   }
 }
