@@ -1,9 +1,11 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-	"top": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_top",
-	"front": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_front_off",
-	"side": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_side"
-	"bottom": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_bottom"
+	"up": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_top",
+	"down": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_bottom",
+	"west": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_side_west",
+	"east": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_side_east",
+	"south": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_back",
+	"front": "techreborn:block/machines/tier0_machines/alloy/iron_alloy_furnace_front_off"
   }
 }

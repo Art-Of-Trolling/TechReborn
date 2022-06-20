@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-	"up": "techreborn:block/machines/generators/fusion_control_computer_top",
-	"down": "techreborn:block/machines/generators/fusion_control_computer_bottom",
-	"west": "techreborn:block/machines/generators/fusion_control_computer_west",
-	"east": "techreborn:block/machines/generators/fusion_control_computer_east",
-	"south": "techreborn:block/machines/generators/fusion_control_computer_back",
-	"front": "techreborn:block/machines/generators/fusion_control_computer_front_on"
+	"up": "techreborn:block/machines/generators/fusion/fusion_control_computer_top",
+	"down": "techreborn:block/machines/generators/fusion/fusion_control_computer_bottom",
+	"west": "techreborn:block/machines/generators/fusion/fusion_control_computer_side_west",
+	"east": "techreborn:block/machines/generators/fusion/fusion_control_computer_side_east",
+	"south": "techreborn:block/machines/generators/fusion/fusion_control_computer_back",
+	"front": "techreborn:block/machines/generators/fusion/fusion_control_computer_front_on"
   }
 }

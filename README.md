@@ -1,7 +1,8 @@
 [![](https://i.imgur.com/m0y21EK.png "Tech Reborn")](https://github.com/techreborn/TechReborn/)
 
 [Fork](https://github.com/TechReborn/TechReborn) for project purposes, all rights belong to their creators.
-
+***
+![](https://i.imgur.com/OyvXNBI.png)
 * * * * * * * * *
 
 # Credits
@@ -19,5 +20,7 @@
 
 # License
 Tech Reborn is licensed under the MIT license. Full license is in [**LICENSE.md**](https://github.com/szumaster/techreborn/blob/main/LICENSE.md).
-All assets, except for gui's, are licensed under the [CC0 1.0 Universal Public Domain Dedication](https://github.com/szumaster/techreborn/blob/main/LICENSE.md).
+
+All assets, except for gui's, are licensed under the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+
 Report any issues regarding this repository to [szumaster](https://github.com/szumaster).
