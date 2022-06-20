@@ -428,7 +428,6 @@ public class TRContent {
 		}
 	}
 	public enum Parts implements ItemConvertible {
-
 		CUPRONICKEL_HEATING_COIL,
 		KANTHAL_HEATING_COIL,
 		NICHROME_HEATING_COIL,

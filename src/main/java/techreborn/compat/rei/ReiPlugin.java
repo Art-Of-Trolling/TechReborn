@@ -231,7 +231,7 @@ public class ReiPlugin implements REIPluginV0 {
 	private void registerFluidGeneratorDisplays(RecipeHelper recipeHelper, EFluidGenerator generator, Machine machine) {
 		Identifier identifier = new Identifier(TechReborn.MOD_ID, machine.name);
 		GeneratorRecipeHelper.getFluidRecipesForGenerator(generator).getRecipes().forEach(recipe ->
-			recipeHelper.registerDisplay(new FluidGeneratorRecipeDisplay(recipe, identifier))
+				recipeHelper.registerDisplay(new FluidGeneratorRecipeDisplay(recipe, identifier))
 		);
 	}
 
@@ -318,7 +318,8 @@ public class ReiPlugin implements REIPluginV0 {
 		return new EnergyEntryWidget(bounds, animation).entry(
 				new RenderingEntry() {
 					@Override
-					public void render(MatrixStack matrices, Rectangle bounds, int mouseX, int mouseY, float delta) {}
+					public void render(MatrixStack matrices, Rectangle bounds, int mouseX, int mouseY, float delta) {
+					}
 
 					@Override
 					public @Nullable Tooltip getTooltip(Point mouse) {
@@ -363,7 +364,8 @@ public class ReiPlugin implements REIPluginV0 {
 		}
 
 		@Override
-		protected void drawCurrentEntry(MatrixStack matrices, int mouseX, int mouseY, float delta) {}
+		protected void drawCurrentEntry(MatrixStack matrices, int mouseX, int mouseY, float delta) {
+		}
 	}
 
 	private static class FluidEntryWidget extends EntryWidget {
@@ -406,10 +408,10 @@ public class ReiPlugin implements REIPluginV0 {
 			FluidRenderHandler handler = FluidRenderHandlerRegistry.INSTANCE.get(fluid);
 
 			// If registry can't find it, don't render.
-			if(handler == null){
+			if (handler == null) {
 				return;
 			}
-			
+
 			final Sprite sprite = handler.getFluidSprites(MinecraftClient.getInstance().world, BlockPos.ORIGIN, fluid.getDefaultState())[0];
 			int color = FluidRenderHandlerRegistry.INSTANCE.get(fluid).getFluidColor(MinecraftClient.getInstance().world, BlockPos.ORIGIN, fluid.getDefaultState());
 
@@ -432,7 +434,8 @@ public class ReiPlugin implements REIPluginV0 {
 		}
 
 		@Override
-		protected void drawCurrentEntry(MatrixStack matrices, int mouseX, int mouseY, float delta) {}
+		protected void drawCurrentEntry(MatrixStack matrices, int mouseX, int mouseY, float delta) {
+		}
 	}
 
 	public static class EntryAnimation {
